@@ -25,16 +25,48 @@ public class GuestFilter implements Filter {
         HttpSession session = httpRequest.getSession();
         User user = (User) session.getAttribute("user");
 
-        /*Continue if user is authorized or user wants to register,
-        * otherwise filter redirects to index page*/
-        if (user != null ||                     // check if user is authorized
-                (command != null &&             // check if there is any command and if the command is either "register", "registration" or "authorization"
-                        (command.equals("register") || command.equals("registration") || command.equals("authorization")))) {
+        /*
+        * Filter all request without particular command
+        */
+        if (command == null) {
+            RequestDispatcher dispatcher = request.getRequestDispatcher(indexJsp);
+            dispatcher.forward(request, response);
+        }
+
+        /*
+        * These guest commands are available only for guest users
+        * and they're the only commands to be invoked by these users
+        */
+        boolean guestCommand = command.equals("register") || command.equals("registration") ||
+                command.equals("authorization") || command.equals("login");
+
+        /*
+        * Null user == guest user
+        */
+        boolean guestUser = user == null;
+
+        /*
+        * Continue if guest user invokes guest command or
+        * authorized user invokes any other command.
+        * Otherwise - redirect to index.jsp
+        */
+        if ((guestCommand == guestUser)) {
             chain.doFilter(request, response);
+
         } else {
             RequestDispatcher dispatcher = request.getRequestDispatcher(indexJsp);
             dispatcher.forward(request, response);
         }
+//        /*Continue if user is authorized or user wants to register,
+//        * otherwise filter redirects to index page*/
+//        if (user != null ||                     // check if user is authorized
+//                (command != null &&             // check if there is any command and if the command is either "register", "registration" or "authorization"
+//                        (command.equals("register") || command.equals("registration") || command.equals("authorization")))) {
+//            chain.doFilter(request, response);
+//        } else {
+//            RequestDispatcher dispatcher = request.getRequestDispatcher(indexJsp);
+//            dispatcher.forward(request, response);
+//        }
     }
 
     @Override

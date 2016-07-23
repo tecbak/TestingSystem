@@ -22,6 +22,15 @@ public class Controller extends HttpServlet {
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpServletRequestWrapper requestWrapper = new HttpServletRequestWrapper(request);
 
+
+//        { // TODO: 22.07.2016 TESTS
+//            MenuJdbc dao = MenuJdbc.getInstance();
+//            List<Subject> subjects = dao.getSubjects();
+//            for (Subject subject : subjects) {
+//                System.out.println(subject);
+//            }
+//        }
+
         CommandFactory factory = CommandFactory.getInstance();
         Command command = factory.getCommand(requestWrapper);
         String page = command.execute(requestWrapper);

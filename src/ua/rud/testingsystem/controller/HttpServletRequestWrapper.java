@@ -2,6 +2,7 @@ package ua.rud.testingsystem.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Locale;
 
 /**
  * Encapsulates {@link HttpServletRequest}
@@ -42,5 +43,22 @@ public class HttpServletRequestWrapper implements RequestWrapper {
     @Override
     public void setSessionAttribute(String s, Object o) {
         session.setAttribute(s, o);
+    }
+
+    @Override
+    public Locale getSessionLanguage() {
+        Object language = session.getAttribute("language");
+
+        if (language != null && language instanceof Locale) {
+            return (Locale) language;
+        } else {
+            return request.getLocale();
+        }
+    }
+
+    @Override
+    public void invalidateSession() {
+        session.invalidate();
+
     }
 }

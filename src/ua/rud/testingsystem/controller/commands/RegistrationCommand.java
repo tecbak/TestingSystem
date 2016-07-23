@@ -2,123 +2,64 @@ package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
-import ua.rud.testingsystem.dao.DAOFactory;
-import ua.rud.testingsystem.dao.RegistrationDAO;
-import ua.rud.testingsystem.exceptions.RegistrationException;
+import ua.rud.testingsystem.logic.RegistrationLogic;
 import ua.rud.testingsystem.model.user.User;
 import ua.rud.testingsystem.resource.ConfigurationManager;
 import ua.rud.testingsystem.resource.MessageManager;
 
 import javax.servlet.ServletException;
+import java.util.Locale;
 
 public class RegistrationCommand implements Command {
+
     @Override
     public String execute(RequestWrapper request) throws ServletException {
+        /*Get data from request*/
         String login = request.getRequestParameter("login");
         String password0 = request.getRequestParameter("password0");
         String password1 = request.getRequestParameter("password1");
         String firstName = request.getRequestParameter("firstName");
         String lastName = request.getRequestParameter("lastName");
         String email = request.getRequestParameter("email");
-        String message = MessageManager.getProperty("register.success");
+        Locale locale = request.getSessionLanguage();
 
-        try {
-            //Data validation
-            checkFieldsFilled(login, password0, password1, firstName, lastName, email);
-            checkPasswordsMatch(password0, password1);
-            checkLoginUnique(login);
-            checkEmailUnique(email);
-            checkEmailValid(email);
+        /*Message of result*/
+        String message;
 
-            //Creating new user and registration in DB
+        /*Check if all fields are filed*/
+        if (!RegistrationLogic.isFilled(login, password0, password1, firstName, lastName, email)) {
+            message = MessageManager.getProperty("register.emptyFields", locale);
+
+            /*Check if passwords are equal*/
+        } else if (!RegistrationLogic.isPasswordsMatch(password0, password1)) {
+            message = MessageManager.getProperty("register.passwordsMismatch", locale);
+
+            /*Check if login doesn't already exist*/
+        } else if (!RegistrationLogic.isLoginUnique(login)) {
+            message = MessageManager.getProperty("register.loginExists", locale);
+
+            /*Check if email doesn't already exist*/
+        } else if (!RegistrationLogic.isEmailUnique(email)) {
+            message = MessageManager.getProperty("register.emailExists", locale);
+
+            /*Check if email is valid*/
+        } else if (!RegistrationLogic.isEmailValid(email)) {
+            message = MessageManager.getProperty("register.emailInvalid", locale);
+
+            /*If everything's OK*/
+        } else {
+
+            /*Creating new user and registration in database*/
             User user = new User(login, firstName, lastName, email);
-            DAOFactory factory = DAOFactory.getInstance();
-            RegistrationDAO dao = factory.getRegistrationDAO();
-            dao.registerUser(user, password0);
+            RegistrationLogic.registerUser(user, password0);
 
-        } catch (RegistrationException e) {
-            message = e.getMessage();
+            message = MessageManager.getProperty("register.success", locale);
         }
 
+        /*Set message of registration result*/
         request.setRequestAttribute("registrationMessage", message);
+
+        /*Return registration page again*/
         return ConfigurationManager.getProperty("path.page.register");
-//        DAOFactory factory = DAOFactory.getInstance();
-//        RegistrationDAO dao = factory.getRegistrationDAO();
-//
-//        //Check if all fields are filled
-//        if (isEmpty(login, password0, password1, firstName, lastName, email)) {
-//            request.setAttribute("registrationMessage", MessageManager.getProperty("register.emptyFields"));
-//            return ConfigurationManager.getProperty("path.page.register");
-//        }
-//
-//        //Check if password and confirmation password are equal
-//        if (!password0.equals(password1)) {
-//            request.setAttribute("registrationMessage", MessageManager.getProperty("register.passwordsMismatch"));
-//            return ConfigurationManager.getProperty("path.page.register");
-//        }
-//
-//        //Check if login is unique
-//        if (dao.loginExists(login)) {
-//            request.setAttribute("registrationMessage", MessageManager.getProperty("register.loginExists"));
-//            return ConfigurationManager.getProperty("path.page.register");
-//        }
-//
-//        //Check if email is unique
-//        if (dao.emailExists(email)) {
-//            request.setAttribute("registrationMessage", MessageManager.getProperty("register.emailExists"));
-//            return ConfigurationManager.getProperty("path.page.register");
-//        }
-//
-//        //Check if email is valid
-//        if (!isEmailValid(email)) {
-//            request.setAttribute("registrationMessage", MessageManager.getProperty("register.emailInvalid"));
-//            return ConfigurationManager.getProperty("path.page.register");
-//        }
-//
-//
-//
-//        request.setAttribute("registrationMessage", MessageManager.getProperty("register.success"));
-    }
-
-    private void checkFieldsFilled(String... values) throws RegistrationException {
-        for (String value : values) {
-            if (value.isEmpty()) {
-                String message = MessageManager.getProperty("register.emptyFields");
-                throw new RegistrationException(message);
-            }
-        }
-    }
-
-    private void checkPasswordsMatch(String password0, String password1) throws RegistrationException {
-        if (!password0.equals(password1)) {
-            String message = MessageManager.getProperty("register.passwordsMismatch");
-            throw new RegistrationException(message);
-        }
-    }
-
-    private void checkLoginUnique(String login) throws RegistrationException {
-        DAOFactory factory = DAOFactory.getInstance();
-        RegistrationDAO dao = factory.getRegistrationDAO();
-        if (dao.loginExists(login)) {
-            String message = MessageManager.getProperty("register.loginExists");
-            throw new RegistrationException(message);
-        }
-    }
-
-    private void checkEmailUnique(String email) throws RegistrationException {
-        DAOFactory factory = DAOFactory.getInstance();
-        RegistrationDAO dao = factory.getRegistrationDAO();
-        if (dao.emailExists(email)) {
-            String message = MessageManager.getProperty("registrationEmailExists");
-            throw new RegistrationException(message);
-        }
-    }
-
-    private void checkEmailValid(String email) throws RegistrationException {
-        final String EMAIL_PATTERN = "^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
-        if (!email.matches(EMAIL_PATTERN)) {
-            String message = MessageManager.getProperty("registrationEmailInvalid");
-            throw new RegistrationException(message);
-        }
     }
 }

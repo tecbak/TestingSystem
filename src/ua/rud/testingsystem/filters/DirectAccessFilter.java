@@ -4,7 +4,7 @@ import javax.servlet.*;
 import java.io.IOException;
 
 /**
- * Redirects to index.jsp all attempts of direct access to JSPs
+ * Prevents from direct access to JSPs
  */
 public class DirectAccessFilter implements Filter {
     private String indexJsp;

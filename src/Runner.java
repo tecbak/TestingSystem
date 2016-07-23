@@ -1,14 +1,26 @@
+import ua.rud.testingsystem.resource.MessageManager;
+
 import java.sql.SQLException;
 import java.util.Locale;
 
 public class Runner {
     public static void main(String[] args) throws SQLException {
-        String login = "admin";
-        String pass = "password";
+        Locale locale = new Locale("en");
 
-        System.out.println(Locale.getDefault());
+        String property = MessageManager.getProperty("index.caption", locale);
+        System.out.println(property);
 
-//        AuthorizationJDBC dao = new AuthorizationJDBC();
+
+//        MenuJdbc dao = MenuJdbc.getInstance();
+//        List<Subject> subjects = dao.getSubjects();
+//        System.out.println(subjects);
+//
+//        Subject subject = new Subject();
+//        Map<Integer, String> tests = subject.getTests();
+//        for (Map.Entry<Integer, String> integerStringEntry : tests.entrySet()) {
+//        }
+
+//        AuthorizationJdbc dao = new AuthorizationJdbc();
 
 //        User user = dao.getUser(login, pass);
 

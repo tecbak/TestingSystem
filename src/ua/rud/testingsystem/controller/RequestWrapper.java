@@ -1,5 +1,7 @@
 package ua.rud.testingsystem.controller;
 
+import java.util.Locale;
+
 /**
  * Provides access to request's parameters and attributes
  * as well as session's attributes
@@ -14,4 +16,8 @@ public interface RequestWrapper {
     Object getSessionAttribute(String s);
 
     void setSessionAttribute(String s, Object o);
+
+    Locale getSessionLanguage();
+
+    void invalidateSession();
 }

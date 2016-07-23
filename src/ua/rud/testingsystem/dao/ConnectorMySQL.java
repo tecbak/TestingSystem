@@ -24,15 +24,8 @@ public class ConnectorMySQL {
             ds = (DataSource) envCtx.lookup("jdbc/testingsystem");
         } catch (NamingException e) {
             e.printStackTrace();
+            // TODO: 23.07.2016 insert log here
         }
         return ds.getConnection();
-
-//        ResourceBundle ua.rud.testingsystem.resource = ResourceBundle.getBundle("database");
-//        String url = ua.rud.testingsystem.resource.getString("db.url");
-//        String user = ua.rud.testingsystem.resource.getString("db.user");
-//        String password = ua.rud.testingsystem.resource.getString("db.password");
-//        String driver = ua.rud.testingsystem.resource.getString("db.driver");
-//        DriverManager.registerDriver(new com.jdbc.jdbc.Driver());
-//        return DriverManager.getConnection(url, user, password);
     }
 }

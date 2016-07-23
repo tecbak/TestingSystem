@@ -8,6 +8,13 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
+    <!--<jsp-config>-->
+        <!--<taglib>-->
+            <!--<taglib-uri>customtags</taglib-uri>-->
+            <!--<taglib-location>/WEB-INF/ltd/lang.tld</taglib-location>-->
+        <!--</taglib>-->
+    <!--</jsp-config>-->
+
     <!--DB-->
     <description>MySQL</description>
     <resource-ref>
@@ -67,17 +74,18 @@
         <url-pattern>/controller</url-pattern>
     </filter-mapping>
 
-    <!--Errors-->
-    <error-page>
-        <error-code>404</error-code>
-        <location>/jsp/error.jsp</location>
-    </error-page>
+    <!--&lt;!&ndash;Errors&ndash;&gt;-->
+    <!--<error-page>-->
+        <!--<error-code>404</error-code>-->
+        <!--<location>/jsp/error.jsp</location>-->
+    <!--</error-page>-->
 
-    <error-page>
-        <exception-type>java.lang.Throwable</exception-type>
-        <location>/jsp/error.jsp</location>
-    </error-page>
+    <!--<error-page>-->
+        <!--<exception-type>java.lang.Throwable</exception-type>-->
+        <!--<location>/jsp/error.jsp</location>-->
+    <!--</error-page>-->
 
+    <!--Tag libs-->
 
 
 </web-app>

@@ -1,36 +1,20 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="ctg" uri="http://customtags.rud.ua" %>
 
-<c:set var="language"
-       value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale}"
-       scope="session"/>
-<fmt:setLocale value="${language}"/>
-<fmt:bundle basename="ua/rud/testingsystem/resource/messages">
-
-    <!DOCTYPE html>
-    <html lang="${language}">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title><fmt:message key="index.title"/></title>
-    </head>
-    <body>
-    <c:if test="${not empty sessionScope.user}">
-        <jsp:forward page="/jsp/menu.jsp"/>
-    </c:if>
-
+<fmt:bundle basename="ua/rud/testingsystem/resource/config" prefix="path.page.">
+    <%--Redirect to login page if user isn't authorized--%>
+    <fmt:message var="login" key="login"/>
     <c:if test="${empty sessionScope.user}">
-        <jsp:forward page="/jsp/login.jsp"/>
+        <jsp:forward page="${login}"/>
     </c:if>
-
-
-
-    <div align="center">
-        <h1><fmt:message key="index.caption"/></h1>
-        <a href="/controller?command=login"><fmt:message key="index.login"/></a><br>
-        <a href="/controller?command=register"><fmt:message key="index.registration"/></a>
-    </div>
-    </body>
-    </html>
-
+    <%--Redirect to menu page if user is authorized--%>
+    <fmt:message var="menu" key="menu"/>
+    <c:if test="${not empty sessionScope.user}">
+        <jsp:forward page="${menu}"/>
+    </c:if>
 </fmt:bundle>
+
+
+
