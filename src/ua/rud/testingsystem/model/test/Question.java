@@ -53,4 +53,20 @@ public class Question {
         }
         return sb.toString();
     }
+
+    public void applyAnswers(List<Integer> answerList) {
+        for (Answer answer : answers) {
+            answer.applyAnswers(answerList);
+        }
+    }
+
+    public boolean isCorrect() {
+        for (Answer answer : answers) {
+            if (!answer.isCorrectlyChecked()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }

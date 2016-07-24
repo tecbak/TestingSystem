@@ -11,7 +11,7 @@
     <html lang="${language}">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title><fmt:message key="login.title"/></title>
+        <title><fmt:message key="menu.title"/></title>
         <style type="text/css">
             table {
                 font-family: Arial;
@@ -23,8 +23,10 @@
         <table width="600px">  <%-- frame="border"--%>
             <tr>
                 <td align="left">
-                    <c:if test="${not empty sessionScope.user}">
-                        <a href="controller?command=logout"><fmt:message key="common.logout"/></a>
+                    <a href="controller?command=logout"><fmt:message key="common.logout"/></a>
+                    <%--<a href="controller?command=results"> <fmt:message key="common.results"/></a>--%>
+                    <c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">
+                        <a href="controller?command=admin"> <fmt:message key="common.administration"/></a>
                     </c:if>
                 </td>
                 <td align="right">
@@ -39,34 +41,27 @@
                         <h1><fmt:message key="menu.availableTests"/></h1><br/>
                     </div>
 
-                    <form action="controller" method="get">
-                        <input type="hidden" name="action" value="test">
-                        <c:forEach var="subject" items="${sessionScope.subjects}">
+                    <div align="left">
+                        <form action="controller" method="get">
+                            <input type="hidden" name="command" value="start">
 
-                            <h2><c:out value="${subject.name}"/></h2>
+                            <c:forEach var="subject" items="${sessionScope.subjects}">
 
-                            <c:forEach var="entry" items="${subject.tests.entrySet()}">
-                                <input type="radio" name="id" value="${entry.getKey()}"/>
-                                <c:out value="${entry.getValue()}"/>
+                                <h2><c:out value="${subject.name}"/></h2>
+
+                                <c:forEach var="entry" items="${subject.tests.entrySet()}">
+                                    <input type="radio" name="id" value="${entry.getKey()}"/>
+                                    <c:out value="${entry.getValue()}"/>
+                                    <br/>
+                                </c:forEach>
                                 <br/>
                             </c:forEach>
-                            <br/>
-                        </c:forEach>
 
-                        <fmt:message  key="menu.start" var="start"/>
-                        <input type="submit" name="select" value="${start}" >
-                    </form>
+                            <fmt:message key="menu.start" var="start"/>
+                            <input type="submit" name="select" value="${start}">
 
-
-                    <br>
-                        ${sessionScope.user}<br/><br/>
-                    id = ${sessionScope.user.id}<br/>
-                    login = ${sessionScope.user.login}<br/>
-                    firstname = ${sessionScope.user.firstName}<br/>
-                    lastname = ${sessionScope.user.lastName}<br/>
-                    email = ${sessionScope.user.email}<br/>
-                    role = ${sessionScope.user.role}<br/>
-
+                        </form>
+                    </div>
                         <%--template--%>
                 </td>
             </tr>

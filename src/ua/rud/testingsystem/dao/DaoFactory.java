@@ -5,5 +5,7 @@ public interface DaoFactory {
 
     RegistrationDao getRegistrationDao();
 
-    MenuDao getTestDao();
+    MenuDao getMenuDao();
+
+    TestDao getTestDao();
 }

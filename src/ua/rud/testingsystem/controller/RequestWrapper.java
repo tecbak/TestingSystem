@@ -19,5 +19,8 @@ public interface RequestWrapper {
 
     Locale getSessionLanguage();
 
+    String[] getRequestParameterValues(String s);
+
     void invalidateSession();
+
 }

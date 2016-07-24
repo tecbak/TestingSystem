@@ -6,6 +6,7 @@ public class Test {
     private int id;
     private String caption;
     private List<Question> questions;
+    private boolean completed;
 
     /*Constructors*/
     public Test() {
@@ -15,6 +16,7 @@ public class Test {
         this.id = id;
         this.caption = caption;
         this.questions = questions;
+        this.completed = false;
     }
 
     /*Getters and setters*/
@@ -42,6 +44,10 @@ public class Test {
         this.questions = questions;
     }
 
+    public boolean isCompleted() {
+        return completed;
+    }
+
     /*Methods*/
 
     @Override
@@ -53,4 +59,23 @@ public class Test {
         }
         return sb.toString();
     }
+
+    public void applyAnswers(List<Integer> answerList) {
+        for (Question question : questions) {
+            question.applyAnswers(answerList);
+        }
+        completed = true;
+    }
+
+    public int getRate() {
+        int n = 0;
+        for (Question question : questions) {
+            if (question.isCorrect()) {
+                n++;
+            }
+        }
+        return n * 100 / questions.size();
+    }
+
+
 }

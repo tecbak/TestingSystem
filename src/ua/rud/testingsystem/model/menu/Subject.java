@@ -1,11 +1,13 @@
-package ua.rud.testingsystem.model.test;
+package ua.rud.testingsystem.model.menu;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 public class Subject {
     private int id;
     private String name;
     private Map<Integer, String> tests;
+    private ArrayList<TestInfo> testInfos;
 
     /*Constructors*/
     public Subject() {

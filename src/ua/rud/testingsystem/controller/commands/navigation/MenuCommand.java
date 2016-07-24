@@ -1,9 +1,9 @@
-package ua.rud.testingsystem.controller.commands;
+package ua.rud.testingsystem.controller.commands.navigation;
 
 import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
 import ua.rud.testingsystem.logic.MenuLogic;
-import ua.rud.testingsystem.model.test.Subject;
+import ua.rud.testingsystem.model.menu.Subject;
 import ua.rud.testingsystem.resource.ConfigurationManager;
 
 import javax.servlet.ServletException;

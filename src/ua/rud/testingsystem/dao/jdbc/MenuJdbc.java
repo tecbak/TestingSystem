@@ -2,10 +2,7 @@ package ua.rud.testingsystem.dao.jdbc;
 
 import ua.rud.testingsystem.dao.ConnectorMySQL;
 import ua.rud.testingsystem.dao.MenuDao;
-import ua.rud.testingsystem.model.test.Answer;
-import ua.rud.testingsystem.model.test.Question;
-import ua.rud.testingsystem.model.test.Subject;
-import ua.rud.testingsystem.model.test.Test;
+import ua.rud.testingsystem.model.menu.Subject;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -17,8 +14,9 @@ public class MenuJdbc implements MenuDao {
 
     private final static String SQL_GET_SUBJECTS =
             "SELECT subjectId AS id, name FROM subjects;";
-    private final static String SQL_GET_TEST_CAPTIONS_BY_SUBJECT_ID =
+    private final static String SQL_GET_TESTS_BY_SUBJECT_ID =
             "SELECT testId AS id, caption FROM tests WHERE subjectId = ?";
+
 
     public MenuJdbc() {
     }
@@ -51,7 +49,7 @@ public class MenuJdbc implements MenuDao {
     private Map<Integer, String> getTestCaptions(Connection connection, int subjectId) {
         Map<Integer, String> map = new HashMap<>();
 
-        try (PreparedStatement statement = connection.prepareStatement(SQL_GET_TEST_CAPTIONS_BY_SUBJECT_ID)) {
+        try (PreparedStatement statement = connection.prepareStatement(SQL_GET_TESTS_BY_SUBJECT_ID)) {
             statement.setInt(1, subjectId);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
@@ -66,13 +64,6 @@ public class MenuJdbc implements MenuDao {
 
         return map;
     }
-
-
-
-
-
-
-
 
 
 }

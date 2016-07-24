@@ -57,8 +57,15 @@ public class HttpServletRequestWrapper implements RequestWrapper {
     }
 
     @Override
+    public String[] getRequestParameterValues(String s) {
+        return request.getParameterValues(s);
+    }
+
+    @Override
     public void invalidateSession() {
         session.invalidate();
 
     }
+
+
 }

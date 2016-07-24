@@ -13,15 +13,15 @@ import java.util.Locale;
 public class RegistrationCommand implements Command {
 
     @Override
-    public String execute(RequestWrapper request) throws ServletException {
+    public String execute(RequestWrapper wrapper) throws ServletException {
         /*Get data from request*/
-        String login = request.getRequestParameter("login");
-        String password0 = request.getRequestParameter("password0");
-        String password1 = request.getRequestParameter("password1");
-        String firstName = request.getRequestParameter("firstName");
-        String lastName = request.getRequestParameter("lastName");
-        String email = request.getRequestParameter("email");
-        Locale locale = request.getSessionLanguage();
+        String login = wrapper.getRequestParameter("login");
+        String password0 = wrapper.getRequestParameter("password0");
+        String password1 = wrapper.getRequestParameter("password1");
+        String firstName = wrapper.getRequestParameter("firstName");
+        String lastName = wrapper.getRequestParameter("lastName");
+        String email = wrapper.getRequestParameter("email");
+        Locale locale = wrapper.getSessionLanguage();
 
         /*Message of result*/
         String message;
@@ -57,7 +57,7 @@ public class RegistrationCommand implements Command {
         }
 
         /*Set message of registration result*/
-        request.setRequestAttribute("registrationMessage", message);
+        wrapper.setRequestAttribute("registrationMessage", message);
 
         /*Return registration page again*/
         return ConfigurationManager.getProperty("path.page.register");

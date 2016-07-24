@@ -1,6 +1,10 @@
 package ua.rud.testingsystem.controller;
 
 import ua.rud.testingsystem.controller.commands.*;
+import ua.rud.testingsystem.controller.commands.navigation.LoginCommand;
+import ua.rud.testingsystem.controller.commands.navigation.MenuCommand;
+import ua.rud.testingsystem.controller.commands.navigation.RegisterCommand;
+import ua.rud.testingsystem.controller.commands.navigation.TestCommand;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,6 +22,8 @@ public class CommandFactory {
             put("logout", new LogoutCommand());
             put("menu", new MenuCommand());
             put("start", new StartCommand());
+            put("test", new TestCommand());
+            put("complete", new CompleteCommand());
         }};
     }
 

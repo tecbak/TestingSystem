@@ -1,6 +1,7 @@
 package ua.rud.testingsystem.dao.jdbc;
 
 import ua.rud.testingsystem.dao.ConnectorMySQL;
+import ua.rud.testingsystem.dao.TestDao;
 import ua.rud.testingsystem.model.test.Answer;
 import ua.rud.testingsystem.model.test.Question;
 import ua.rud.testingsystem.model.test.Test;
@@ -9,17 +10,16 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestsJdbc {
-
-
-
-
-
-
+public class TestsJdbc implements TestDao {
 
     private static final String SQL_SELECT_TESTS_BY_SUBJECT_ID =
             "SELECT testId AS id, caption " +
                     "FROM tests WHERE subjectId = ?";
+
+
+    private static final String SQL_SELECT_TEST_BY_ID =
+            "SELECT caption FROM tests WHERE testId = ?";
+
 
     private static final String SQL_SELECT_QUESTIONS_BY_TEST_ID =
             "SELECT questionId AS id, task " +
@@ -28,6 +28,10 @@ public class TestsJdbc {
     private static final String SQL_SELECT_ANSWERS_BY_QUESTION_ID =
             "SELECT answerId AS id, text, correct " +
                     "FROM answers WHERE questionId = ?";
+
+    private static final String SQL_INSERT_RESULT =
+            "INSERT INTO results (userId, testId, rate) VALUES (?, ?, ?)";
+
 
     public static final String SQL_INSERT_TEST_SELECT_TEST_ID =
             "INSERT INTO tests (subjectId, caption) VALUES (?, ?); ";
@@ -43,38 +47,63 @@ public class TestsJdbc {
             "SELECT LAST_INSERT_ID();";
 
 
+//
+//    /**
+//     * Creates tests concerning particular subject
+//     *
+//     * @param subjectId id number of the subject
+//     * @return list of tests
+//     */
+//    public List<Test> getTests(int subjectId) {
+//        List<Test> tests = new ArrayList<>();
+//
+//        try (Connection connection = ConnectorMySQL.getConnection();
+//             PreparedStatement statement = connection.prepareStatement(SQL_SELECT_TESTS_BY_SUBJECT_ID)) {
+//            statement.setInt(1, subjectId);
+//            try (ResultSet resultSet = statement.executeQuery()) {
+//                while (resultSet.next()) {
+//                    int id = resultSet.getInt("id");
+//                    String caption = resultSet.getString("caption");
+//                    List<Question> questions = getQuestions(connection, id);
+//
+//                    Test test = new Test(id, caption, questions);
+//                    tests.add(test);
+//                }
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
+//        return tests;
+//    }
 
-    /*
-     SELECT QUERIES
-    */
+    /*SELECT QUERIES*/
 
     /**
-     * Creates tests concerning particular subjectx
+     * Extract test with particular ID from database
      *
-     * @param subjectId id number of the subject
-     * @return list of tests
+     * @param testId test ID
+     * @return test with particular ID or {@code null} if there's no test with such ID
      */
-    public List<Test> getTests(int subjectId) {
-        List<Test> tests = new ArrayList<>();
+    @Override
+    public Test getTestById(int testId) {
+        Test test = null;
 
         try (Connection connection = ConnectorMySQL.getConnection();
-             PreparedStatement statement = connection.prepareStatement(SQL_SELECT_TESTS_BY_SUBJECT_ID)) {
-            statement.setInt(1, subjectId);
-            try (ResultSet resultSet = statement.executeQuery()) {
-                while (resultSet.next()) {
-                    int id = resultSet.getInt("id");
-                    String caption = resultSet.getString("caption");
-                    List<Question> questions = getQuestions(connection, id);
-
-                    Test test = new Test(id, caption, questions);
-                    tests.add(test);
-                }
+             PreparedStatement statement = connection.prepareStatement(SQL_SELECT_TEST_BY_ID)) {
+            statement.setInt(1, testId);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                String caption = resultSet.getString("caption");
+                List<Question> questions = getQuestions(connection, testId);
+                test = new Test(testId, caption, questions);
             }
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        return tests;
+        return test;
     }
 
     private List<Question> getQuestions(Connection connection, int testId) throws SQLException {
@@ -116,9 +145,23 @@ public class TestsJdbc {
     }
 
 
-    /*
-     INSERT QUERIES
-    */
+
+
+    /*INSERT QUERIES*/
+    @Override
+    public void addResult(int userId, int testId, int rate) {
+        try (Connection connection = ConnectorMySQL.getConnection();
+             PreparedStatement statement = connection.prepareStatement(SQL_INSERT_RESULT)) {
+            statement.setInt(1, userId);
+            statement.setInt(2, testId);
+            statement.setInt(3, rate);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
     public void addTest(int subjectId, Test test) {
         try (Connection connection = ConnectorMySQL.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_INSERT_TEST_SELECT_TEST_ID)) {

@@ -1,9 +1,12 @@
 package ua.rud.testingsystem.model.test;
 
+import java.util.List;
+
 public class Answer {
     private int id;
     private String text;
     private boolean correct;
+    private boolean checked;
 
     /*Constructors*/
     public Answer() {
@@ -40,6 +43,14 @@ public class Answer {
         this.correct = correct;
     }
 
+    public boolean isChecked() {
+        return checked;
+    }
+
+    public void setChecked(boolean checked) {
+        this.checked = checked;
+    }
+
     /*Methods*/
     @Override
     public String toString() {
@@ -47,5 +58,13 @@ public class Answer {
         sb.append(correct);
         sb.append("\t").append(text);
         return sb.toString();
+    }
+
+    public void applyAnswers(List<Integer> answerList) {
+        checked = answerList.contains(id);
+    }
+
+    public boolean isCorrectlyChecked() {
+        return checked == correct;
     }
 }

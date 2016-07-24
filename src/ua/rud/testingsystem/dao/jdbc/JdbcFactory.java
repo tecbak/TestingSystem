@@ -1,16 +1,14 @@
 package ua.rud.testingsystem.dao.jdbc;
 
-import ua.rud.testingsystem.dao.AuthorizationDao;
-import ua.rud.testingsystem.dao.DaoFactory;
-import ua.rud.testingsystem.dao.MenuDao;
-import ua.rud.testingsystem.dao.RegistrationDao;
+import ua.rud.testingsystem.dao.*;
 
 public class JdbcFactory implements DaoFactory {
     private static JdbcFactory instance = new JdbcFactory();
 
     private AuthorizationDao authorizationDao = new AuthorizationJdbc();
     private RegistrationDao registrationDao = new RegistrationJdbc();
-    private MenuDao testDao = new MenuJdbc();
+    private MenuDao menuDao = new MenuJdbc();
+    private TestDao testDao = new TestsJdbc();
 
     /*Constructor*/
     private JdbcFactory() {
@@ -21,15 +19,23 @@ public class JdbcFactory implements DaoFactory {
         return instance;
     }
 
+    @Override
     public AuthorizationDao getAuthorizationDao() {
         return authorizationDao;
     }
 
+    @Override
     public RegistrationDao getRegistrationDao() {
         return registrationDao;
     }
 
-    public MenuDao getTestDao() {
+    @Override
+    public MenuDao getMenuDao() {
+        return menuDao;
+    }
+
+    @Override
+    public TestDao getTestDao() {
         return testDao;
     }
 

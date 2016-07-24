@@ -4,7 +4,7 @@ import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
 import ua.rud.testingsystem.logic.AuthorizationLogic;
 import ua.rud.testingsystem.logic.MenuLogic;
-import ua.rud.testingsystem.model.test.Subject;
+import ua.rud.testingsystem.model.menu.Subject;
 import ua.rud.testingsystem.model.user.User;
 import ua.rud.testingsystem.resource.ConfigurationManager;
 import ua.rud.testingsystem.resource.MessageManager;

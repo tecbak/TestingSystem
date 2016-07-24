@@ -9,9 +9,9 @@ import javax.servlet.ServletException;
 public class LogoutCommand implements Command {
 
     @Override
-    public String execute(RequestWrapper request) throws ServletException {
+    public String execute(RequestWrapper wrapper) throws ServletException {
         /*Invalidate user*/
-        request.setSessionAttribute("user", null);
+        wrapper.setSessionAttribute("user", null);
 
         /*Return login page*/
         return ConfigurationManager.getProperty("path.page.login");

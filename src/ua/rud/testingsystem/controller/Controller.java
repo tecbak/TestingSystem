@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Controller extends HttpServlet {
 
@@ -21,6 +22,8 @@ public class Controller extends HttpServlet {
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpServletRequestWrapper requestWrapper = new HttpServletRequestWrapper(request);
+
+        System.out.println(Arrays.toString(request.getParameterValues("id")));
 
 
 //        { // TODO: 22.07.2016 TESTS
