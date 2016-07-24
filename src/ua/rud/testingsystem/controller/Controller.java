@@ -27,7 +27,7 @@ public class Controller extends HttpServlet {
 
 
 //        { // TODO: 22.07.2016 TESTS
-//            MenuJdbc dao = MenuJdbc.getInstance();
+//            SubjectJdbc dao = SubjectJdbc.getInstance();
 //            List<Subject> subjects = dao.getSubjects();
 //            for (Subject subject : subjects) {
 //                System.out.println(subject);

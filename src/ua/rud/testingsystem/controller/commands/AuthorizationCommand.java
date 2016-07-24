@@ -2,10 +2,10 @@ package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
-import ua.rud.testingsystem.logic.AuthorizationLogic;
-import ua.rud.testingsystem.logic.MenuLogic;
-import ua.rud.testingsystem.model.menu.Subject;
-import ua.rud.testingsystem.model.user.User;
+import ua.rud.testingsystem.entities.utils.SubjectUtils;
+import ua.rud.testingsystem.entities.utils.UserUtils;
+import ua.rud.testingsystem.entities.sbj.Subject;
+import ua.rud.testingsystem.entities.user.User;
 import ua.rud.testingsystem.resource.ConfigurationManager;
 import ua.rud.testingsystem.resource.MessageManager;
 
@@ -23,7 +23,7 @@ public class AuthorizationCommand implements Command {
         String password = wrapper.getRequestParameter("password");
 
         /*Extract user from database*/
-        User user = AuthorizationLogic.getUser(login, password);
+        User user = UserUtils.getUser(login, password);
 
         /*
          * If user is null - there's no such a login/password pair in database,
@@ -42,7 +42,7 @@ public class AuthorizationCommand implements Command {
         } else {
 
             /*Extract list of subjects from database*/
-            List<Subject> subjects = MenuLogic.loadSubjects();
+            List<Subject> subjects = SubjectUtils.loadSubjects();
 
             /*Put extracted user and subjects to session*/
             wrapper.setSessionAttribute("user", user);

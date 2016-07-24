@@ -2,8 +2,8 @@ package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
-import ua.rud.testingsystem.logic.TestUtils;
-import ua.rud.testingsystem.model.test.Test;
+import ua.rud.testingsystem.entities.utils.TestUtils;
+import ua.rud.testingsystem.entities.test.Test;
 import ua.rud.testingsystem.resource.ConfigurationManager;
 
 import javax.servlet.ServletException;

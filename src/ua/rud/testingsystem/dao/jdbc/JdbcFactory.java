@@ -2,12 +2,18 @@ package ua.rud.testingsystem.dao.jdbc;
 
 import ua.rud.testingsystem.dao.*;
 
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
+
 public class JdbcFactory implements DaoFactory {
     private static JdbcFactory instance = new JdbcFactory();
 
-    private AuthorizationDao authorizationDao = new AuthorizationJdbc();
-    private RegistrationDao registrationDao = new RegistrationJdbc();
-    private MenuDao menuDao = new MenuJdbc();
+    private UserDao userDao = new UserJdbc();
+    private SubjectDao subjectDao = new SubjectJdbc();
     private TestDao testDao = new TestsJdbc();
 
     /*Constructor*/
@@ -20,23 +26,17 @@ public class JdbcFactory implements DaoFactory {
     }
 
     @Override
-    public AuthorizationDao getAuthorizationDao() {
-        return authorizationDao;
+    public UserDao getUserDao() {
+        return userDao;
     }
 
     @Override
-    public RegistrationDao getRegistrationDao() {
-        return registrationDao;
-    }
-
-    @Override
-    public MenuDao getMenuDao() {
-        return menuDao;
+    public SubjectDao getSubjectDao() {
+        return subjectDao;
     }
 
     @Override
     public TestDao getTestDao() {
         return testDao;
     }
-
 }

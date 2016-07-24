@@ -1,6 +1,6 @@
 package ua.rud.testingsystem.filters;
 
-import ua.rud.testingsystem.model.user.User;
+import ua.rud.testingsystem.entities.user.User;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

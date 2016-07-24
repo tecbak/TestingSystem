@@ -11,7 +11,7 @@ public class Runner {
         System.out.println(property);
 
 
-//        MenuJdbc dao = MenuJdbc.getInstance();
+//        SubjectJdbc dao = SubjectJdbc.getInstance();
 //        List<Subject> subjects = dao.getSubjects();
 //        System.out.println(subjects);
 //
@@ -36,7 +36,7 @@ public class Runner {
 //            System.out.println(test.getId() + "\t" + test.getSubject() + "\t" + test.getCaption());
 //        }
 
-//        List<Answer> answers = dao.getAnswers(ConnectorMySQL.getConnection(), 1);
+//        List<Answer> answers = dao.getAnswers(Connector.getConnection(), 1);
 //        for (Answer answer : answers) {
 //            System.out.println(answer.getId() + "\t" + answer.getText() + "\t" + answer.isCorrect());
 //        }

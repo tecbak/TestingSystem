@@ -1,11 +1,10 @@
 package ua.rud.testingsystem.dao;
 
 public interface DaoFactory {
-    AuthorizationDao getAuthorizationDao();
 
-    RegistrationDao getRegistrationDao();
+    UserDao getUserDao();
 
-    MenuDao getMenuDao();
+    SubjectDao getSubjectDao();
 
     TestDao getTestDao();
 }
