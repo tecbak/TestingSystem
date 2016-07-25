@@ -1,9 +1,8 @@
-package ua.rud.testingsystem.entities.utils;
+package ua.rud.testingsystem.entities.test;
 
 import ua.rud.testingsystem.dao.DaoFactory;
 import ua.rud.testingsystem.dao.TestDao;
 import ua.rud.testingsystem.dao.jdbc.JdbcFactory;
-import ua.rud.testingsystem.entities.test.Test;
 import ua.rud.testingsystem.entities.user.User;
 
 import java.util.ArrayList;
@@ -54,5 +53,12 @@ public final class TestUtils {
         int testId = test.getId();
         int rate = test.getRate();
         dao.addResult(userId, testId, rate);
+    }
+
+    public static List<Integer> getResults(int userId, int testId) {
+        DaoFactory factory = JdbcFactory.getInstance();
+        TestDao testDao = factory.getTestDao();
+        List<Integer> results = testDao.getResults(userId, testId);
+        return results;
     }
 }

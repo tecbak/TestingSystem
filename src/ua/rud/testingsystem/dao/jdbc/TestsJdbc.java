@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestsJdbc implements TestDao {
-    private static final String SQL_LAST_INSERT_ID = "SELECT LAST_INSERT_ID();";
+    private static final String SQL_LAST_INSERT_ID = "SELECT LAST_INSERT_ID()";
 
 //    private static final String SQL_SELECT_TESTS_BY_SUBJECT_ID =
 //            "SELECT testId AS id, caption " +
@@ -216,28 +216,36 @@ public class TestsJdbc implements TestDao {
         return answers;
     }
 
-    /*INSERT QUERIES*/
-
     /**
-     * Add result to database
+     * Get all results of particular user and test
      *
-     * @param userId user's id
+     * @param userId users's id
      * @param testId test's id
-     * @param rate   percent of right answers
+     * @return result as percent of correct answers
      */
     @Override
-    public void addResult(int userId, int testId, int rate) {
-        final String SQL_INSERT_RESULT = "INSERT INTO results (userId, testId, rate) VALUES (?, ?, ?)";
+    public List<Integer> getResults(int userId, int testId) {
+        final String SQL_GET_RESULT = "SELECT rate FROM results WHERE userId = ? AND testId = ?";
+        List<Integer> rates = new ArrayList<>();
+
         try (Connection connection = Connector.getConnection();
-             PreparedStatement statement = connection.prepareStatement(SQL_INSERT_RESULT)) {
+             PreparedStatement statement = connection.prepareStatement(SQL_GET_RESULT)) {
             statement.setInt(1, userId);
             statement.setInt(2, testId);
-            statement.setInt(3, rate);
-            statement.executeUpdate();
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+                while (resultSet.next()) {
+                    int rate = resultSet.getInt("rate");
+                    rates.add(rate);
+                }
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return rates;
     }
+
+    /*INSERT QUERIES*/
 
     /**
      * Add test to database
@@ -316,6 +324,27 @@ public class TestsJdbc implements TestDao {
                 statement.setBoolean(3, correct);
                 statement.executeUpdate();
             }
+        }
+    }
+
+    /**
+     * Add result to database
+     *
+     * @param userId user's id
+     * @param testId test's id
+     * @param rate   percent of right answers
+     */
+    @Override
+    public void addResult(int userId, int testId, int rate) {
+        final String SQL_INSERT_RESULT = "INSERT INTO results (userId, testId, rate) VALUES (?, ?, ?)";
+        try (Connection connection = Connector.getConnection();
+             PreparedStatement statement = connection.prepareStatement(SQL_INSERT_RESULT)) {
+            statement.setInt(1, userId);
+            statement.setInt(2, testId);
+            statement.setInt(3, rate);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }

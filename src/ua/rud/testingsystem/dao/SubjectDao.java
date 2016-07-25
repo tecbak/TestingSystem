@@ -1,6 +1,6 @@
 package ua.rud.testingsystem.dao;
 
-import ua.rud.testingsystem.entities.sbj.Subject;
+import ua.rud.testingsystem.entities.Subject;
 
 import java.util.List;
 

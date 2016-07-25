@@ -1,14 +1,11 @@
-package ua.rud.testingsystem.entities.sbj;
+package ua.rud.testingsystem.entities;
 
 
-import java.util.List;
 import java.util.Map;
 
 public class Subject {
     private int id;
     private String name;
-    private List<TestInfo> testInfos;
-
     private Map<Integer, String> tests;
 
     /*Constructor*/
@@ -39,14 +36,6 @@ public class Subject {
 
     public void setTests(Map<Integer, String> tests) {
         this.tests = tests;
-    }
-
-    public List<TestInfo> getTestInfos() {
-        return testInfos;
-    }
-
-    public void setTestInfos(List<TestInfo> testInfos) {
-        this.testInfos = testInfos;
     }
 
     @Override

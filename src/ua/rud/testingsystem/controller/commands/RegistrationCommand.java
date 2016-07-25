@@ -2,7 +2,7 @@ package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
-import ua.rud.testingsystem.entities.utils.UserUtils;
+import ua.rud.testingsystem.entities.user.UserUtils;
 import ua.rud.testingsystem.entities.user.User;
 import ua.rud.testingsystem.resource.ConfigurationManager;
 import ua.rud.testingsystem.resource.MessageManager;

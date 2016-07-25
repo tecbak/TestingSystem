@@ -1,9 +1,8 @@
-package ua.rud.testingsystem.entities.utils;
+package ua.rud.testingsystem.entities.user;
 
 import ua.rud.testingsystem.dao.DaoFactory;
 import ua.rud.testingsystem.dao.UserDao;
 import ua.rud.testingsystem.dao.jdbc.JdbcFactory;
-import ua.rud.testingsystem.entities.user.User;
 
 public final class UserUtils {
 

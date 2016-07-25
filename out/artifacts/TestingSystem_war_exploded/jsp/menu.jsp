@@ -24,7 +24,7 @@
             <tr>
                 <td align="left">
                     <a href="controller?command=logout"><fmt:message key="common.logout"/></a>
-                    <%--<a href="controller?command=results"> <fmt:message key="common.results"/></a>--%>
+                        <%--<a href="controller?command=results"> <fmt:message key="common.results"/></a>--%>
                     <c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">
                         <a href="controller?command=admin"> <fmt:message key="common.administration"/></a>
                     </c:if>
@@ -49,9 +49,22 @@
 
                                 <h2><c:out value="${subject.name}"/></h2>
 
+                                <%--Output of tests--%>
                                 <c:forEach var="entry" items="${subject.tests.entrySet()}">
-                                    <input type="radio" name="id" value="${entry.getKey()}"/>
-                                    <c:out value="${entry.getValue()}"/>
+                                    <c:set var="testId" value="${entry.getKey()}"/>
+                                    <c:set var="testCaption" value="${entry.getValue()}"/>
+
+                                    <input type="radio" name="id" value="${testId}"/>
+                                    <c:out value="${testCaption}"/>
+
+                                    <%--If there are any result for the test--%>
+                                    <c:set var="rates" value="${sessionScope.results[testId]}"/>
+                                    <c:if test="${rates.size() > 0}">
+                                        <br/><fmt:message key="menu.results"/>
+                                        <c:forEach var="rate" items="${rates}">
+                                            <c:out value="${rate}"/>%
+                                        </c:forEach>
+                                    </c:if>
                                     <br/>
                                 </c:forEach>
                                 <br/>

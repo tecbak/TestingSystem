@@ -80,7 +80,7 @@
                                     </c:choose>
 
                                         <%--Task--%>
-                                    <span class="${color}"><c:out value="${question.task}"/></span><br/>
+                                    <span class="${color}"><b><c:out value="${question.task}"/></b></span><br/>
 
                                         <%--Answers--%>
                                     <c:forEach var="answer" items="${question.answers}">

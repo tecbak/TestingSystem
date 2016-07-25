@@ -2,7 +2,7 @@ package ua.rud.testingsystem.dao.jdbc;
 
 import ua.rud.testingsystem.dao.Connector;
 import ua.rud.testingsystem.dao.SubjectDao;
-import ua.rud.testingsystem.entities.sbj.Subject;
+import ua.rud.testingsystem.entities.Subject;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,10 +12,10 @@ import java.util.Map;
 
 public class SubjectJdbc implements SubjectDao {
 
-    private final static String SQL_GET_SUBJECTS =
-            "SELECT subjectId AS id, name FROM subjects;";
-    private final static String SQL_GET_TESTS_BY_SUBJECT_ID =
-            "SELECT testId AS id, caption FROM tests WHERE subjectId = ?";
+    //    private final static String SQL_GET_SUBJECTS =
+//            "SELECT subjectId AS id, name FROM subjects;";
+//    private final static String SQL_GET_TESTS_BY_SUBJECT_ID =
+//            "SELECT testId AS id, caption FROM tests WHERE subjectId = ?";
 
 
     public SubjectJdbc() {
@@ -23,6 +23,8 @@ public class SubjectJdbc implements SubjectDao {
 
     @Override
     public List<Subject> getSubjects() {
+        final String SQL_GET_SUBJECTS = "SELECT subjectId AS id, name FROM subjects";
+
         List<Subject> list = new ArrayList<>();
         try (Connection connection = Connector.getConnection();
              Statement statement = connection.createStatement()) {
@@ -47,13 +49,14 @@ public class SubjectJdbc implements SubjectDao {
     }
 
     private Map<Integer, String> getTestCaptions(Connection connection, int subjectId) {
+        String SQL_GET_TESTS_BY_SUBJECT_ID = "SELECT testId AS testId, caption FROM tests WHERE subjectId = ?";
         Map<Integer, String> map = new HashMap<>();
 
         try (PreparedStatement statement = connection.prepareStatement(SQL_GET_TESTS_BY_SUBJECT_ID)) {
             statement.setInt(1, subjectId);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                int id = resultSet.getInt("id");
+                int id = resultSet.getInt("testId");
                 String caption = resultSet.getString("caption");
 
                 map.put(id, caption);
@@ -64,6 +67,7 @@ public class SubjectJdbc implements SubjectDao {
 
         return map;
     }
+
 
 //    public List<Test> getTestsBySubjectId(int subjectId, Connection connection) throws SQLException {
 //        final String SQL_SELECT_TESTS_BY_SUBJECT_ID = "SELECT testId AS id, caption FROM tests WHERE subjectId = ?";
