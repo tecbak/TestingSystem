@@ -26,7 +26,7 @@
                     <a href="controller?command=logout"><fmt:message key="common.logout"/></a>
                         <%--<a href="controller?command=results"> <fmt:message key="common.results"/></a>--%>
                     <c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">
-                        <a href="controller?command=admin"> <fmt:message key="common.administration"/></a>
+                        <a href="controller?command=adminMenu"> <fmt:message key="common.administration"/></a>
                     </c:if>
                 </td>
                 <td align="right">
@@ -46,8 +46,8 @@
                             <input type="hidden" name="command" value="start">
 
                             <c:forEach var="subject" items="${sessionScope.subjects}">
-
-                                <h2><c:out value="${subject.name}"/></h2>
+                                <%--Subject name--%>
+                                <h3><c:out value="${subject.name}"/></h3>
 
                                 <%--Output of tests--%>
                                 <c:forEach var="entry" items="${subject.tests.entrySet()}">
@@ -64,6 +64,7 @@
                                         <c:forEach var="rate" items="${rates}">
                                             <c:out value="${rate}"/>%
                                         </c:forEach>
+                                        <br/>
                                     </c:if>
                                     <br/>
                                 </c:forEach>
@@ -71,7 +72,7 @@
                             </c:forEach>
 
                             <fmt:message key="menu.start" var="start"/>
-                            <input type="submit" name="select" value="${start}">
+                            <input type="submit" name="start" value="${start}">
 
                         </form>
                     </div>

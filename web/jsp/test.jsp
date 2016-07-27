@@ -38,7 +38,7 @@
                     <a href="controller?command=logout"><fmt:message key="common.logout"/></a>
                     <%--<a href="controller?command=results"> <fmt:message key="common.results"/></a>--%>
                     <c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">
-                        <a href="controller?command=admin"> <fmt:message key="common.administration"/></a>
+                        <a href="controller?command=adminMenu"> <fmt:message key="common.administration"/></a>
                     </c:if>
                 </td>
                 <td align="right">

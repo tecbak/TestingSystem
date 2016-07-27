@@ -2,59 +2,120 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37df5f9e-ab7c-4818-8ce7-3225e42d12a7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/sbj/Subject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/sbj/TestInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/utils/SubjectUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/utils/TestUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/utils/UserUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/sbj/Subject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/sbj/TestInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/utils/SubjectUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/utils/TestUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/utils/UserUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/sbj/TestInfo.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AuthorizationCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AuthorizationCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/CompleteCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/CompleteCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/RegistrationCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/RegistrationCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/StartCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/StartCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminMenuCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/admin.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/editSubjects.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/editTests.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/database.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/CommandFactory$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AuthorizationCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/RegistrationCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/navigation/LoginCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/navigation/RegisterCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/navigation/TestCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/Connector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/filters/DirectAccessFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/filters/EncodingFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/filters/GuestFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/test2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/database.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/CommandFactory$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AuthorizationCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/RegistrationCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/navigation/LoginCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/navigation/RegisterCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/navigation/TestCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/Connector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/filters/DirectAccessFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/filters/EncodingFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/filters/GuestFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/database.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/Connector.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test2.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/Runner.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/Runner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/CommandFactory.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/CommandFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/Controller.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/HttpServletRequestWrapper.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/HttpServletRequestWrapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/DAOFactory.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/DAOFactory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/SubjectDao.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/SubjectDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/TestDao.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/TestDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/JdbcFactory.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/JdbcFactory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AuthorizationCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AuthorizationCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/CompleteCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/CompleteCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/RegistrationCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/RegistrationCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/StartCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/StartCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/UserJdbc.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/UserJdbc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/SubjectUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/SubjectUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/test/Test.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/test/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/test/TestUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/entities/test/TestUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/Runner.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/Runner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/CommandFactory.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/CommandFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/Controller.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/HttpServletRequestWrapper.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/HttpServletRequestWrapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/DAOFactory.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/DAOFactory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/SubjectDao.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/SubjectDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/TestDao.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/TestDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/JdbcFactory.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/JdbcFactory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/UserJdbc.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/UserJdbc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/SubjectUtils.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/SubjectUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/Test.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/TestUtils.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/TestUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/resource/config.properties" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/resource/config.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/resource/messages_en.properties" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/resource/messages_en.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/resource/messages_ru.properties" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/resource/messages_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/jsp/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/jsp/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/jsp/menu.jsp" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/jsp/menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/jsp/register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/jsp/register.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/jsp/test.jsp" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/jsp/test.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/resource/config.properties" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/resource/config.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/resource/messages_en.properties" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/resource/messages_en.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/resource/messages_ru.properties" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/resource/messages_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AuthorizationCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AuthorizationCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/CompleteCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/CompleteCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/RegistrationCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/RegistrationCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/StartCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/StartCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Runner.java" afterPath="$PROJECT_DIR$/src/Runner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/CommandFactory.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/CommandFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/Controller.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/DaoFactory.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/DaoFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/SubjectDao.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/SubjectDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/TestDao.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/TestDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/JdbcFactory.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/JdbcFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/UserJdbc.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/UserJdbc.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/SubjectUtils.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/SubjectUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Test.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/TestUtils.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/TestUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/config.properties" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/config.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_ru.properties" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jsp/login.jsp" afterPath="$PROJECT_DIR$/web/jsp/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jsp/menu.jsp" afterPath="$PROJECT_DIR$/web/jsp/menu.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jsp/register.jsp" afterPath="$PROJECT_DIR$/web/jsp/register.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jsp/test.jsp" afterPath="$PROJECT_DIR$/web/jsp/test.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/sbj/Subject.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/Subject.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/utils/SubjectUtils.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/SubjectUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/utils/TestUtils.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/TestUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/utils/UserUtils.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/UserUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AuthorizationCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/RegistrationCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/LoginCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestLoginCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/MenuCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/RegisterCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestRegisterCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/TestCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/TestCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/filters/DirectAccessFilter.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/filters/DirectAccessFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/filters/EncodingFilter.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/filters/EncodingFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/filters/GuestFilter.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/filters/GuestFilter.java" />
     </list>
     <ignored path="TestingSystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,11 +145,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/menu.jsp">
+      <file leaf-file-name="editSubjects.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsp/editSubjects.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+            <state relative-caret-position="245">
+              <caret line="80" column="104" selection-start-line="80" selection-start-column="104" selection-end-line="80" selection-end-column="104" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminDeleteSubjectCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubjectUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/SubjectUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="85" column="17" selection-start-line="76" selection-start-column="4" selection-end-line="85" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubjectDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/SubjectDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,57 +200,69 @@
       <file leaf-file-name="SubjectJdbc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+            <state relative-caret-position="172">
+              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#SubjectJdbc#0;class#SubjectJdbc#0" expanded="false" />
-                <marker date="1469436343892" expanded="true" signature="415:457" ph="SELECT subje... subjects" />
-                <marker date="1469436343892" expanded="true" signature="540:599" ph="SELECT testI... tests" />
-                <marker date="1469436343892" expanded="true" signature="734:776" ph="SELECT subje... subjects" />
-                <marker date="1469436343892" expanded="true" signature="1717:1780" ph="SELECT testI... tests" />
-                <marker date="1469436343892" expanded="true" signature="2521:2580" ph="SELECT testI... tests" />
+                <marker date="1469582650430" expanded="true" signature="372:414" ph="SELECT subje... subjects" />
+                <marker date="1469582650430" expanded="true" signature="497:556" ph="SELECT testI... tests" />
+                <marker date="1469582650430" expanded="true" signature="691:733" ph="SELECT subje... subjects" />
+                <marker date="1469582650430" expanded="true" signature="1690:1753" ph="SELECT testI... tests" />
+                <marker date="1469582650430" expanded="true" signature="2442:2480" ph="INSERT INTO subjects... " />
+                <marker date="1469582650430" expanded="true" signature="2980:3019" ph="SELECT ? IN " />
+                <marker date="1469582650430" expanded="true" signature="2980:3026" ph="SELECT ? IN " />
+                <marker date="1469582650430" expanded="true" signature="2993:3018" ph="SELECT name subjects" />
+                <marker date="1469582650430" expanded="true" signature="3707:3747" ph="DELETE FROM " />
+                <marker date="1469582650430" expanded="true" signature="4330:4389" ph="SELECT testI... tests" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/register.jsp">
+      <file leaf-file-name="UserJdbc.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/UserJdbc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="68">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <marker date="1469478043191" expanded="true" signature="2128:2219" ph="INSERT INTO users... " />
+                <marker date="1469478043191" expanded="true" signature="2905:3036" ph="SELECT userI... users" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.java">
+      <file leaf-file-name="TestsJdbc.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="381">
+              <caret line="364" column="0" selection-start-line="364" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
+              <folding>
+                <marker date="1469577655110" expanded="true" signature="502:525" ph="SELECT LAST_... " />
+                <marker date="1469577655110" expanded="true" signature="5809:5851" ph="SELECT capti... tests" />
+                <marker date="1469577655110" expanded="true" signature="6770:6831" ph="SELECT quest... questions" />
+                <marker date="1469577655110" expanded="true" signature="7801:7871" ph="SELECT answe... answers" />
+                <marker date="1469577655110" expanded="true" signature="8973:9029" ph="SELECT rate results" />
+                <marker date="1469577655110" expanded="true" signature="9945:9997" ph="INSERT INTO tests... " />
+                <marker date="1469577655110" expanded="true" signature="11380:11430" ph="INSERT INTO questions... " />
+                <marker date="1469577655110" expanded="true" signature="12400:12464" ph="INSERT INTO answers... " />
+                <marker date="1469577655110" expanded="true" signature="13205:13264" ph="INSERT INTO results... " />
+                <marker date="1469577655110" expanded="true" signature="13792:13826" ph="DELETE FROM " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/test.jsp">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" column="99" selection-start-line="82" selection-start-column="99" selection-end-line="82" selection-end-column="99" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubjectUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/SubjectUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="374">
+              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+              <folding>
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1014#1015#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,44 +270,11 @@
       <file leaf-file-name="TestUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/TestUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="-21">
+              <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/UserUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/Subject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="method#Subject#0;class#Subject#0" expanded="false" />
-                <element signature="method#toString#0;class#Subject#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/LoginCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -205,9 +287,9 @@
         <option value="Singleton" />
         <option value="HTML File" />
         <option value="Tag Library Descriptor" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -221,60 +303,63 @@
       <projects_view />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/CommandFactory.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/logic/TestUtils.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/CompleteCommand.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/model/menu/menuInfo.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/model/menu/TestInfo.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/model/menu/Subject.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/RegistrationDao.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/AuthorizationJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/RegistrationJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/MenuJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/MenuDao.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/MenuDao.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/model/test/Subject.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/logic/RegistrationLogic.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/SubjectDao.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/logic/AuthorizationLogic.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/utils/UserUtils.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/utils/QuestionUtils.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/utils/AnswerUtils.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/utils/UserUtils.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/TestCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/Error.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/ErrorCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Question.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/QuestionJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/QuestionDao.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/AnswerDao.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Answer.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/sbj/TestPreview.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/sbj/TestInfo.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/Connector.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/AnswerJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/Connector.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/UserJdbc.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/CommandFactory.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AuthorizationCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/filters/GuestFilter.java" />
+        <option value="$PROJECT_DIR$/web/jsp/register.jsp" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/factory/DaoFactory.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/factory/JdbcFactory.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/JdbcFactory.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/DaoFactory.java" />
         <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/JdbcFactory.java" />
         <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/DaoFactory.java" />
+        <option value="$PROJECT_DIR$/src/database.properties" />
+        <option value="$PROJECT_DIR$/web/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdministrationCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdministrationMenuCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/filters/GuestFilter.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminMenuCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommand.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ca385751-fc7d-4600-bcc3-261bb59d953b/console.sql" />
+        <option value="$PROJECT_DIR$/web/jsp/test.jsp" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddSubjectCommand.java" />
+        <option value="$PROJECT_DIR$/src/Runner.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminNewSubjectCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.java" />
+        <option value="$PROJECT_DIR$/web/jsp/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/config.properties" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminEditTests.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Test.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/TestDao.java" />
         <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/sbj/Subject.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/utils/SubjectUtils.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/utils/TestUtils.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AuthorizationCommand.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties" />
         <option value="$PROJECT_DIR$/web/jsp/menu.jsp" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.java" />
-        <option value="$PROJECT_DIR$/web/jsp/test.jsp" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/sbj/SubjectUtils.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.java" />
+        <option value="$PROJECT_DIR$/web/jsp/editTests.jsp" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_ru.properties" />
+        <option value="$PROJECT_DIR$/web/jsp/editSubjects.jsp" />
         <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/TestUtils.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/UserUtils.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.java" />
         <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/SubjectUtils.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/SubjectDao.java" />
+        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -511,37 +596,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="TestingSystem" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jstl-1.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jstl-1.2.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -600,6 +663,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ltd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -636,6 +739,224 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resource Bundle 'messages'" />
+              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdbc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -646,7 +967,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="D:/" />
     <property name="SearchEverywhereHistoryKey" value="Au&#9;FILE&#9;file://D:/Java Workspace/EPAM/TestingSystem/src/ua/rud/testingsystem/dao/jdbc/AuthorizationJDBC.java" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -655,18 +976,16 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="ua.rud.testingsystem.entities.test.TestUtils" />
+      <recent name="ua.rud.testingsystem.dao.jdbc.JdbcFactory" />
       <recent name="ua.rud.testingsystem.entities.utils.TestUtils" />
       <recent name="ua.rud.testingsystem.dao.jdbc.Connector" />
-      <recent name="ua.rud.testingsystem.dao.jdbc.JdbcFactory" />
       <recent name="ua.rud.testingsystem.logic.RegistrationLogic" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java Workspace\EPAM\TestingSystem\web" />
-      <recent name="D:\Java Workspace\EPAM\TestingSystem\web\jsp" />
-      <recent name="D:\Java Workspace\EPAM\TestingSystem\src\ua\rud\testingsystem\resource" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java Workspace\EPAM\TestingSystem\src\ua\rud\testingsystem\resource" />
@@ -674,6 +993,11 @@
       <recent name="D:\Java Workspace\EPAM\TestingSystem\web\WEB-INF\ltd" />
       <recent name="D:\Java Workspace\EPAM\TestingSystem\web\jsp" />
       <recent name="D:\Java Workspace\EPAM\TestingSystem\web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java Workspace\EPAM\TestingSystem\web\jsp" />
+      <recent name="D:\Java Workspace\EPAM\TestingSystem\web" />
+      <recent name="D:\Java Workspace\EPAM\TestingSystem\src\ua\rud\testingsystem\resource" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.0.M4">
@@ -1419,12 +1743,13 @@
       <workItem from="1469142312411" duration="11515000" />
       <workItem from="1469212479853" duration="44347000" />
       <workItem from="1469301028907" duration="16238000" />
-      <workItem from="1469361184885" duration="29865000" />
+      <workItem from="1469361184885" duration="48324000" />
+      <workItem from="1469482196177" duration="46805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306283000" />
+    <option name="totallyTimeSpent" value="371547000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1437,31 +1762,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50292826" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4384858" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50292826" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.340694" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35015774" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21815519" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40063092" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21815519" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1504,30 +1831,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/MessageManager.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/MessageManager.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/MessageManager.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="32" />
+      <option name="time" value="74" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1536,289 +1843,235 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_ru.properties">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="21" />
+    <entry file="file://$PROJECT_DIR$/src/database.properties" />
+    <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="ResourceBundle">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/filters/GuestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ca385751-fc7d-4600-bcc3-261bb59d953b/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/ca385751-fc7d-4600-bcc3-261bb59d953b">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>ca385751-fc7d-4600-bcc3-261bb59d953b</OriginalElement>
+          <nodes>
+            <node x="61.25000000000003" y="0.0">ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.subjects</node>
+            <node x="0.0" y="529.0">ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.answers</node>
+            <node x="60.25000000000003" y="169.0">ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.tests</node>
+            <node x="6.0" y="371.0">ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.questions</node>
+            <node x="245.25000000000003" y="125.0">ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.users</node>
+            <node x="222.5" y="360.0">ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.results</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.results" target="ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.users">
+              <point x="48.75" y="-59.5" />
+              <point x="0.0" y="92.5" />
+            </edge>
+            <edge source="ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.questions" target="ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.tests">
+              <point x="0.0" y="-48.5" />
+              <point x="-41.25" y="48.5" />
+            </edge>
+            <edge source="ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.answers" target="ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.questions">
+              <point x="0.0" y="-59.5" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.results" target="ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.tests">
+              <point x="-48.75" y="-59.5" />
+              <point x="271.25" y="335.0" />
+              <point x="184.00000000000003" y="335.0" />
+              <point x="41.25" y="48.5" />
+            </edge>
+            <edge source="ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.tests" target="ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.subjects">
+              <point x="0.0" y="-48.5" />
+              <point x="0.0" y="37.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8667664670658682" x="-92.69170984455963" y="266.8911917098446" />
+          <SelectedNodes>
+            <node>ca385751-fc7d-4600-bcc3-261bb59d953b.TABLE:testingsystem.results</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/RequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="34" column="83" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="58" selection-start-line="14" selection-start-column="8" selection-end-line="17" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/JdbcFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+          <folding>
+            <element signature="e#1117#1118#0" expanded="false" />
+            <element signature="e#1148#1149#0" expanded="false" />
+            <element signature="docComment;method#getConnection#0;class#JdbcFactory#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/jsp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        <state relative-caret-position="-152">
+          <caret line="54" column="69" selection-start-line="54" selection-start-column="69" selection-end-line="54" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/test2.html">
+    <entry file="file://$PROJECT_DIR$/src/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/AuthorizationDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/AuthorizationJdbc.java" />
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/model/menu/TestInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/ref/ReferenceQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/logic/AuthorizationLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/javax/naming/InitialContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="337" column="22" selection-start-line="337" selection-start-column="22" selection-end-line="337" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="dbDummy://dbtable:/9a51ed39/ca385751-fc7d-4600-bcc3-261bb59d953b/testingsystem.questions">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/9a51ed39/ca385751-fc7d-4600-bcc3-261bb59d953b/testingsystem.subjects">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminMenuCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/MenuCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="39" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="282">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/RegistrationCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/StartCommand.java">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Question.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="7" selection-start-line="13" selection-start-column="10" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="-221">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Answer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="7" selection-start-line="14" selection-start-column="6" selection-end-line="18" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/AnswerJdbc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="13" column="83" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/QuestionJdbc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/QuestionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/AnswerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/Connector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/UserJdbc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#390#453#0" expanded="false" />
-            <marker date="1469401862858" expanded="true" signature="705:796" ph="INSERT INTO users... " />
-            <marker date="1469401862858" expanded="true" signature="867:996" ph="SELECT userI... users" />
-            <marker date="1469401862858" expanded="true" signature="2155:2246" ph="INSERT INTO users... " />
-            <marker date="1469401862858" expanded="true" signature="2916:3047" ph="SELECT userI... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/utils/AnswerUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/utils/QuestionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/JdbcFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="218" column="4" selection-start-line="218" selection-start-column="4" selection-end-line="218" selection-end-column="4" />
-          <folding>
-            <element signature="e#471#537#0" expanded="false" />
-            <element signature="docComment;method#getTestById#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="method#getTestById#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="method#getQuestions#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="method#getAnswers#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="docComment;method#getResults#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="method#getResults#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="docComment;method#addTest#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="method#addTest#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="method#addQuestions#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="method#addAnswers#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="docComment;method#addResult#0;class#TestsJdbc#0" expanded="false" />
-            <element signature="method#addResult#0;class#TestsJdbc#0" expanded="false" />
-            <marker date="1469429692579" expanded="false" signature="444:467" ph="SELECT LAST_... " />
-            <marker date="1469429692579" expanded="false" signature="1661:1725" ph="INSERT INTO answers... " />
-            <marker date="1469429692579" expanded="false" signature="2074:2133" ph="SELECT testI... tests" />
-            <marker date="1469429692579" expanded="false" signature="5751:5793" ph="SELECT capti... tests" />
-            <marker date="1469429692579" expanded="false" signature="6696:6757" ph="SELECT quest... questions" />
-            <marker date="1469429692579" expanded="false" signature="7727:7797" ph="SELECT answe... answers" />
-            <marker date="1469429692579" expanded="false" signature="8899:8955" ph="SELECT rate results" />
-            <marker date="1469429692579" expanded="false" signature="9855:9907" ph="INSERT INTO tests... " />
-            <marker date="1469429692579" expanded="false" signature="11274:11324" ph="INSERT INTO questions... " />
-            <marker date="1469429692579" expanded="false" signature="12237:12301" ph="INSERT INTO answers... " />
-            <marker date="1469429692579" expanded="false" signature="13042:13101" ph="INSERT INTO results... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/sbj/TestInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -1826,45 +2079,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/SubjectDao.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/RequestWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/TestCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="17">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/CompleteCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        <state relative-caret-position="-34">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/StartCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/MessageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding>
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AuthorizationCommand.java">
+    <entry file="file://$PROJECT_DIR$/web/jsp/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="-391">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="58" selection-start-line="14" selection-start-column="8" selection-end-line="18" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/editTests.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="253">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1872,122 +2216,137 @@
         <state />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/AbstractMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="e#2279#2280#0" expanded="true" />
-            <element signature="e#2319#2320#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="138" column="8" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_ru.properties">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/CompleteCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
-        </state>
+      <provider selected="true" editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/LoginCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        <state relative-caret-position="-33">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#SubjectJdbc#0;class#SubjectJdbc#0" expanded="false" />
-            <marker date="1469436343892" expanded="true" signature="415:457" ph="SELECT subje... subjects" />
-            <marker date="1469436343892" expanded="true" signature="540:599" ph="SELECT testI... tests" />
-            <marker date="1469436343892" expanded="true" signature="734:776" ph="SELECT subje... subjects" />
-            <marker date="1469436343892" expanded="true" signature="1717:1780" ph="SELECT testI... tests" />
-            <marker date="1469436343892" expanded="true" signature="2521:2580" ph="SELECT testI... tests" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/navigation/MenuCommand.java">
+    <entry file="file://$PROJECT_DIR$/web/jsp/editSubjects.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="245">
+          <caret line="80" column="104" selection-start-line="80" selection-start-column="104" selection-end-line="80" selection-end-column="104" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/menu.jsp">
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="99" selection-start-line="82" selection-start-column="99" selection-end-line="82" selection-end-column="99" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+          <folding>
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/TestUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="-21">
+          <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/UserUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="206">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/Subject.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/UserJdbc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="method#Subject#0;class#Subject#0" expanded="false" />
-            <element signature="method#toString#0;class#Subject#0" expanded="false" />
+            <marker date="1469478043191" expanded="true" signature="2128:2219" ph="INSERT INTO users... " />
+            <marker date="1469478043191" expanded="true" signature="2905:3036" ph="SELECT userI... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="364" column="0" selection-start-line="364" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
+          <folding>
+            <marker date="1469577655110" expanded="true" signature="502:525" ph="SELECT LAST_... " />
+            <marker date="1469577655110" expanded="true" signature="5809:5851" ph="SELECT capti... tests" />
+            <marker date="1469577655110" expanded="true" signature="6770:6831" ph="SELECT quest... questions" />
+            <marker date="1469577655110" expanded="true" signature="7801:7871" ph="SELECT answe... answers" />
+            <marker date="1469577655110" expanded="true" signature="8973:9029" ph="SELECT rate results" />
+            <marker date="1469577655110" expanded="true" signature="9945:9997" ph="INSERT INTO tests... " />
+            <marker date="1469577655110" expanded="true" signature="11380:11430" ph="INSERT INTO questions... " />
+            <marker date="1469577655110" expanded="true" signature="12400:12464" ph="INSERT INTO answers... " />
+            <marker date="1469577655110" expanded="true" signature="13205:13264" ph="INSERT INTO results... " />
+            <marker date="1469577655110" expanded="true" signature="13792:13826" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/SubjectUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="427">
+          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/SubjectDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#SubjectJdbc#0;class#SubjectJdbc#0" expanded="false" />
+            <marker date="1469582650430" expanded="true" signature="372:414" ph="SELECT subje... subjects" />
+            <marker date="1469582650430" expanded="true" signature="497:556" ph="SELECT testI... tests" />
+            <marker date="1469582650430" expanded="true" signature="691:733" ph="SELECT subje... subjects" />
+            <marker date="1469582650430" expanded="true" signature="1690:1753" ph="SELECT testI... tests" />
+            <marker date="1469582650430" expanded="true" signature="2442:2480" ph="INSERT INTO subjects... " />
+            <marker date="1469582650430" expanded="true" signature="2980:3019" ph="SELECT ? IN " />
+            <marker date="1469582650430" expanded="true" signature="2980:3026" ph="SELECT ? IN " />
+            <marker date="1469582650430" expanded="true" signature="2993:3018" ph="SELECT name subjects" />
+            <marker date="1469582650430" expanded="true" signature="3707:3747" ph="DELETE FROM " />
+            <marker date="1469582650430" expanded="true" signature="4330:4389" ph="SELECT testI... tests" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="85" column="17" selection-start-line="76" selection-start-column="4" selection-end-line="85" selection-end-column="17" />
           <folding />
         </state>
       </provider>

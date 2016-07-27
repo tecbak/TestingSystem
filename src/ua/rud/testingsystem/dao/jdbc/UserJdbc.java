@@ -1,6 +1,5 @@
 package ua.rud.testingsystem.dao.jdbc;
 
-import ua.rud.testingsystem.dao.Connector;
 import ua.rud.testingsystem.dao.UserDao;
 import ua.rud.testingsystem.entities.user.User;
 import ua.rud.testingsystem.entities.user.UserRole;
@@ -40,7 +39,7 @@ public class UserJdbc implements UserDao {
 
     private boolean exists(String element, String sql) {
         boolean exists = true;
-        try (Connection connection = Connector.getConnection();
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, element);
             try (ResultSet resultSet = statement.executeQuery()) {
@@ -58,7 +57,7 @@ public class UserJdbc implements UserDao {
     public void addUser(User user, String password) {
         final String SQL_ADD_USER =
                 "INSERT INTO users (login, password, firstName, lastName, email) VALUES (?, MD5(?), ?, ?, ?);";
-        try (Connection connection = Connector.getConnection();
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_ADD_USER)) {
             statement.setString(1, user.getLogin());
             statement.setString(2, password);
@@ -78,7 +77,7 @@ public class UserJdbc implements UserDao {
                         "FROM users WHERE login = ? AND password = md5(?)";
         User user = null;
 
-        try (Connection connection = Connector.getConnection();
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_AUTHORIZE)) {
             statement.setString(1, login);
             statement.setString(2, password);

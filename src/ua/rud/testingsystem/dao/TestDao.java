@@ -14,7 +14,5 @@ public interface TestDao {
 
     void addResult(int userId, int testId, int rate);
 
-
-
-//    List<Test> getTestsBySubjectId(int subjectId, Connection connection) throws SQLException;
+    void deleteTests(List<Integer> testIds);
 }

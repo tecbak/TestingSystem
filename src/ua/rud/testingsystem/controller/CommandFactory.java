@@ -1,30 +1,13 @@
 package ua.rud.testingsystem.controller;
 
-import ua.rud.testingsystem.controller.commands.*;
-import ua.rud.testingsystem.controller.commands.navigation.LoginCommand;
-import ua.rud.testingsystem.controller.commands.navigation.MenuCommand;
-import ua.rud.testingsystem.controller.commands.navigation.RegisterCommand;
-import ua.rud.testingsystem.controller.commands.navigation.TestCommand;
-
 import java.util.HashMap;
 import java.util.Map;
 
 public class CommandFactory {
     private static CommandFactory instance = new CommandFactory();
-    private Map<String, Command> commands;
+    private Map<String, Command> commands = new HashMap<>();
 
     private CommandFactory() {
-        commands = new HashMap<String, Command>() {{
-            put("login", new LoginCommand());
-            put("authorization", new AuthorizationCommand());
-            put("register", new RegisterCommand());
-            put("registration", new RegistrationCommand());
-            put("logout", new LogoutCommand());
-            put("menu", new MenuCommand());
-            put("start", new StartCommand());
-            put("test", new TestCommand());
-            put("complete", new CompleteCommand());
-        }};
     }
 
     public static CommandFactory getInstance() {
@@ -44,10 +27,31 @@ public class CommandFactory {
         Command command;
 
         if (action == null || action.isEmpty()) {
-            command = null;
-        } else {
-            command = commands.get(action);
+            return null;
         }
+
+        /*
+         * If command has been already created - return it,
+         * Otherwise, create new command, put it to the map storing commands
+         * and return the command
+         */
+        if (commands.containsKey(action)) {
+            command = commands.get(action);
+        } else {
+            String className = "ua.rud.testingsystem.controller.commands." + firstUpper(action) + "Command";
+            try {
+                command = (Command) Class.forName(className).newInstance();
+            } catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
+                e.printStackTrace();
+                return null;
+            }
+            commands.put(action, command);
+        }
+
         return command;
+    }
+
+    private String firstUpper(String word) {
+        return word.substring(0, 1).toUpperCase() + word.substring(1);
     }
 }

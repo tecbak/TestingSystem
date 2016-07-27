@@ -28,8 +28,8 @@
                     </c:if>
                 </td>
                 <td align="right">
-                    <a href="controller?command=register&userlang=en">ENG</a>
-                    <a href="controller?command=register&userlang=ru">РУC</a><br/>
+                    <a href="controller?command=guestRegister&userlang=en">ENG</a>
+                    <a href="controller?command=guestRegister&userlang=ru">РУC</a><br/>
                 </td>
             </tr>
             <tr align="center">
@@ -38,7 +38,7 @@
 
                     <h1><fmt:message key="register.caption"/></h1>
                     <form action="controller" method="post">
-                        <input type="hidden" name="command" value="registration">
+                        <input type="hidden" name="command" value="guestRegistration">
                         <table>
                             <tr>
                                 <td><fmt:message key="register.login"/></td>
@@ -80,7 +80,7 @@
             <tr align="center">
                 <td colspan="2">
                     <fmt:message key="register.registered"/>
-                    <a href="controller?command=login">
+                    <a href="controller?command=guestLogin">
                         <fmt:message key="register.signin"/>
                     </a>
                 </td>

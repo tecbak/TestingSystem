@@ -1,12 +1,13 @@
 package ua.rud.testingsystem.controller;
 
+import ua.rud.testingsystem.resource.ConfigurationManager;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Arrays;
 
 public class Controller extends HttpServlet {
 
@@ -23,20 +24,18 @@ public class Controller extends HttpServlet {
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpServletRequestWrapper requestWrapper = new HttpServletRequestWrapper(request);
 
-        System.out.println(Arrays.toString(request.getParameterValues("id")));
-
-
-//        { // TODO: 22.07.2016 TESTS
-//            SubjectJdbc dao = SubjectJdbc.getInstance();
-//            List<Subject> subjects = dao.getSubjects();
-//            for (Subject subject : subjects) {
-//                System.out.println(subject);
-//            }
-//        }
-
         CommandFactory factory = CommandFactory.getInstance();
         Command command = factory.getCommand(requestWrapper);
-        String page = command.execute(requestWrapper);
+
+        /*
+         * Execute command or redirect to error page in case of command is {@code null}
+         */
+        String page;
+        if (command != null) {
+            page = command.execute(requestWrapper);
+        } else {
+            page = ConfigurationManager.getProperty("path.page.error");
+        }
 
         RequestDispatcher dispatcher = request.getRequestDispatcher(page);
         dispatcher.forward(request, response);

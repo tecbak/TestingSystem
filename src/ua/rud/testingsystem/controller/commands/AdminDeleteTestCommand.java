@@ -1,0 +1,37 @@
+package ua.rud.testingsystem.controller.commands;
+
+import ua.rud.testingsystem.controller.Command;
+import ua.rud.testingsystem.controller.RequestWrapper;
+import ua.rud.testingsystem.entities.Subject;
+import ua.rud.testingsystem.entities.SubjectUtils;
+import ua.rud.testingsystem.entities.test.TestUtils;
+import ua.rud.testingsystem.resource.ConfigurationManager;
+import ua.rud.testingsystem.resource.MessageManager;
+
+import javax.servlet.ServletException;
+import java.util.List;
+import java.util.Locale;
+
+public class AdminDeleteTestCommand implements Command {
+    @Override
+    public String execute(RequestWrapper wrapper) throws ServletException {
+        String[] testIds = wrapper.getRequestParameterValues("testId");
+
+        /*Check if at least one test is selected*/
+        if (testIds != null && !TestUtils.allEmpty(testIds)) {
+            TestUtils.deleteTests(testIds);
+
+        /*Message about no selection */
+        } else {
+            Locale locale = wrapper.getSessionLanguage();
+            String message = MessageManager.getProperty("editTests.noTestSelected", locale);
+            wrapper.setRequestAttribute("deleteTestMessage", message);
+        }
+
+        /*Update list of subjects*/
+        List<Subject> subjects = SubjectUtils.getSubjects();
+        wrapper.setSessionAttribute("subjects", subjects);
+
+        return ConfigurationManager.getProperty("path.page.editTests");
+    }
+}

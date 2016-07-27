@@ -44,6 +44,10 @@ public class Test {
         this.questions = questions;
     }
 
+    public void addQuestion(Question question) {
+        questions.add(question);
+    }
+
     public boolean isCompleted() {
         return completed;
     }

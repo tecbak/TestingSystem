@@ -1,12 +1,14 @@
 package ua.rud.testingsystem.dao.jdbc;
 
-import ua.rud.testingsystem.dao.Connector;
 import ua.rud.testingsystem.dao.TestDao;
 import ua.rud.testingsystem.entities.test.Answer;
 import ua.rud.testingsystem.entities.test.Question;
 import ua.rud.testingsystem.entities.test.Test;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -150,7 +152,7 @@ public class TestsJdbc implements TestDao {
         final String SQL_SELECT_TEST_BY_ID = "SELECT caption FROM tests WHERE testId = ?";
         Test test = null;
 
-        try (Connection connection = Connector.getConnection();
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_SELECT_TEST_BY_ID)) {
             statement.setInt(1, testId);
             ResultSet resultSet = statement.executeQuery();
@@ -228,7 +230,7 @@ public class TestsJdbc implements TestDao {
         final String SQL_GET_RESULT = "SELECT rate FROM results WHERE userId = ? AND testId = ?";
         List<Integer> rates = new ArrayList<>();
 
-        try (Connection connection = Connector.getConnection();
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_GET_RESULT)) {
             statement.setInt(1, userId);
             statement.setInt(2, testId);
@@ -257,7 +259,7 @@ public class TestsJdbc implements TestDao {
     public void addTest(int subjectId, Test test) {
         final String SQL_INSERT_TEST = "INSERT INTO tests (subjectId, caption) VALUES (?, ?)";
 
-        try (Connection connection = Connector.getConnection();
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
              PreparedStatement statement0 = connection.prepareStatement(SQL_INSERT_TEST);
              PreparedStatement statement1 = connection.prepareStatement(SQL_LAST_INSERT_ID)) {
 
@@ -305,8 +307,10 @@ public class TestsJdbc implements TestDao {
                 statement0.executeUpdate();
 
                 try (ResultSet resultSet = statement1.executeQuery()) {
-                    int questionId = resultSet.getInt("LAST_INSERT_ID()");
-                    addAnswers(connection, answers, questionId);
+                    if (resultSet.next()) {
+                        int questionId = resultSet.getInt(1);
+                        addAnswers(connection, answers, questionId);
+                    }
                 }
             }
         }
@@ -337,7 +341,7 @@ public class TestsJdbc implements TestDao {
     @Override
     public void addResult(int userId, int testId, int rate) {
         final String SQL_INSERT_RESULT = "INSERT INTO results (userId, testId, rate) VALUES (?, ?, ?)";
-        try (Connection connection = Connector.getConnection();
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_INSERT_RESULT)) {
             statement.setInt(1, userId);
             statement.setInt(2, testId);
@@ -345,6 +349,20 @@ public class TestsJdbc implements TestDao {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void deleteTests(List<Integer> testIds) {
+        final String SQL_DELETE_TEST = "DELETE FROM tests WHERE testId = ?";
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(SQL_DELETE_TEST)) {
+            for (Integer testId : testIds) {
+                statement.setInt(1, testId);
+                statement.executeUpdate();
+            }
+        } catch (SQLException e) {
+            // TODO: 27.07.2016 add log
         }
     }
 }

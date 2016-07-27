@@ -1,6 +1,5 @@
 package ua.rud.testingsystem.dao.jdbc;
 
-import ua.rud.testingsystem.dao.Connector;
 import ua.rud.testingsystem.dao.SubjectDao;
 import ua.rud.testingsystem.entities.Subject;
 
@@ -26,7 +25,7 @@ public class SubjectJdbc implements SubjectDao {
         final String SQL_GET_SUBJECTS = "SELECT subjectId AS id, name FROM subjects";
 
         List<Subject> list = new ArrayList<>();
-        try (Connection connection = Connector.getConnection();
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
              Statement statement = connection.createStatement()) {
             ResultSet resultSet = statement.executeQuery(SQL_GET_SUBJECTS);
             while (resultSet.next()) {
@@ -62,10 +61,55 @@ public class SubjectJdbc implements SubjectDao {
                 map.put(id, caption);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            // TODO: 26.07.2016 insert log
         }
 
         return map;
+    }
+
+    @Override
+    public void addSubject(Subject subject) {
+        final String SQL_ADD_SUBJECT = "INSERT INTO subjects (name) VALUES (?)";
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(SQL_ADD_SUBJECT)) {
+            String name = subject.getName();
+            statement.setString(1, name);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            // TODO: 26.07.2016 insert log
+        }
+    }
+
+    @Override
+    public boolean subjectExists(String name) {
+        final String SQL_SUBJECT_EXISTS = "SELECT ? IN (SELECT name FROM subjects) AS exs";
+        boolean exists = true;
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(SQL_SUBJECT_EXISTS)) {
+            statement.setString(1, name);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    exists = resultSet.getBoolean("exs");
+                }
+            }
+        } catch (SQLException e) {
+            // TODO: 26.07.2016 insert log
+        }
+        return exists;
+    }
+
+    @Override
+    public void deleteSubjects(List<Integer> subjectIds) {
+        final String SQL_DELETE_SUBJECT = "DELETE FROM subjects WHERE subjectId = ?";
+        try (Connection connection = JdbcFactory.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(SQL_DELETE_SUBJECT)) {
+            for (int subjectId : subjectIds) {
+                statement.setInt(1, subjectId);
+                statement.executeUpdate();
+            }
+        } catch (SQLException e) {
+            // TODO: 27.07.2016 add log
+        }
     }
 
 

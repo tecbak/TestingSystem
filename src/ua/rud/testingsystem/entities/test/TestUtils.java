@@ -36,16 +36,6 @@ public final class TestUtils {
         test.applyAnswers(answerList);
     }
 
-    private static List<Integer> stringArrayToIntList(String[] stringArray) {
-        List<Integer> array = new ArrayList<>();
-
-        for (String s : stringArray) {
-            array.add(Integer.parseInt(s));
-        }
-
-        return array;
-    }
-
     public static void addResult(User user, Test test) {
         DaoFactory factory = JdbcFactory.getInstance();
         TestDao dao = factory.getTestDao();
@@ -60,5 +50,69 @@ public final class TestUtils {
         TestDao testDao = factory.getTestDao();
         List<Integer> results = testDao.getResults(userId, testId);
         return results;
+    }
+
+    public static Test getNewTest(String caption) {
+        Test newTest = new Test();
+        List<Question> questions = new ArrayList<>();
+        newTest.setCaption(caption);
+        newTest.setQuestions(questions);
+        return newTest;
+    }
+
+    public static Question getNewQuestion(String task) {
+        Question question = new Question();
+        question.setTask(task);
+        return question;
+    }
+
+    public static List<Answer> getNewAnswers(String[] texts, String[] answerIds) {
+        List<Answer> answers = new ArrayList<>();
+        List<Integer> answerIdsList = stringArrayToIntList(answerIds);
+
+
+        for (int i = 0, n = texts.length; i < n; i++) {
+            if (!texts[i].isEmpty()) {
+                Answer answer = new Answer();
+                String text = texts[i];
+                boolean correct = answerIdsList.contains(i);
+                answer.setCorrect(correct);
+                answer.setText(text);
+                answers.add(answer);
+            }
+        }
+        return answers;
+    }
+
+    public static List<Integer> stringArrayToIntList(String[] stringArray) {
+        List<Integer> array = new ArrayList<>();
+
+        for (String s : stringArray) {
+            array.add(Integer.parseInt(s));
+        }
+
+        return array;
+    }
+
+    public static void addTest(int subjectId, Test newTest) {
+        DaoFactory factory = JdbcFactory.getInstance();
+        TestDao testDao = factory.getTestDao();
+        testDao.addTest(subjectId, newTest);
+    }
+
+    public static boolean allEmpty(String[] strings) {
+        for (String string : strings) {
+            if (!string.isEmpty()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void deleteTests(String[] stringTestIds) {
+        List<Integer> testIds = stringArrayToIntList(stringTestIds);
+        DaoFactory factory = JdbcFactory.getInstance();
+        TestDao testDao = factory.getTestDao();
+        testDao.deleteTests(testIds);
     }
 }

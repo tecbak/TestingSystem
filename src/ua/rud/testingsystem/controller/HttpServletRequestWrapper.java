@@ -52,7 +52,7 @@ public class HttpServletRequestWrapper implements RequestWrapper {
         if (language != null && language instanceof Locale) {
             return (Locale) language;
         } else {
-            return request.getLocale();
+            return new Locale("en");
         }
     }
 

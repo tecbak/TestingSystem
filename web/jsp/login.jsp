@@ -29,8 +29,8 @@
                     </c:if>
                 </td>
                 <td align="right">
-                    <a href="controller?command=login&userlang=en">ENG</a>
-                    <a href="controller?command=login&userlang=ru">РУC</a><br>
+                    <a href="controller?command=guestLogin&userlang=en">ENG</a>
+                    <a href="controller?command=guestLogin&userlang=ru">РУC</a><br>
                 </td>
             </tr>
             <tr align="center">
@@ -39,7 +39,7 @@
                     <h1><fmt:message key="login.caption"/></h1>
 
                     <form action="controller" method="get">
-                        <input type="hidden" name="command" value="authorization">
+                        <input type="hidden" name="command" value="guestAuthorization">
                         <table>
                             <tr>
                                 <td><fmt:message key="index.login"/></td>
@@ -52,7 +52,7 @@
                             <tr>
                                 <td colspan="2" align="center">
                                     <fmt:message key="login.submit" var="submit"/>
-                                    <input type="submit" name="send" value="${submit}"/>
+                                    <input type="submit" name="action" value="${submit}"/>
                                 </td>
                             </tr>
                         </table>
@@ -66,7 +66,7 @@
             <tr align="center">
                 <td colspan="2">
                     <fmt:message key="login.noAccount"/>
-                    <a href="controller?command=register">
+                    <a href="controller?command=guestRegister">
                         <fmt:message key="login.register"/>
                     </a>
                 </td>
