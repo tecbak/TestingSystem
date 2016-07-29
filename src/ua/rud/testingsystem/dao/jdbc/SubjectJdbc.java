@@ -8,6 +8,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static ua.rud.testingsystem.resource.SqlManager.getProperty;
+
 public class SubjectJdbc extends AbstractJdbc implements SubjectDao {
 
     public SubjectJdbc(DataSource dataSource) {
@@ -16,7 +18,7 @@ public class SubjectJdbc extends AbstractJdbc implements SubjectDao {
 
     @Override
     public void addSubject(Subject subject) {
-        final String SQL_ADD_SUBJECT = "INSERT INTO subjects (name) VALUES (?)";
+        final String SQL_ADD_SUBJECT = getProperty("sql.insert.subject");
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_ADD_SUBJECT)) {
             String name = subject.getName();
@@ -30,13 +32,7 @@ public class SubjectJdbc extends AbstractJdbc implements SubjectDao {
 
     @Override
     public List<Subject> getSubjects() {
-        final String SQL_GET_SUBJECTS = "SELECT " +
-                "s.subjectId, " +
-                "s.name, " +
-                "t.testId, " +
-                "t.caption " +
-                "FROM subjects AS s " +
-                "LEFT JOIN tests AS t ON s.subjectId = t.subjectId";
+        final String SQL_GET_SUBJECTS = getProperty("sql.select.subjects");
 
         List<Subject> subjects = new ArrayList<>();
 
@@ -94,7 +90,7 @@ public class SubjectJdbc extends AbstractJdbc implements SubjectDao {
 
     @Override
     public boolean subjectExists(String name) {
-        final String SQL_SUBJECT_EXISTS = "SELECT ? IN (SELECT name FROM subjects) AS exs";
+        final String SQL_SUBJECT_EXISTS = getProperty("sql.exists.subject");
         boolean exists = true;
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_SUBJECT_EXISTS)) {
@@ -114,7 +110,7 @@ public class SubjectJdbc extends AbstractJdbc implements SubjectDao {
 
     @Override
     public void deleteSubjects(List<Integer> subjectIds) {
-        final String SQL_DELETE_SUBJECT = "DELETE FROM subjects WHERE subjectId = ?";
+        final String SQL_DELETE_SUBJECT = getProperty("sql.delete.subject");
 
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_DELETE_SUBJECT)) {

@@ -13,8 +13,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static ua.rud.testingsystem.resource.SqlManager.getProperty;
+
 public class TestsJdbc extends AbstractJdbc implements TestDao {
-    private static final String SQL_LAST_INSERT_ID = "SELECT LAST_INSERT_ID()";
+    private static final String SQL_LAST_INSERT_ID = getProperty("sql.select.lii");
 
     public TestsJdbc(DataSource dataSource) {
         super(dataSource);
@@ -30,18 +32,7 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
      */
     @Override
     public Test getTestById(int testId) {
-        final String SQL_GET_TEST_BY_ID = "SELECT " +
-                "t.testId, " +
-                "t.caption, " +
-                "q.questionId, " +
-                "q.task, " +
-                "a.answerId, " +
-                "a.text, " +
-                "a.correct " +
-                "FROM tests AS t " +
-                "JOIN questions AS q ON t.testId = q.testId " +
-                "JOIN answers AS a ON q.questionId = a.questionId " +
-                "WHERE t.testId = ?";
+        final String SQL_GET_TEST_BY_ID = getProperty("sql.select.test");
 
         Test test = null;
 
@@ -95,7 +86,8 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
      */
     @Override
     public List<Integer> getResults(int userId, int testId) {
-        final String SQL_GET_RESULT = "SELECT rate FROM results WHERE userId = ? AND testId = ?";
+        final String SQL_GET_RESULT = getProperty("sql.select.result");
+
         List<Integer> rates = new ArrayList<>();
 
         try (Connection connection = dataSource.getConnection();
@@ -127,7 +119,7 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
      */
     @Override
     public void addTest(int subjectId, Test test) {
-        final String SQL_INSERT_TEST = "INSERT INTO tests (subjectId, caption) VALUES (?, ?)";
+        final String SQL_INSERT_TEST = getProperty("sql.insert.test");
 
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement0 = connection.prepareStatement(SQL_INSERT_TEST);
@@ -171,7 +163,7 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
      * @throws SQLException in case of problems with database connection
      */
     private void addQuestions(Connection connection, List<Question> questions, int testID) throws SQLException {
-        final String SQL_INSERT_QUESTION = "INSERT INTO questions (testId, task) VALUES (?, ?)";
+        final String SQL_INSERT_QUESTION = getProperty("sql.insert.question");
 
         for (Question question : questions) {
             try (PreparedStatement statement0 = connection.prepareStatement(SQL_INSERT_QUESTION);
@@ -203,7 +195,8 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
      * @throws SQLException in case of problems with database connection
      */
     private void addAnswers(Connection connection, List<Answer> answers, int questionId) throws SQLException {
-        final String SQL_INSERT_ANSWER = "INSERT INTO answers (questionId, text, correct) VALUES (?, ?, ?)";
+        final String SQL_INSERT_ANSWER = getProperty("sql.insert.answer");
+
         // TODO: 28.07.2016 batch
         for (Answer answer : answers) {
             try (PreparedStatement statement = connection.prepareStatement(SQL_INSERT_ANSWER)) {
@@ -220,7 +213,8 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
 
     @Override
     public void addResult(int userId, int testId, int rate) {
-        final String SQL_INSERT_RESULT = "INSERT INTO results (userId, testId, rate) VALUES (?, ?, ?)";
+        final String SQL_INSERT_RESULT = getProperty("sql.insert.result");
+
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_INSERT_RESULT)) {
             statement.setInt(1, userId);
@@ -236,7 +230,8 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
 
     @Override
     public void deleteTests(List<Integer> testIds) {
-        final String SQL_DELETE_TEST = "DELETE FROM tests WHERE testId = ?";
+        final String SQL_DELETE_TEST = getProperty("sql.delete.test");
+
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_DELETE_TEST)) {
             for (Integer testId : testIds) {

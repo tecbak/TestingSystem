@@ -10,6 +10,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import static ua.rud.testingsystem.resource.SqlManager.getProperty;
+
 public class UserJdbc extends AbstractJdbc implements UserDao {
 
     public UserJdbc(DataSource dataSource) {
@@ -19,13 +21,14 @@ public class UserJdbc extends AbstractJdbc implements UserDao {
     /*Methods*/
     @Override
     public boolean loginExists(String login) {
-        final String SQL_IS_LOGIN_EXISTS = "SELECT ? IN (SELECT login FROM users) AS exs;";
+        final String SQL_IS_LOGIN_EXISTS = getProperty("sql.exists.login");
+
         return exists(login, SQL_IS_LOGIN_EXISTS);
     }
 
     @Override
     public boolean emailExists(String email) {
-        final String SQL_IS_EMAIL_EXISTS = "SELECT ? IN (SELECT email FROM users) AS exs;";
+        final String SQL_IS_EMAIL_EXISTS = getProperty("sql.exists.email");
         return exists(email, SQL_IS_EMAIL_EXISTS);
     }
 
@@ -49,8 +52,7 @@ public class UserJdbc extends AbstractJdbc implements UserDao {
 
     @Override
     public void addUser(User user, String password) {
-        final String SQL_ADD_USER =
-                "INSERT INTO users (login, password, firstName, lastName, email) VALUES (?, MD5(?), ?, ?, ?);";
+        final String SQL_ADD_USER = getProperty("sql.insert.user");
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_ADD_USER)) {
             statement.setString(1, user.getLogin());
@@ -68,9 +70,7 @@ public class UserJdbc extends AbstractJdbc implements UserDao {
 
     @Override
     public User getUser(String login, String password) {
-        final String SQL_AUTHORIZE =
-                "SELECT userId AS id, email, firstName, lastName, role " +
-                        "FROM users WHERE login = ? AND password = md5(?)";
+        final String SQL_AUTHORIZE = getProperty("sql.select.user");
         User user = null;
 
         try (Connection connection = dataSource.getConnection();
