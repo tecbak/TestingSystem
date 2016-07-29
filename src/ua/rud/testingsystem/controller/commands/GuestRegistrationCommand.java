@@ -4,12 +4,15 @@ import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
 import ua.rud.testingsystem.entities.user.UserUtils;
 import ua.rud.testingsystem.entities.user.User;
-import ua.rud.testingsystem.resource.ConfigurationManager;
+import ua.rud.testingsystem.resource.PageManager;
 import ua.rud.testingsystem.resource.MessageManager;
 
 import javax.servlet.ServletException;
 import java.util.Locale;
 
+/**
+ * Command to register a new user
+ */
 public class GuestRegistrationCommand implements Command {
 
     @Override
@@ -60,6 +63,6 @@ public class GuestRegistrationCommand implements Command {
         wrapper.setRequestAttribute("registrationMessage", message);
 
         /*Return registration page again*/
-        return ConfigurationManager.getProperty("path.page.register");
+        return PageManager.getProperty("path.page.register");
     }
 }

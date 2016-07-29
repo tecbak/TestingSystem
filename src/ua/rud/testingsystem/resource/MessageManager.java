@@ -4,11 +4,12 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+/**
+ * The class provides a messages depending on the language
+ */
 public class MessageManager {
     private static final String PROPERTIES_FILE = "ua/rud/testingsystem/resource/messages";
     private static HashMap<Locale, ResourceBundle> bundles = new HashMap<>();
-
-//    private static final ResourceBundle resourceBundle = ResourceBundle.getBundle("ua/rud/testingsystem/resource/messages");
 
     private MessageManager() {
     }
@@ -20,8 +21,6 @@ public class MessageManager {
             resourceBundle = bundles.get(locale);
         } else {
             resourceBundle = ResourceBundle.getBundle(PROPERTIES_FILE, locale);
-            System.out.println(resourceBundle.getLocale());
-
             bundles.put(locale, resourceBundle);
         }
         return resourceBundle.getString(key);

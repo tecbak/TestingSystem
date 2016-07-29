@@ -7,7 +7,7 @@ import ua.rud.testingsystem.entities.test.TestUtils;
 import ua.rud.testingsystem.entities.user.UserUtils;
 import ua.rud.testingsystem.entities.Subject;
 import ua.rud.testingsystem.entities.user.User;
-import ua.rud.testingsystem.resource.ConfigurationManager;
+import ua.rud.testingsystem.resource.PageManager;
 import ua.rud.testingsystem.resource.MessageManager;
 
 import javax.servlet.ServletException;
@@ -15,7 +15,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-
+/**
+ * Command to sign in
+ */
 public class GuestAuthorizationCommand implements Command {
 
     @Override
@@ -40,7 +42,7 @@ public class GuestAuthorizationCommand implements Command {
             wrapper.setRequestAttribute("errorLoginPassMessage", message);
 
             /*Return login page again*/
-            return ConfigurationManager.getProperty("path.page.login");
+            return PageManager.getProperty("path.page.login");
 
         } else {
 
@@ -62,7 +64,7 @@ public class GuestAuthorizationCommand implements Command {
             wrapper.setSessionAttribute("results", resultMap);
 
             /*Return menu page*/
-            return ConfigurationManager.getProperty("path.page.menu");
+            return PageManager.getProperty("path.page.menu");
         }
     }
 }

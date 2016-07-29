@@ -1,23 +1,24 @@
 package ua.rud.testingsystem.entities.test;
 
+import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A test with a questions
+ */
 public class Test {
     private int id;
     private String caption;
     private List<Question> questions;
     private boolean completed;
 
-    /*Constructors*/
+    /*Constructor*/
     public Test() {
+        this.id = -1;                   //id -1 means that this test isn't saved in database
+        this.caption = "";
+        this.questions = new ArrayList<>();
+        this.completed = false;
     }
-
-//    public Test(int id, String caption, List<Question> questions) {
-//        this.id = id;
-//        this.caption = caption;
-//        this.questions = questions;
-//        this.completed = false;
-//    }
 
     /*Getters and setters*/
     public int getId() {
@@ -54,6 +55,23 @@ public class Test {
 
     /*Methods*/
 
+    /**
+     * Find question by its id and return it if exists, return {@code null} otherwise
+     *
+     * @param id question id
+     * @return question if there is one with specified id
+     * or {@code null} otherwise
+     */
+    public Question getQuestionById(int id) {
+
+        for (Question question : questions) {
+            if (question.getId() == id) {
+                return question;
+            }
+        }
+        return null;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder(caption);
@@ -64,6 +82,11 @@ public class Test {
         return sb.toString();
     }
 
+    /**
+     * Invoke method applyAnsvers for all {@link Answer}s of this question
+     *
+     * @param answerList a {@link List} of chosen answers
+     */
     public void applyAnswers(List<Integer> answerList) {
         for (Question question : questions) {
             question.applyAnswers(answerList);
@@ -71,6 +94,11 @@ public class Test {
         completed = true;
     }
 
+    /**
+     * Calculate a percent of right {@link Answer}s
+     *
+     * @return a percent of right {@link Answer}s
+     */
     public int getRate() {
         int n = 0;
         for (Question question : questions) {
@@ -80,6 +108,4 @@ public class Test {
         }
         return n * 100 / questions.size();
     }
-
-
 }

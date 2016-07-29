@@ -4,27 +4,19 @@ import ua.rud.testingsystem.dao.UserDao;
 import ua.rud.testingsystem.entities.user.User;
 import ua.rud.testingsystem.entities.user.UserRole;
 
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class UserJdbc implements UserDao {
+public class UserJdbc extends AbstractJdbc implements UserDao {
 
-//            private static final String SQL_IS_LOGIN_EXISTS =
-//            "SELECT ? IN (SELECT login FROM users) AS exs;";
-//    private static final String SQL_IS_EMAIL_EXISTS =
-//            "SELECT ? IN (SELECT email FROM users) AS exs;";
-//    private static final String SQL_REGISTER_USER =
-//            "INSERT INTO users (login, password, firstName, lastName, email) VALUES (?, MD5(?), ?, ?, ?);";
-//
-//    public static final String SQL_AUTHORIZE =
-//            "SELECT userId AS id, email, firstName, lastName, role " +
-//                    "FROM users WHERE login = ? AND password = md5(?)";
-
-    public UserJdbc() {
+    public UserJdbc(DataSource dataSource) {
+        super(dataSource);
     }
 
+    /*Methods*/
     @Override
     public boolean loginExists(String login) {
         final String SQL_IS_LOGIN_EXISTS = "SELECT ? IN (SELECT login FROM users) AS exs;";
@@ -39,16 +31,18 @@ public class UserJdbc implements UserDao {
 
     private boolean exists(String element, String sql) {
         boolean exists = true;
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
+        try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, element);
             try (ResultSet resultSet = statement.executeQuery()) {
+
+                logger.info("If exists " + element);
                 if (resultSet.next()) {
                     exists = resultSet.getBoolean("exs");
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         return exists;
     }
@@ -57,16 +51,18 @@ public class UserJdbc implements UserDao {
     public void addUser(User user, String password) {
         final String SQL_ADD_USER =
                 "INSERT INTO users (login, password, firstName, lastName, email) VALUES (?, MD5(?), ?, ?, ?);";
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
+        try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_ADD_USER)) {
             statement.setString(1, user.getLogin());
-            statement.setString(2, password);
+            statement.setString(2, password);               //password is saved as MD5 cache
             statement.setString(3, user.getFirstName());
             statement.setString(4, user.getLastName());
             statement.setString(5, user.getEmail());
             statement.executeUpdate();
+
+            logger.info("Add user " + user);
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
     }
 
@@ -77,7 +73,7 @@ public class UserJdbc implements UserDao {
                         "FROM users WHERE login = ? AND password = md5(?)";
         User user = null;
 
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
+        try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_AUTHORIZE)) {
             statement.setString(1, login);
             statement.setString(2, password);
@@ -98,9 +94,15 @@ public class UserJdbc implements UserDao {
                     user.setLastName(lastName);
                     user.setRole(role);
                 }
+                if (user.getRole() == UserRole.ADMIN) {
+                    logger.warn("Login admin");
+                } else {
+                    logger.info("Get user " + login);
+                }
+
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         return user;
     }

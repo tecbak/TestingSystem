@@ -4,11 +4,14 @@ import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
 import ua.rud.testingsystem.entities.Subject;
 import ua.rud.testingsystem.entities.SubjectUtils;
-import ua.rud.testingsystem.resource.ConfigurationManager;
+import ua.rud.testingsystem.resource.PageManager;
 
 import javax.servlet.ServletException;
 import java.util.List;
 
+/**
+ * Command to get to editing tests menu
+ */
 public class AdminEditTestsCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
@@ -19,6 +22,6 @@ public class AdminEditTestsCommand implements Command {
         wrapper.setSessionAttribute("subjects", subjects);
 
 
-        return ConfigurationManager.getProperty("path.page.editTests");
+        return PageManager.getProperty("path.page.editTests");
     }
 }

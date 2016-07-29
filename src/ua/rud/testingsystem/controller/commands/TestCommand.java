@@ -2,10 +2,13 @@ package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
-import ua.rud.testingsystem.resource.ConfigurationManager;
+import ua.rud.testingsystem.resource.PageManager;
 
 import javax.servlet.ServletException;
 
+/**
+ * Command to start a test
+ */
 public class TestCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
@@ -15,11 +18,11 @@ public class TestCommand implements Command {
          * Otherwise - return login page
          */
         if (wrapper.getSessionAttribute("test") != null) {
-            return ConfigurationManager.getProperty("path.page.test");
+            return PageManager.getProperty("path.page.test");
         } else if (wrapper.getSessionAttribute("user") != null) {
-            return ConfigurationManager.getProperty("path.page.menu");
+            return PageManager.getProperty("path.page.menu");
         } else {
-            return ConfigurationManager.getProperty("path.page.login");
+            return PageManager.getProperty("path.page.login");
         }
     }
 }

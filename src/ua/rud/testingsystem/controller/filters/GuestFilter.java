@@ -2,7 +2,7 @@ package ua.rud.testingsystem.controller.filters;
 
 import ua.rud.testingsystem.entities.user.User;
 import ua.rud.testingsystem.entities.user.UserRole;
-import ua.rud.testingsystem.resource.ConfigurationManager;
+import ua.rud.testingsystem.resource.PageManager;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +17,7 @@ public class GuestFilter implements Filter {
 
     @Override
     public void init(FilterConfig config) throws ServletException {
-        indexJsp = ConfigurationManager.getProperty("path.page.index");
+        indexJsp = PageManager.getProperty("path.page.index");
 //        config.getInitParameter("indexJsp");
     }
 
@@ -49,8 +49,10 @@ public class GuestFilter implements Filter {
         * Null user == guest user
         */
 //        boolean guestUser = (user == null);
+        if (command.startsWith("all")) {
+            chain.doFilter(request, response);
 
-        if (command.startsWith("guest")) {
+        } else if (command.startsWith("guest")) {
             if (user == null) {
                 chain.doFilter(request, response);
             } else {

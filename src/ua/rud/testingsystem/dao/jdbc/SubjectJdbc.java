@@ -3,97 +3,111 @@ package ua.rud.testingsystem.dao.jdbc;
 import ua.rud.testingsystem.dao.SubjectDao;
 import ua.rud.testingsystem.entities.Subject;
 
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class SubjectJdbc implements SubjectDao {
+public class SubjectJdbc extends AbstractJdbc implements SubjectDao {
 
-    //    private final static String SQL_GET_SUBJECTS =
-//            "SELECT subjectId AS id, name FROM subjects;";
-//    private final static String SQL_GET_TESTS_BY_SUBJECT_ID =
-//            "SELECT testId AS id, caption FROM tests WHERE subjectId = ?";
-
-
-    public SubjectJdbc() {
-    }
-
-    @Override
-    public List<Subject> getSubjects() {
-        final String SQL_GET_SUBJECTS = "SELECT subjectId AS id, name FROM subjects";
-
-        List<Subject> list = new ArrayList<>();
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
-             Statement statement = connection.createStatement()) {
-            ResultSet resultSet = statement.executeQuery(SQL_GET_SUBJECTS);
-            while (resultSet.next()) {
-                int id = resultSet.getInt("id");
-                String name = resultSet.getString("name");
-                Map<Integer, String> tests = getTestCaptions(connection, id);
-
-                Subject subject = new Subject();
-                subject.setId(id);
-                subject.setName(name);
-                subject.setTests(tests);
-
-                list.add(subject);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return list;
-    }
-
-    private Map<Integer, String> getTestCaptions(Connection connection, int subjectId) {
-        String SQL_GET_TESTS_BY_SUBJECT_ID = "SELECT testId AS testId, caption FROM tests WHERE subjectId = ?";
-        Map<Integer, String> map = new HashMap<>();
-
-        try (PreparedStatement statement = connection.prepareStatement(SQL_GET_TESTS_BY_SUBJECT_ID)) {
-            statement.setInt(1, subjectId);
-            ResultSet resultSet = statement.executeQuery();
-            while (resultSet.next()) {
-                int id = resultSet.getInt("testId");
-                String caption = resultSet.getString("caption");
-
-                map.put(id, caption);
-            }
-        } catch (SQLException e) {
-            // TODO: 26.07.2016 insert log
-        }
-
-        return map;
+    public SubjectJdbc(DataSource dataSource) {
+        super(dataSource);
     }
 
     @Override
     public void addSubject(Subject subject) {
         final String SQL_ADD_SUBJECT = "INSERT INTO subjects (name) VALUES (?)";
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
+        try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_ADD_SUBJECT)) {
             String name = subject.getName();
             statement.setString(1, name);
             statement.executeUpdate();
+            logger.info(subject + " added");
         } catch (SQLException e) {
-            // TODO: 26.07.2016 insert log
+            logger.error(e);
         }
+    }
+
+    @Override
+    public List<Subject> getSubjects() {
+        final String SQL_GET_SUBJECTS = "SELECT " +
+                "s.subjectId, " +
+                "s.name, " +
+                "t.testId, " +
+                "t.caption " +
+                "FROM subjects AS s " +
+                "LEFT JOIN tests AS t ON s.subjectId = t.subjectId";
+
+        List<Subject> subjects = new ArrayList<>();
+
+        try (Connection connection = dataSource.getConnection();
+             Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(SQL_GET_SUBJECTS);
+            logger.info("Get all subjects");
+            while (resultSet.next()) {
+
+                /*
+                 * If list of already extracted subjects doesn't contain a subject with id,
+                 * that is equal to subjectId, - create a new subject
+                 */
+                int subjectId = resultSet.getInt("subjectId");
+                Subject subject = getSubjectFromListById(subjects, subjectId);
+                if (subject == null) {
+                    subject = new Subject();
+                    subject.setId(subjectId);
+                    subject.setName(resultSet.getString("name"));
+                    subjects.add(subject);
+                }
+
+                /*
+                 * If subject already doesn't contain a test with id,
+                 * that is equal to test id, - create a new test
+                 */
+                int testId = resultSet.getInt("testId");
+                if (testId != 0) {
+                    String caption = resultSet.getString("caption");
+                    subject.addTest(testId, caption);
+                }
+            }
+        } catch (SQLException e) {
+            logger.error(e);
+        }
+
+        return subjects;
+    }
+
+    /**
+     * Find a {@link Subject} with a specific id in a {@link List} of subjects
+     *
+     * @param subjects  a {@link List} of subjects to find in it
+     * @param subjectId a {@link Subject}'s id to find in {@link List}
+     * @return a {@link Subject} with a specified id if exists or {@code null} if doesn't
+     */
+    private Subject getSubjectFromListById(List<Subject> subjects, int subjectId) {
+        for (Subject subject : subjects) {
+            if (subject.getId() == subjectId) {
+                return subject;
+            }
+        }
+        return null;
     }
 
     @Override
     public boolean subjectExists(String name) {
         final String SQL_SUBJECT_EXISTS = "SELECT ? IN (SELECT name FROM subjects) AS exs";
         boolean exists = true;
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
+        try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_SUBJECT_EXISTS)) {
             statement.setString(1, name);
             try (ResultSet resultSet = statement.executeQuery()) {
+
+                logger.info("Query if exists subject " + name);
                 if (resultSet.next()) {
                     exists = resultSet.getBoolean("exs");
                 }
             }
         } catch (SQLException e) {
-            // TODO: 26.07.2016 insert log
+            logger.error(e);
         }
         return exists;
     }
@@ -101,36 +115,17 @@ public class SubjectJdbc implements SubjectDao {
     @Override
     public void deleteSubjects(List<Integer> subjectIds) {
         final String SQL_DELETE_SUBJECT = "DELETE FROM subjects WHERE subjectId = ?";
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
+
+        try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_DELETE_SUBJECT)) {
             for (int subjectId : subjectIds) {
                 statement.setInt(1, subjectId);
                 statement.executeUpdate();
+
+                logger.info("Deleted subject with id " + subjectId);
             }
         } catch (SQLException e) {
-            // TODO: 27.07.2016 add log
+            logger.error(e);
         }
     }
-
-
-//    public List<Test> getTestsBySubjectId(int subjectId, Connection connection) throws SQLException {
-//        final String SQL_SELECT_TESTS_BY_SUBJECT_ID = "SELECT testId AS id, caption FROM tests WHERE subjectId = ?";
-//
-//        List<Test> tests = new ArrayList<>();
-//
-//        try (PreparedStatement statement = connection.prepareStatement(SQL_SELECT_TESTS_BY_SUBJECT_ID)) {
-//            statement.setInt(1, subjectId);
-//            try (ResultSet resultSet = statement.executeQuery()) {
-//                while (resultSet.next()) {
-//                    int id = resultSet.getInt("id");
-//                    String caption = resultSet.getString("caption");
-//                    Test test = new Test();
-//                    test.setId(id);
-//                    test.setCaption(caption);
-//                    tests.add(test);
-//                }
-//            }
-//        }
-//        return tests;
-//    }
 }

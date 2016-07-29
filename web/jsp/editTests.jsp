@@ -169,7 +169,7 @@
                             <form action="controller" method="post">
                                 <input type="hidden" name="command" value="adminAddQuestion"/>
                                 <h3><fmt:message key="editTests.newQuestion"/>:</h3>
-                                <textarea name="task" rows="3" cols="80">${param.task}</textarea>
+                                <textarea name="task" rows="3" cols="80"></textarea> <%--${param.task}--%>
                                 <h3><fmt:message key="editTests.answers"/>:</h3>
                                 <p>
                                     <input type="checkbox" name="answerId" value="0">

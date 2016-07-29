@@ -1,15 +1,29 @@
 package ua.rud.testingsystem.controller;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * A factory for creating {@link Command}s
+ */
 public class CommandFactory {
     private static CommandFactory instance = new CommandFactory();
     private Map<String, Command> commands = new HashMap<>();
+    private Logger logger;
 
     private CommandFactory() {
+        this.logger = Logger.getLogger(this.getClass());
+        this.logger.setLevel(Level.ERROR);
     }
 
+    /**
+     * Get instance of this factory
+     *
+     * @return instance of this factory
+     */
     public static CommandFactory getInstance() {
         return instance;
     }
@@ -42,7 +56,7 @@ public class CommandFactory {
             try {
                 command = (Command) Class.forName(className).newInstance();
             } catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
-                e.printStackTrace();
+                logger.error(e);
                 return null;
             }
             commands.put(action, command);
@@ -51,7 +65,13 @@ public class CommandFactory {
         return command;
     }
 
-    private String firstUpper(String word) {
-        return word.substring(0, 1).toUpperCase() + word.substring(1);
+    /**
+     * Make first letter capitalized
+     *
+     * @param expression a {@link String} to change the first letter to capital one
+     * @return an expression with capitalized first letter
+     */
+    private String firstUpper(String expression) {
+        return expression.substring(0, 1).toUpperCase() + expression.substring(1);
     }
 }

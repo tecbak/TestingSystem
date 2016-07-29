@@ -1,5 +1,8 @@
 package ua.rud.testingsystem.entities.user;
 
+/**
+ * An entity representing a user of application
+ */
 public class User {
     private int id;
     private String login;
@@ -12,7 +15,7 @@ public class User {
     }
 
     public User(String login, String firstName, String lastName, String email) {
-        this.id = -1;
+        this.id = -1;           //id -1 means that this user isn't saved in database
         this.login = login;
         this.firstName = firstName;
         this.lastName = lastName;

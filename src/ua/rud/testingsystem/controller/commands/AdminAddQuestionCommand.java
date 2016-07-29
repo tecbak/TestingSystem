@@ -6,13 +6,16 @@ import ua.rud.testingsystem.entities.test.Answer;
 import ua.rud.testingsystem.entities.test.Question;
 import ua.rud.testingsystem.entities.test.Test;
 import ua.rud.testingsystem.entities.test.TestUtils;
-import ua.rud.testingsystem.resource.ConfigurationManager;
+import ua.rud.testingsystem.resource.PageManager;
 import ua.rud.testingsystem.resource.MessageManager;
 
 import javax.servlet.ServletException;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * Command to add a new question for a test, which is being constructed
+ */
 public class AdminAddQuestionCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
@@ -39,7 +42,7 @@ public class AdminAddQuestionCommand implements Command {
                 wrapper.setRequestAttribute("addQuestionMessage", message);
 
             /*Check if at least one right answer*/
-            }else if(answerIds == null || TestUtils.allEmpty(answerIds)){
+            } else if (answerIds == null || TestUtils.allEmpty(answerIds)) {
                 Locale locale = wrapper.getSessionLanguage();
                 String message = MessageManager.getProperty("editTests.emptyRightAnswers", locale);
                 wrapper.setRequestAttribute("addQuestionMessage", message);
@@ -53,7 +56,7 @@ public class AdminAddQuestionCommand implements Command {
             }
         }
 
-        return ConfigurationManager.getProperty("path.page.editTests");
+        return PageManager.getProperty("path.page.editTests");
     }
 
 }

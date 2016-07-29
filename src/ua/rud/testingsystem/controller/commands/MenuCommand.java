@@ -6,13 +6,16 @@ import ua.rud.testingsystem.entities.user.User;
 import ua.rud.testingsystem.entities.SubjectUtils;
 import ua.rud.testingsystem.entities.Subject;
 import ua.rud.testingsystem.entities.test.TestUtils;
-import ua.rud.testingsystem.resource.ConfigurationManager;
+import ua.rud.testingsystem.resource.PageManager;
 
 import javax.servlet.ServletException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Command to enter to main menu
+ */
 public class MenuCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
@@ -41,6 +44,6 @@ public class MenuCommand implements Command {
         wrapper.setSessionAttribute("results", resultMap);
 
         /*Return menu page*/
-        return ConfigurationManager.getProperty("path.page.menu");
+        return PageManager.getProperty("path.page.menu");
     }
 }

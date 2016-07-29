@@ -5,13 +5,16 @@ import ua.rud.testingsystem.controller.RequestWrapper;
 import ua.rud.testingsystem.entities.Subject;
 import ua.rud.testingsystem.entities.SubjectUtils;
 import ua.rud.testingsystem.entities.test.TestUtils;
-import ua.rud.testingsystem.resource.ConfigurationManager;
+import ua.rud.testingsystem.resource.PageManager;
 import ua.rud.testingsystem.resource.MessageManager;
 
 import javax.servlet.ServletException;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * Command to delete a test
+ */
 public class AdminDeleteTestCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
@@ -32,6 +35,6 @@ public class AdminDeleteTestCommand implements Command {
         List<Subject> subjects = SubjectUtils.getSubjects();
         wrapper.setSessionAttribute("subjects", subjects);
 
-        return ConfigurationManager.getProperty("path.page.editTests");
+        return PageManager.getProperty("path.page.editTests");
     }
 }

@@ -2,21 +2,32 @@ package ua.rud.testingsystem.entities.test;
 
 import java.util.List;
 
+/**
+ * A separate answer to question.
+ * Contains information whether it is correct or not
+ * and if it is checked by user
+ */
 public class Answer {
+
+    /*Answers ID*/
     private int id;
+
+    /*Text of answer*/
     private String text;
+
+    /*Is a correct answer to question*/
     private boolean correct;
+
+    /*Is checked by user*/
     private boolean checked;
 
-    /*Constructors*/
+    /*Constructor*/
     public Answer() {
+        this.id = -1;           //id -1 means that this answer isn't saved in database
+        this.text = "";
+        this.correct = false;
+        this.checked = false;
     }
-
-//    public Answer(int id, String text, boolean correct) {
-//        this.id = id;
-//        this.text = text;
-//        this.correct = correct;
-//    }
 
     /*Getters and setters*/
     public int getId() {
@@ -60,6 +71,12 @@ public class Answer {
         return sb.toString();
     }
 
+    /**
+     * Look through the {@link List} of user's answer ids
+     * and mark this answers if the list contains its id
+     *
+     * @param answerList a {@link List} as answer ids
+     */
     public void applyAnswers(List<Integer> answerList) {
         checked = answerList.contains(id);
     }

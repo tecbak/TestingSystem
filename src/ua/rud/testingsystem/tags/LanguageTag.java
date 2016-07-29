@@ -7,7 +7,6 @@ import javax.servlet.jsp.tagext.TagSupport;
 import java.util.Locale;
 
 
-
 public class LanguageTag extends TagSupport {
     // Name of session's attribute storing value of locale (session's locale attribute)
     private String var;
@@ -32,19 +31,23 @@ public class LanguageTag extends TagSupport {
 
         String language = request.getParameter(param);
         /*
-         If language is defined in request parameter -
-         set session's locale attribute value from the parameter
-        */
+         * If language is defined in request parameter -
+         * set session's locale attribute value from the parameter
+         */
         if (language != null && !language.isEmpty()) {
             Locale locale = new Locale(language);
             session.setAttribute(var, locale);
         /*
-        If session's locale attribute value hasn't been defined yet
-        set it equal to request locale
-        */
+         * If session's locale attribute value hasn't been defined yet,
+         * use request's locale if its language is EN or RU,
+         * otherwise, use default locale - English
+         */
         } else if (session.getAttribute(var) == null) {
             Locale locale = request.getLocale();
-            session.setAttribute(var, locale);
+            if (!locale.getLanguage().equalsIgnoreCase("ru") && !locale.getLanguage().equalsIgnoreCase("en")) {
+                locale = new Locale("en");
+                session.setAttribute(var, locale);
+            }
         }
         /*
         Otherwise, the session's locale attribute value won't be changed

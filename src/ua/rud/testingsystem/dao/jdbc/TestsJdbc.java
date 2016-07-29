@@ -5,6 +5,7 @@ import ua.rud.testingsystem.entities.test.Answer;
 import ua.rud.testingsystem.entities.test.Question;
 import ua.rud.testingsystem.entities.test.Test;
 
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,132 +13,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestsJdbc implements TestDao {
+public class TestsJdbc extends AbstractJdbc implements TestDao {
     private static final String SQL_LAST_INSERT_ID = "SELECT LAST_INSERT_ID()";
 
-//    private static final String SQL_SELECT_TESTS_BY_SUBJECT_ID =
-//            "SELECT testId AS id, caption " +
-//                    "FROM tests WHERE subjectId = ?";
-
-
-//    private static final String SQL_SELECT_TEST_BY_ID =
-//            "SELECT caption FROM tests WHERE testId = ?";
-
-
-//    private static final String SQL_SELECT_QUESTIONS_BY_TEST_ID =
-//            "SELECT questionId AS id, task " +
-//                    "FROM questions WHERE testId = ?";
-
-//    private static final String SQL_SELECT_ANSWERS_BY_QUESTION_ID =
-//            "SELECT answerId AS id, text, correct " +
-//                    "FROM answers WHERE questionId = ?";
-
-//    private static final String SQL_INSERT_RESULT =
-//            "INSERT INTO results (userId, testId, rate) VALUES (?, ?, ?)";
-
-
-//    public static final String SQL_INSERT_TEST_SELECT_TEST_ID =
-//            "INSERT INTO tests (subjectId, caption) VALUES (?, ?); ";
-
-//    public static final String SQL_INSERT_QUESTION_SELECT_QUESTION_ID =
-//            "INSERT INTO questions (testId, task) VALUES (?, ?); " +
-//                    "SELECT LAST_INSERT_ID();";
-
-//    public static final String SQL_INSERT_ANSWER =
-//            "INSERT INTO answers (questionId, text, correct) VALUES (?, ?, ?);";
-
-
-//    /**
-//     * Creates tests concerning particular subject
-//     *
-//     * @param subjectId id number of the subject
-//     * @return list of tests
-//     */
-////    @Override
-//    public List<Test> getTestsBySubjectId(int subjectId, Connection connection) throws SQLException {
-//        final String SQL_SELECT_TESTS_BY_SUBJECT_ID = "SELECT testId AS id, caption FROM tests WHERE subjectId = ?";
-//
-//        List<Test> tests = new ArrayList<>();
-//
-//        try (PreparedStatement statement = connection.prepareStatement(SQL_SELECT_TESTS_BY_SUBJECT_ID)) {
-//            statement.setInt(1, subjectId);
-//            try (ResultSet resultSet = statement.executeQuery()) {
-//                while (resultSet.next()) {
-//                    int id = resultSet.getInt("id");
-//                    String caption = resultSet.getString("caption");
-//                    Test test = new Test();
-//                    test.setId(id);
-//                    test.setCaption(caption);
-//                    tests.add(test);
-//                }
-//            }
-//        }
-//        return tests;
-//    }
-//    /**
-//     * Extract test with particular ID from database
-//     *
-//     * @param testId test ID
-//     * @return test with particular ID or {@code null} if there's no test with such ID
-//     */
-//    @Override
-//    public Test getTestById(int testId) {
-//        Test test = null;
-//
-//        try (Connection connection = JdbcFactory.getConnection();
-//             PreparedStatement statement = connection.prepareStatement(SQL_SELECT_TEST_BY_ID)) {
-//            statement.setInt(1, testId);
-//            ResultSet resultSet = statement.executeQuery();
-//            if (resultSet.next()) {
-//                String caption = resultSet.getString("caption");
-//                List<Question> questions = getQuestions(connection, testId);
-//                test = new Test(testId, caption, questions);
-//            }
-//
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return test;
-//    }
-//
-//    private List<Question> getQuestions(Connection connection, int testId) throws SQLException {
-//        List<Question> questions = new ArrayList<>();
-//
-//        try (PreparedStatement statement = connection.prepareStatement(SQL_SELECT_QUESTIONS_BY_TEST_ID)) {
-//            statement.setInt(1, testId);
-//            try (ResultSet resultSet = statement.executeQuery()) {
-//                while (resultSet.next()) {
-//                    int id = resultSet.getInt("id");
-//                    String task = resultSet.getString("task");
-//                    List<Answer> answers = getAnswers(connection, id);
-//
-//                    Question question = new Question(id, task, answers);
-//                    questions.add(question);
-//                }
-//            }
-//        }
-//        return questions;
-//    }
-
-//    private List<Answer> getAnswers(Connection connection, int questionId) throws SQLException {
-//        List<Answer> answers = new ArrayList<>();
-//
-//        try (PreparedStatement statement = connection.prepareStatement(SQL_SELECT_ANSWERS_BY_QUESTION_ID)) {
-//            statement.setInt(1, questionId);
-//            try (ResultSet resultSet = statement.executeQuery()) {
-//                while (resultSet.next()) {
-//                    int id = resultSet.getInt("id");
-//                    String text = resultSet.getString("text");
-//                    Boolean correct = resultSet.getBoolean("correct");
-//
-//                    Answer answer = new Answer(id, text, correct);
-//                    answers.add(answer);
-//                }
-//            }
-//        }
-//        return answers;
-//    }
+    public TestsJdbc(DataSource dataSource) {
+        super(dataSource);
+    }
 
     /*SELECT QUERIES*/
 
@@ -149,73 +30,60 @@ public class TestsJdbc implements TestDao {
      */
     @Override
     public Test getTestById(int testId) {
-        final String SQL_SELECT_TEST_BY_ID = "SELECT caption FROM tests WHERE testId = ?";
+        final String SQL_GET_TEST_BY_ID = "SELECT " +
+                "t.testId, " +
+                "t.caption, " +
+                "q.questionId, " +
+                "q.task, " +
+                "a.answerId, " +
+                "a.text, " +
+                "a.correct " +
+                "FROM tests AS t " +
+                "JOIN questions AS q ON t.testId = q.testId " +
+                "JOIN answers AS a ON q.questionId = a.questionId " +
+                "WHERE t.testId = ?";
+
         Test test = null;
 
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
-             PreparedStatement statement = connection.prepareStatement(SQL_SELECT_TEST_BY_ID)) {
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement statement = connection.prepareStatement(SQL_GET_TEST_BY_ID)) {
             statement.setInt(1, testId);
-            ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
-                String caption = resultSet.getString("caption");
-                List<Question> questions = getQuestions(connection, testId);
 
-                test = new Test();
-                test.setId(testId);
-                test.setCaption(caption);
-                test.setQuestions(questions);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                logger.info("Get test with id " + testId);
+
+                while (resultSet.next()) {
+
+                    /*Create a new test if it hasn't been created yet*/
+                    if (test == null) {
+                        test = new Test();
+                        test.setId(resultSet.getInt("testId"));
+                        test.setCaption(resultSet.getString("caption"));
+                    }
+
+                    /*Create question if test doesn't have one with id that is equal to questionId*/
+                    int questionId = resultSet.getInt("questionId");
+                    Question question = test.getQuestionById(questionId);
+                    if (question == null) {
+                        question = new Question();
+                        question.setId(questionId);
+                        question.setTask(resultSet.getString("task"));
+                        test.addQuestion(question);
+                    }
+
+                    /*Create answer*/
+                    Answer answer = new Answer();
+                    answer.setId(resultSet.getInt("answerId"));
+                    answer.setText(resultSet.getString("text"));
+                    answer.setCorrect(resultSet.getBoolean("correct"));
+                    question.addAnswer(answer);
+                }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
+
         return test;
-    }
-
-    private List<Question> getQuestions(Connection connection, int testId) throws SQLException {
-        final String SQL_SELECT_QUESTIONS_BY_TEST_ID = "SELECT questionId AS id, task FROM questions WHERE testId = ?";
-        List<Question> questions = new ArrayList<>();
-
-        try (PreparedStatement statement = connection.prepareStatement(SQL_SELECT_QUESTIONS_BY_TEST_ID)) {
-            statement.setInt(1, testId);
-            try (ResultSet resultSet = statement.executeQuery()) {
-                while (resultSet.next()) {
-                    int id = resultSet.getInt("id");
-                    String task = resultSet.getString("task");
-                    List<Answer> answers = getAnswers(connection, id);
-
-                    Question question = new Question();
-                    question.setId(id);
-                    question.setTask(task);
-                    question.setAnswers(answers);
-
-                    questions.add(question);
-                }
-            }
-        }
-        return questions;
-    }
-
-    private List<Answer> getAnswers(Connection connection, int questionId) throws SQLException {
-        final String SQL_SELECT_ANSWERS_BY_QUESTION_ID = "SELECT answerId AS id, text, correct FROM answers WHERE questionId = ?";
-        List<Answer> answers = new ArrayList<>();
-
-        try (PreparedStatement statement = connection.prepareStatement(SQL_SELECT_ANSWERS_BY_QUESTION_ID)) {
-            statement.setInt(1, questionId);
-            try (ResultSet resultSet = statement.executeQuery()) {
-                while (resultSet.next()) {
-                    int id = resultSet.getInt("id");
-                    String text = resultSet.getString("text");
-                    Boolean correct = resultSet.getBoolean("correct");
-
-                    Answer answer = new Answer();
-                    answer.setId(id);
-                    answer.setText(text);
-                    answer.setCorrect(correct);
-                    answers.add(answer);
-                }
-            }
-        }
-        return answers;
     }
 
     /**
@@ -230,19 +98,21 @@ public class TestsJdbc implements TestDao {
         final String SQL_GET_RESULT = "SELECT rate FROM results WHERE userId = ? AND testId = ?";
         List<Integer> rates = new ArrayList<>();
 
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
+        try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_GET_RESULT)) {
             statement.setInt(1, userId);
             statement.setInt(2, testId);
 
             try (ResultSet resultSet = statement.executeQuery()) {
+                logger.info("Get result of user with id " + userId + " and test id " + testId);
+
                 while (resultSet.next()) {
                     int rate = resultSet.getInt("rate");
                     rates.add(rate);
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         return rates;
     }
@@ -259,7 +129,7 @@ public class TestsJdbc implements TestDao {
     public void addTest(int subjectId, Test test) {
         final String SQL_INSERT_TEST = "INSERT INTO tests (subjectId, caption) VALUES (?, ?)";
 
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
+        try (Connection connection = dataSource.getConnection();
              PreparedStatement statement0 = connection.prepareStatement(SQL_INSERT_TEST);
              PreparedStatement statement1 = connection.prepareStatement(SQL_LAST_INSERT_ID)) {
 
@@ -284,14 +154,22 @@ public class TestsJdbc implements TestDao {
                 e.printStackTrace();
             } finally {
                 connection.commit();
+                logger.info("Add test " + test);
             }
             /*End of transaction*/
-
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
     }
 
+    /**
+     * Add {@link Question}s of a specified {@link Test}
+     *
+     * @param connection {@link Connection} to database
+     * @param questions  a {@link List} of {@link Question}s to be saved
+     * @param testID     id of {@link Test} the {@link Question}s regard to
+     * @throws SQLException in case of problems with database connection
+     */
     private void addQuestions(Connection connection, List<Question> questions, int testID) throws SQLException {
         final String SQL_INSERT_QUESTION = "INSERT INTO questions (testId, task) VALUES (?, ?)";
 
@@ -316,8 +194,17 @@ public class TestsJdbc implements TestDao {
         }
     }
 
+    /**
+     * Save {@link Answer}s of the specified {@link Question}
+     *
+     * @param connection {@link Connection} to database
+     * @param answers    a {@link List} of {@link Answer}s to be saved
+     * @param questionId id of the {@link Question} these {@link Answer}s regard to
+     * @throws SQLException in case of problems with database connection
+     */
     private void addAnswers(Connection connection, List<Answer> answers, int questionId) throws SQLException {
         final String SQL_INSERT_ANSWER = "INSERT INTO answers (questionId, text, correct) VALUES (?, ?, ?)";
+        // TODO: 28.07.2016 batch
         for (Answer answer : answers) {
             try (PreparedStatement statement = connection.prepareStatement(SQL_INSERT_ANSWER)) {
                 String text = answer.getText();
@@ -331,38 +218,35 @@ public class TestsJdbc implements TestDao {
         }
     }
 
-    /**
-     * Add result to database
-     *
-     * @param userId user's id
-     * @param testId test's id
-     * @param rate   percent of right answers
-     */
     @Override
     public void addResult(int userId, int testId, int rate) {
         final String SQL_INSERT_RESULT = "INSERT INTO results (userId, testId, rate) VALUES (?, ?, ?)";
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
+        try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_INSERT_RESULT)) {
             statement.setInt(1, userId);
             statement.setInt(2, testId);
             statement.setInt(3, rate);
             statement.executeUpdate();
+
+            logger.info("Add result for user with id " + userId + " and test with id " + testId);
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
     }
 
     @Override
     public void deleteTests(List<Integer> testIds) {
         final String SQL_DELETE_TEST = "DELETE FROM tests WHERE testId = ?";
-        try (Connection connection = JdbcFactory.getInstance().getConnection();
+        try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = connection.prepareStatement(SQL_DELETE_TEST)) {
             for (Integer testId : testIds) {
                 statement.setInt(1, testId);
                 statement.executeUpdate();
+
+                logger.info("Test with id " + testId + " deleted");
             }
         } catch (SQLException e) {
-            // TODO: 27.07.2016 add log
+            logger.error(e);
         }
     }
 }

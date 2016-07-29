@@ -51,6 +51,7 @@
 
                                 <%--Output of tests--%>
                                 <c:forEach var="entry" items="${subject.tests.entrySet()}">
+                                    <p>
                                     <c:set var="testId" value="${entry.getKey()}"/>
                                     <c:set var="testCaption" value="${entry.getValue()}"/>
 
@@ -66,7 +67,7 @@
                                         </c:forEach>
                                         <br/>
                                     </c:if>
-                                    <br/>
+                                    </p>
                                 </c:forEach>
                                 <br/>
                             </c:forEach>
