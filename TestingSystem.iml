@@ -9,6 +9,9 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+        </sourceRoots>
       </configuration>
     </facet>
   </component>
@@ -16,11 +19,19 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/tests" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.0.M4" level="application_server_libraries" />
     <orderEntry type="library" name="jstl-1.2" level="project" />
     <orderEntry type="library" name="log4j-1.2.17" level="project" />
+    <orderEntry type="library" name="com.bluecatcode.junit:junit-4.12-extended:1.0.4" level="project" />
+    <orderEntry type="library" name="com.bluecatcode.mockito:mockito-1.10.19-extended:1.1.0" level="project" />
+    <orderEntry type="library" name="org.powermock:powermock-api-mockito:1.6.5" level="project" />
+    <orderEntry type="library" name="org.powermock:powermock-module-junit4:1.6.5" level="project" />
+    <orderEntry type="library" name="org.easymock:easymock:3.4" level="project" />
+    <orderEntry type="library" name="org.powermock:powermock-core:1.6.5" level="project" />
+    <orderEntry type="library" name="org.powermock.examples:powermock-examples-easymock31:1.6.4" level="project" />
   </component>
 </module>

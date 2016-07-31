@@ -83,7 +83,7 @@ public class Test {
     }
 
     /**
-     * Invoke method applyAnsvers for all {@link Answer}s of this question
+     * Invoke method applyAnswers for all {@link Answer}s of this question
      *
      * @param answerList a {@link List} of chosen answers
      */

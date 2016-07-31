@@ -11,6 +11,7 @@ import ua.rud.testingsystem.resource.MessageManager;
 import javax.servlet.ServletException;
 import java.util.List;
 import java.util.Locale;
+
 /**
  * Command to delete a subject
  */

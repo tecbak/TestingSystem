@@ -65,7 +65,7 @@ public class Answer {
     /*Methods*/
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder(id);
+        final StringBuilder sb = new StringBuilder("" + id);
         sb.append(correct);
         sb.append("\t").append(text);
         return sb.toString();
