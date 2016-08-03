@@ -1,5 +1,7 @@
 package ua.rud.testingsystem.controller;
 
+import ua.rud.testingsystem.controller.RequestWrapper;
+
 import javax.servlet.ServletException;
 
 /**

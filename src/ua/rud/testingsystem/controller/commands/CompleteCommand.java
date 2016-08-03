@@ -21,7 +21,7 @@ public class CompleteCommand implements Command {
         /*Check if any test is selected*/
         if (testObj != null && testObj instanceof Test) {
 
-            /*Check if answes's aren't empty*/
+            /*Check if answers aren't empty*/
             if (answerIds != null) {
                 Test test = (Test) testObj;
 

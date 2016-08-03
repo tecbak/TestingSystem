@@ -14,4 +14,5 @@ public class AdminMenuCommand implements Command {
     public String execute(RequestWrapper wrapper) throws ServletException {
         return PageManager.getProperty("path.page.adminMenu");
     }
+
 }

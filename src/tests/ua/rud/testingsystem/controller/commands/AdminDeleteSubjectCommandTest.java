@@ -45,9 +45,9 @@ public class AdminDeleteSubjectCommandTest {
         ArgumentCaptor<String> s = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<String> o = ArgumentCaptor.forClass(String.class);
 
-        replayAll();
+//        replayAll();
         page = new AdminDeleteSubjectCommand().execute(wrapper);
-        verifyAll();
+//        verifyAll();
 
         verify(wrapper).setRequestAttribute(s.capture(), o.capture());
 
@@ -69,9 +69,9 @@ public class AdminDeleteSubjectCommandTest {
         PowerMockito.doReturn(new ArrayList<>()).when(SubjectUtils.class);
         SubjectUtils.getSubjects();
 
-        replayAll();
+//        replayAll();
         page = new AdminDeleteSubjectCommand().execute(wrapper);
-        verifyAll();
+//        verifyAll();
 
 
     }
