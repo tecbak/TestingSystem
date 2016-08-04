@@ -1,11 +1,11 @@
 package ua.rud.testingsystem.dao;
 
-import ua.rud.testingsystem.entities.Subject;
+import ua.rud.testingsystem.entities.subject.Subject;
 
 import java.util.List;
 
 /**
- * DAO with methods to operate with {@link ua.rud.testingsystem.entities.Subject} entities
+ * DAO with methods to operate with {@link Subject} entities
  */
 public interface SubjectDao {
     /**

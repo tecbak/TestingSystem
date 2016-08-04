@@ -1,4 +1,4 @@
-package ua.rud.testingsystem.entities;
+package ua.rud.testingsystem.entities.subject;
 
 
 import java.util.HashMap;

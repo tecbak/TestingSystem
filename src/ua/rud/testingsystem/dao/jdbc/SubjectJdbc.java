@@ -1,7 +1,7 @@
 package ua.rud.testingsystem.dao.jdbc;
 
 import ua.rud.testingsystem.dao.SubjectDao;
-import ua.rud.testingsystem.entities.Subject;
+import ua.rud.testingsystem.entities.subject.Subject;
 
 import javax.sql.DataSource;
 import java.sql.*;

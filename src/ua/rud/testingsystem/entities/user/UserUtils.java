@@ -13,26 +13,6 @@ public final class UserUtils {
     }
 
     /**
-     * Check if all strings aren't empty
-     *
-     * @param values array of strings to check
-     * @return {@code true} if there isn't any empty string, and {@code false} otherwise
-     */
-    // TODO: 29.07.2016 common utils
-    public static boolean isFilled(String... values) {
-        if (values == null || values.length == 0) {
-            return false;
-        }
-
-        for (String value : values) {
-            if (value == null || value.isEmpty()) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    /**
      * Check wether two passwords are equal
      *
      * @param password0

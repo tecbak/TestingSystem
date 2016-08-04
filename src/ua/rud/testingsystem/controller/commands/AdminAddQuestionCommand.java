@@ -2,6 +2,7 @@ package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
+import ua.rud.testingsystem.entities.CommonUtils;
 import ua.rud.testingsystem.entities.test.Answer;
 import ua.rud.testingsystem.entities.test.Question;
 import ua.rud.testingsystem.entities.test.Test;
@@ -36,13 +37,13 @@ public class AdminAddQuestionCommand implements Command {
                 wrapper.setRequestAttribute("addQuestionMessage", message);
 
             /*Check if at least one answer is entered*/
-            } else if (texts == null || TestUtils.allEmpty(texts)) {
+            } else if (texts == null || CommonUtils.allEmpty(texts)) {
                 Locale locale = wrapper.getSessionLanguage();
                 String message = MessageManager.getProperty("editTests.emptyAnswers", locale);
                 wrapper.setRequestAttribute("addQuestionMessage", message);
 
             /*Check if at least one right answer*/
-            } else if (answerIds == null || TestUtils.allEmpty(answerIds)) {
+            } else if (answerIds == null || CommonUtils.allEmpty(answerIds)) {
                 Locale locale = wrapper.getSessionLanguage();
                 String message = MessageManager.getProperty("editTests.emptyRightAnswers", locale);
                 wrapper.setRequestAttribute("addQuestionMessage", message);

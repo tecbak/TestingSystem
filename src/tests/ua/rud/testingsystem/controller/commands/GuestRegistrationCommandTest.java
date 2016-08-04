@@ -10,6 +10,7 @@ import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 import ua.rud.testingsystem.controller.RequestWrapper;
+import ua.rud.testingsystem.entities.CommonUtils;
 import ua.rud.testingsystem.entities.user.UserUtils;
 import ua.rud.testingsystem.resource.MessageManager;
 import ua.rud.testingsystem.resource.PageManager;
@@ -19,7 +20,7 @@ import java.util.Locale;
 
 
 @RunWith(PowerMockRunner.class)
-@PrepareForTest(UserUtils.class)
+@PrepareForTest({UserUtils.class, CommonUtils.class})
 public class GuestRegistrationCommandTest {
     RequestWrapper wrapper = Mockito.mock(RequestWrapper.class);
 
@@ -51,8 +52,10 @@ public class GuestRegistrationCommandTest {
 
     @Test
     public void onAnythingIsNotFilled_reportAboutIt() throws ServletException {
-        PowerMockito.doReturn(false).when(UserUtils.class);
-        UserUtils.isFilled(Mockito.anyVararg());
+        /*Spy CommonUtils*/
+        PowerMockito.spy(CommonUtils.class);
+        PowerMockito.doReturn(false).when(CommonUtils.class);
+        CommonUtils.isFilled(Mockito.anyVararg());
 
 
         /*Verify returned page*/

@@ -1,5 +1,6 @@
 package ua.rud.testingsystem.dao;
 
+import ua.rud.testingsystem.entities.subject.Subject;
 import ua.rud.testingsystem.entities.test.Test;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public interface TestDao {
     /**
      * Save {@link Test} to database
      *
-     * @param subjectId id of {@link ua.rud.testingsystem.entities.Subject} the {@link Test} to be added refers to
+     * @param subjectId id of {@link Subject} the {@link Test} to be added refers to
      * @param test      {@link Test} to be added
      */
     void addTest(int subjectId, Test test);

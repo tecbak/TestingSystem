@@ -9,7 +9,7 @@ import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 import ua.rud.testingsystem.controller.RequestWrapper;
-import ua.rud.testingsystem.entities.SubjectUtils;
+import ua.rud.testingsystem.entities.subject.SubjectUtils;
 import ua.rud.testingsystem.resource.MessageManager;
 import ua.rud.testingsystem.resource.PageManager;
 

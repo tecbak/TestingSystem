@@ -3,6 +3,8 @@ package ua.rud.testingsystem.entities.test;
 import ua.rud.testingsystem.dao.factory.DaoFactory;
 import ua.rud.testingsystem.dao.TestDao;
 import ua.rud.testingsystem.dao.factory.JdbcFactory;
+import ua.rud.testingsystem.entities.CommonUtils;
+import ua.rud.testingsystem.entities.subject.Subject;
 import ua.rud.testingsystem.entities.user.User;
 
 import java.util.ArrayList;
@@ -41,7 +43,7 @@ public final class TestUtils {
             throw new IllegalArgumentException("argument cannot be null");
         }
 
-        List<Integer> answerList = stringArrayToIntList(stringAnswers);
+        List<Integer> answerList = CommonUtils.stringArrayToIntList(stringAnswers);
         test.applyAnswers(answerList);
     }
 
@@ -107,7 +109,7 @@ public final class TestUtils {
      */
     public static List<Answer> getNewAnswers(String[] texts, String[] answerIds) {
         List<Answer> answers = new ArrayList<>();
-        List<Integer> answerIdsList = stringArrayToIntList(answerIds);
+        List<Integer> answerIdsList = CommonUtils.stringArrayToIntList(answerIds);
 
         /*
          * Create a new answer from the every not empty value of the texts array
@@ -127,26 +129,9 @@ public final class TestUtils {
     }
 
     /**
-     * Convert string array to a list of ints
-     *
-     * @param stringArray string array to be converted
-     * @return a {@link List} int
-     * @throws NumberFormatException if any value of string array is not a number
-     */
-    public static List<Integer> stringArrayToIntList(String[] stringArray) {
-        List<Integer> array = new ArrayList<>();
-
-        for (String s : stringArray) {
-            array.add(Integer.parseInt(s));
-        }
-
-        return array;
-    }
-
-    /**
      * Use DAO to save a {@link Test}
      *
-     * @param subjectId id of {@link ua.rud.testingsystem.entities.Subject} the test belongs to
+     * @param subjectId id of {@link Subject} the test belongs to
      * @param newTest   {@link Test} to be saved
      */
     public static void addTest(int subjectId, Test newTest) {
@@ -156,27 +141,12 @@ public final class TestUtils {
     }
 
     /**
-     * Check if al items of string array is empty
-     *
-     * @param strings array of strings to be checked
-     * @return {@code true} if all stings are empty and {@code false} otherwise
-     */
-    public static boolean allEmpty(String[] strings) {
-        for (String string : strings) {
-            if (!string.isEmpty()) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    /**
      * Use DAO to delete some tests from database
      *
      * @param stringTestIds id of {@link Test}s to be deleted
      */
     public static void deleteTests(String[] stringTestIds) {
-        List<Integer> testIds = stringArrayToIntList(stringTestIds);
+        List<Integer> testIds = CommonUtils.stringArrayToIntList(stringTestIds);
         DaoFactory factory = JdbcFactory.getInstance();
         TestDao testDao = factory.getTestDao();
         testDao.deleteTests(testIds);

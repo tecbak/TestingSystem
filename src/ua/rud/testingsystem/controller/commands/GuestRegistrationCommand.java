@@ -2,6 +2,7 @@ package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
+import ua.rud.testingsystem.entities.CommonUtils;
 import ua.rud.testingsystem.entities.user.UserUtils;
 import ua.rud.testingsystem.entities.user.User;
 import ua.rud.testingsystem.resource.PageManager;
@@ -30,7 +31,7 @@ public class GuestRegistrationCommand implements Command {
         String message;
 
         /*Check if all fields are filed*/
-        if (!UserUtils.isFilled(login, password0, password1, firstName, lastName, email)) {
+        if (!CommonUtils.isFilled(login, password0, password1, firstName, lastName, email)) {
             message = MessageManager.getProperty("register.emptyFields", locale);
 
             /*Check if passwords are equal*/

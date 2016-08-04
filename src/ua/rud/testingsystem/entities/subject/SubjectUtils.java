@@ -1,9 +1,10 @@
-package ua.rud.testingsystem.entities;
+package ua.rud.testingsystem.entities.subject;
 
 
 import ua.rud.testingsystem.dao.factory.DaoFactory;
 import ua.rud.testingsystem.dao.SubjectDao;
 import ua.rud.testingsystem.dao.factory.JdbcFactory;
+import ua.rud.testingsystem.entities.CommonUtils;
 import ua.rud.testingsystem.entities.test.TestUtils;
 
 import java.util.HashMap;
@@ -62,7 +63,7 @@ public final class SubjectUtils {
      * @param stringSubjectIds ids of subjects to be deleted
      */
     public static void deleteSubjects(String[] stringSubjectIds) {
-        List<Integer> subjectIds = TestUtils.stringArrayToIntList(stringSubjectIds); //todo common utils
+        List<Integer> subjectIds = CommonUtils.stringArrayToIntList(stringSubjectIds); //todo common utils
         DaoFactory factory = JdbcFactory.getInstance();
         SubjectDao subjectDao = factory.getSubjectDao();
         subjectDao.deleteSubjects(subjectIds);

@@ -2,9 +2,9 @@ package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
-import ua.rud.testingsystem.entities.Subject;
-import ua.rud.testingsystem.entities.SubjectUtils;
-import ua.rud.testingsystem.entities.test.TestUtils;
+import ua.rud.testingsystem.entities.CommonUtils;
+import ua.rud.testingsystem.entities.subject.Subject;
+import ua.rud.testingsystem.entities.subject.SubjectUtils;
 import ua.rud.testingsystem.resource.PageManager;
 import ua.rud.testingsystem.resource.MessageManager;
 
@@ -21,7 +21,7 @@ public class AdminDeleteSubjectCommand implements Command {
         String[] stringSubjectIds = wrapper.getRequestParameterValues("subjectId");
 
         /*Check if there is at least one selected subject*/
-        if (stringSubjectIds != null && !TestUtils.allEmpty(stringSubjectIds)) {
+        if (stringSubjectIds != null && !CommonUtils.allEmpty(stringSubjectIds)) {
             SubjectUtils.deleteSubjects(stringSubjectIds);
 
         /*Message about no selection */

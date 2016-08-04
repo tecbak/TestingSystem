@@ -2,8 +2,9 @@ package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
 import ua.rud.testingsystem.controller.RequestWrapper;
-import ua.rud.testingsystem.entities.Subject;
-import ua.rud.testingsystem.entities.SubjectUtils;
+import ua.rud.testingsystem.entities.CommonUtils;
+import ua.rud.testingsystem.entities.subject.Subject;
+import ua.rud.testingsystem.entities.subject.SubjectUtils;
 import ua.rud.testingsystem.entities.test.TestUtils;
 import ua.rud.testingsystem.resource.PageManager;
 import ua.rud.testingsystem.resource.MessageManager;
@@ -21,7 +22,7 @@ public class AdminDeleteTestCommand implements Command {
         String[] testIds = wrapper.getRequestParameterValues("testId");
 
         /*Check if at least one test is selected*/
-        if (testIds != null && !TestUtils.allEmpty(testIds)) {
+        if (testIds != null && !CommonUtils.allEmpty(testIds)) {
             TestUtils.deleteTests(testIds);
 
         /*Message about no selection */
