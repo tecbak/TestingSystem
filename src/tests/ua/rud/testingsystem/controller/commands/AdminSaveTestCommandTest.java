@@ -31,6 +31,12 @@ public class AdminSaveTestCommandTest {
     public void setUp() throws Exception {
 
         /*Mocks standard behaviour*/
+
+//        test = new ua.rud.testingsystem.entities.test.Test() {{
+//            addQuestion(new Question());
+//        }};
+
+
         Mockito.when(test.getQuestions()).thenReturn(questions);
         Mockito.when(questions.size()).thenReturn(1);
         Mockito.when(wrapper.getRequestParameter("save")).thenReturn("1");
@@ -96,10 +102,15 @@ public class AdminSaveTestCommandTest {
 
 
     @Test
-    public void executeTest() throws Exception {
+    public void executeTest() throws ServletException {
+        String expectedPage = PageManager.getProperty("path.page.editTests");
+        String actualPage = new AdminSaveTestCommand().execute(wrapper);
 
+        PowerMockito.verifyStatic();
+        TestUtils.addTest(Mockito.anyInt(), Mockito.any());
 
-        System.out.println(wrapper.getRequestParameter("save"));
+        Assert.assertEquals(expectedPage, actualPage);
+
     }
 
 }

@@ -35,8 +35,10 @@ public class AdminSaveTestCommand implements Command {
                 Test newTest = (Test) newTestObj;
                 int subjectId = Integer.parseInt((String) subjectIdObj);
 
+
                 /*Save only if there is at least one question*/
                 if (newTest.getQuestions().size() > 0) {
+
 
                     /*Save to DB*/
                     TestUtils.addTest(subjectId, newTest);

@@ -1,7 +1,7 @@
 package ua.rud.testingsystem.entities.user;
 
-import ua.rud.testingsystem.dao.factory.DaoFactory;
 import ua.rud.testingsystem.dao.UserDao;
+import ua.rud.testingsystem.dao.factory.DaoFactory;
 import ua.rud.testingsystem.dao.factory.JdbcFactory;
 
 /**
@@ -20,6 +20,10 @@ public final class UserUtils {
      */
     // TODO: 29.07.2016 common utils
     public static boolean isFilled(String... values) {
+        if (values == null || values.length == 0) {
+            return false;
+        }
+
         for (String value : values) {
             if (value == null || value.isEmpty()) {
                 return false;

@@ -6,7 +6,9 @@ import ua.rud.testingsystem.dao.SubjectDao;
 import ua.rud.testingsystem.dao.factory.JdbcFactory;
 import ua.rud.testingsystem.entities.test.TestUtils;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Utility class for {@link Subject}
@@ -64,5 +66,24 @@ public final class SubjectUtils {
         DaoFactory factory = JdbcFactory.getInstance();
         SubjectDao subjectDao = factory.getSubjectDao();
         subjectDao.deleteSubjects(subjectIds);
+    }
+
+    /**
+     * Get results for all tests for a specific user
+     *
+     * @param subjects
+     * @param userId
+     * @return map with keys of testIds and values if lists of results
+     * @throws NullPointerException if subjects is {@code null}
+     */
+    public static Map<Integer, List<Integer>> getResultsForSubjects(List<Subject> subjects, int userId) {
+        Map<Integer, List<Integer>> resultMap = new HashMap<>();
+        for (Subject subject : subjects) {
+            for (int testId : subject.getTests().keySet()) {
+                List<Integer> results = TestUtils.getResults(userId, testId);
+                resultMap.put(testId, results);
+            }
+        }
+        return resultMap;
     }
 }
