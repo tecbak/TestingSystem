@@ -3,6 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="ctg" uri="http://customtags.rud.ua" %>
 
+<c:set var="navigation" value="guestLogin"/>
 <ctg:lang var="language" param="userlang"/>
 <fmt:setLocale value="${language}"/>
 <fmt:bundle basename="ua/rud/testingsystem/resource/messages">
@@ -29,8 +30,8 @@
                     </c:if>
                 </td>
                 <td align="right">
-                    <a href="controller?command=guestLogin&userlang=en">ENG</a>
-                    <a href="controller?command=guestLogin&userlang=ru">РУC</a><br>
+                    <a href="controller?command=${navigation}&userlang=en">ENG</a>
+                    <a href="controller?command=${navigation}&userlang=ru">РУC</a><br>
                 </td>
             </tr>
             <tr align="center">

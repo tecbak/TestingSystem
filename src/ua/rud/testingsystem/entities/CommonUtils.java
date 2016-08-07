@@ -15,7 +15,7 @@ public final class CommonUtils {
      * Convert string array to a list of ints
      *
      * @param stringArray string array to be converted
-     * @return a {@link List} int
+     * @return a {@link List} of ints
      * @throws NumberFormatException if any value of string array is not a number
      */
     public static List<Integer> stringArrayToIntList(String[] stringArray) {
