@@ -7,82 +7,47 @@
 <fmt:setLocale value="${language}"/>
 <fmt:bundle basename="ua/rud/testingsystem/resource/messages">
 
-    <!DOCTYPE html>
-    <html lang="${language}">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title><fmt:message key="menu.title"/></title>
-        <style type="text/css">
-            table {
-                font-family: Arial;
-            }
-        </style>
-    </head>
-    <body>
-    <div align="center">
-        <table width="600px">  <%-- frame="border"--%>
-            <tr>
-                <td align="left">
-                    <a href="controller?command=logout"><fmt:message key="common.logout"/></a>
-                        <%--<a href="controller?command=results"> <fmt:message key="common.results"/></a>--%>
-                    <c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">
-                        <a href="controller?command=adminMenu"> <fmt:message key="common.administration"/></a>
-                    </c:if>
-                </td>
-                <td align="right">
-                    <a href="controller?command=menu&userlang=en">ENG</a>
-                    <a href="controller?command=menu&userlang=ru">РУC</a><br>
-                </td>
-            </tr>
-            <tr align="left">
-                <td colspan="2">
-                        <%--template--%>
-                    <div align="center">
-                        <h1><fmt:message key="menu.availableTests"/></h1><br/>
-                    </div>
-
-                    <div align="left">
-                        <form action="controller" method="get">
-                            <input type="hidden" name="command" value="start">
-
-                            <c:forEach var="subject" items="${sessionScope.subjects}">
-                                <%--Subject name--%>
-                                <h3><c:out value="${subject.name}"/></h3>
-
-                                <%--Output of tests--%>
-                                <c:forEach var="entry" items="${subject.tests.entrySet()}">
-                                    <p>
-                                    <c:set var="testId" value="${entry.getKey()}"/>
-                                    <c:set var="testCaption" value="${entry.getValue()}"/>
-
-                                    <input type="radio" name="id" value="${testId}"/>
-                                    <c:out value="${testCaption}"/>
-
-                                    <%--If there are any result for the test--%>
-                                    <c:set var="rates" value="${sessionScope.results[testId]}"/>
-                                    <c:if test="${rates.size() > 0}">
-                                        <br/><fmt:message key="menu.results"/>
-                                        <c:forEach var="rate" items="${rates}">
-                                            <c:out value="${rate}"/>%
-                                        </c:forEach>
-                                        <br/>
-                                    </c:if>
-                                    </p>
-                                </c:forEach>
-                                <br/>
-                            </c:forEach>
-
-                            <fmt:message key="menu.start" var="start"/>
-                            <input type="submit" name="start" value="${start}">
-
-                        </form>
-                    </div>
-                        <%--template--%>
-                </td>
-            </tr>
-        </table>
+    <%--Page caption--%>
+    <div id="center">
+        <h1><fmt:message key="menu.availableTests"/></h1><br/>
     </div>
-    </body>
-    </html>
+
+    <%--Menu--%>
+    <div id="left">
+        <form action="controller" method="get">
+            <input type="hidden" name="command" value="start">
+
+            <c:forEach var="subject" items="${sessionScope.subjects}">
+                <%--Subject name--%>
+                <h3><c:out value="${subject.name}"/></h3>
+
+                <%--Output of tests--%>
+                <c:forEach var="entry" items="${subject.tests.entrySet()}">
+                    <p>
+                        <c:set var="testId" value="${entry.getKey()}"/>
+                        <c:set var="testCaption" value="${entry.getValue()}"/>
+
+                        <input type="radio" name="id" value="${testId}"/>
+                        <c:out value="${testCaption}"/>
+
+                            <%--If there are any result for the test--%>
+                        <c:set var="rates" value="${sessionScope.results[testId]}"/>
+                        <c:if test="${rates.size() > 0}">
+                            <br/><fmt:message key="menu.results"/>
+                            <c:forEach var="rate" items="${rates}">
+                                <c:out value="${rate}"/>%
+                            </c:forEach>
+                            <br/>
+                        </c:if>
+                    </p>
+                </c:forEach>
+                <br/>
+            </c:forEach>
+
+            <fmt:message key="menu.start" var="start"/>
+            <input type="submit" name="start" value="${start}">
+
+        </form>
+    </div>
 
 </fmt:bundle>

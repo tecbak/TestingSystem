@@ -30,6 +30,7 @@ public class LanguageTag extends TagSupport {
         ServletRequest request = pageContext.getRequest();
 
         String language = request.getParameter(param);
+
         /*
          * If language is defined in request parameter -
          * set session's locale attribute value from the parameter
@@ -37,6 +38,7 @@ public class LanguageTag extends TagSupport {
         if (language != null && !language.isEmpty()) {
             Locale locale = new Locale(language);
             session.setAttribute(var, locale);
+
         /*
          * If session's locale attribute value hasn't been defined yet,
          * use request's locale if its language is EN or RU,
@@ -46,9 +48,10 @@ public class LanguageTag extends TagSupport {
             Locale locale = request.getLocale();
             if (!locale.getLanguage().equalsIgnoreCase("ru") && !locale.getLanguage().equalsIgnoreCase("en")) {
                 locale = new Locale("en");
-                session.setAttribute(var, locale);
             }
+            session.setAttribute(var, locale);
         }
+
         /*
         Otherwise, the session's locale attribute value won't be changed
          */

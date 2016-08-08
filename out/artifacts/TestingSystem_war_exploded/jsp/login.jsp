@@ -7,73 +7,47 @@
 <fmt:setLocale value="${language}"/>
 <fmt:bundle basename="ua/rud/testingsystem/resource/messages">
 
-    <!DOCTYPE html>
-    <html lang="${language}">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <style type="text/css">
-            table {
-                font-family: Arial;
-            }
-        </style>
-        <title><fmt:message key="login.title"/></title>
-    </head>
-
-    <body>
-    <div align="center">
-        <table width="600px">  <%-- frame="border"--%>
-            <tr>
-                <td align="left">
-                    <c:if test="${not empty sessionScope.user}">
-                        Logout
-                    </c:if>
-                </td>
-                <td align="right">
-                    <a href="controller?command=guestLogin&userlang=en">ENG</a>
-                    <a href="controller?command=guestLogin&userlang=ru">РУC</a><br>
-                </td>
-            </tr>
-            <tr align="center">
-                <td colspan="2">
-
-                    <h1><fmt:message key="login.caption"/></h1>
-
-                    <form action="controller" method="get">
-                        <input type="hidden" name="command" value="guestAuthorization">
-                        <table>
-                            <tr>
-                                <td><fmt:message key="index.login"/></td>
-                                <td><input type="text" name="login" required/></td>
-                            </tr>
-                            <tr>
-                                <td><fmt:message key="login.password"/></td>
-                                <td><input type="password" name="password" required/></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" align="center">
-                                    <fmt:message key="login.submit" var="submit"/>
-                                    <input type="submit" name="action" value="${submit}"/>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-
-                    <br/>
-                        ${errorLoginPassMessage}
-                    <br/><br/>
-                </td>
-            </tr>
-            <tr align="center">
-                <td colspan="2">
-                    <fmt:message key="login.noAccount"/>
-                    <a href="controller?command=guestRegister">
-                        <fmt:message key="login.register"/>
-                    </a>
-                </td>
-            </tr>
-        </table>
+    <%--Page caption--%>
+    <div id="center">
+        <h1><fmt:message key="login.caption"/></h1>
     </div>
-    </body>
-    </html>
+
+    <%--Login form--%>
+    <div id="left">
+        <form action="controller" method="get">
+            <input type="hidden" name="command" value="guestAuthorization">
+            <table>
+                <tr>
+                    <td><fmt:message key="index.login"/></td>
+                    <td><input type="text" name="login" required/></td>
+                </tr>
+                <tr>
+                    <td><fmt:message key="login.password"/></td>
+                    <td><input type="password" name="password" required/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <fmt:message key="login.submit" var="submit"/>
+                        <input type="submit" name="action" value="${submit}"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <%--Message--%>
+    <div id="center">
+        <br/>
+            ${errorLoginPassMessage}
+        <br/><br/>
+    </div>
+
+    <%--Registration link--%>
+    <div id="center">
+        <fmt:message key="login.noAccount"/>
+        <a href="controller?command=guestRegister">
+            <fmt:message key="login.register"/>
+        </a>
+    </div>
 
 </fmt:bundle>

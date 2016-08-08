@@ -8,6 +8,9 @@ import ua.rud.testingsystem.resource.PageManager;
 
 import javax.servlet.ServletException;
 
+/**
+ * Command to start a test
+ */
 public class StartCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {

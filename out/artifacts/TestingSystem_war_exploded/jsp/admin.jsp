@@ -7,66 +7,31 @@
 <fmt:setLocale value="${language}"/>
 <fmt:bundle basename="ua/rud/testingsystem/resource/messages">
 
-    <!DOCTYPE html>
-    <html lang="${language}">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title><fmt:message key="menu.title"/></title>
-        <style type="text/css">
-            table {
-                font-family: Arial;
-            }
-        </style>
-    </head>
-    <body>
-    <div align="center">
-        <table width="600px">  <%-- frame="border"--%>
-            <tr>
-                <td align="left">
-                    <a href="controller?command=logout"><fmt:message key="common.logout"/></a>
-                        <%--<a href="controller?command=results"> <fmt:message key="common.results"/></a>--%>
-                    <c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">
-                        <a href="controller?command=adminMenu"> <fmt:message key="common.administration"/></a>
-                    </c:if>
-                </td>
-                <td align="right">
-                    <a href="controller?command=adminMenu&userlang=en">ENG</a>
-                    <a href="controller?command=adminMenu&userlang=ru">РУC</a><br>
-                </td>
-            </tr>
-            <tr align="left">
-                <td colspan="2">
-                        <%--template--%>
-
-
-                    <div align="center">
-                        <h1><fmt:message key="admin.caption"/></h1><br/>
-                    </div>
-
-                    <div align="left">
-
-                        <p><a href="controller?command=adminEditSubjects">
-                            <fmt:message key="admin.editSubjects"/>
-                        </a></p>
-
-                        <p><a href="controller?command=adminEditTests">
-                            <fmt:message key="admin.editTests"/>
-                        </a></p>
-
-                        <br/>
-
-                        <p><a href="controller?command=menu">
-                            <fmt:message key="admin.back"/>
-                        </a></p>
-
-                    </div>
-
-                        <%--template--%>
-                </td>
-            </tr>
-        </table>
+    <%--Page caption--%>
+    <div id="center">
+        <h1><fmt:message key="admin.caption"/></h1><br/>
     </div>
-    </body>
-    </html>
+
+    <div id="left">
+
+            <%--Edit subjects link--%>
+        <p><a href="controller?command=adminEditSubjects">
+            <fmt:message key="admin.editSubjects"/>
+        </a></p>
+
+            <%--Edit tests link--%>
+        <p><a href="controller?command=adminEditTests">
+            <fmt:message key="admin.editTests"/>
+        </a></p>
+
+        <hr/>
+
+            <%--Back to main menu link--%>
+        <p><a href="controller?command=menu">
+            <fmt:message key="admin.back"/>
+        </a></p>
+
+    </div>
+
 
 </fmt:bundle>

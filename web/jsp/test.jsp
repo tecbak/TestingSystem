@@ -3,52 +3,52 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="ctg" uri="http://customtags.rud.ua" %>
 
-<c:set var="navigation" value="test"/>
+<%--<c:set var="navigation" value="test"/>--%>
 <ctg:lang var="language" param="userlang"/>
 <fmt:setLocale value="${language}"/>
 <fmt:bundle basename="ua/rud/testingsystem/resource/messages">
 
-    <!DOCTYPE html>
-    <html lang="${language}">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title><fmt:message key="menu.title"/></title>
-        <style type="text/css">
-            table {
-                font-family: Arial;
-            }
+    <%--<!DOCTYPE html>--%>
+    <%--<html lang="${language}">--%>
+    <%--<head>--%>
+        <%--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>--%>
+        <%--<title><fmt:message key="menu.title"/></title>--%>
+        <%--<style type="text/css">--%>
+            <%--table {--%>
+                <%--font-family: Arial;--%>
+            <%--}--%>
 
-            .red {
-                color: red;
-            }
+            <%--.red {--%>
+                <%--color: red;--%>
+            <%--}--%>
 
-            .black {
-                color: black;
-            }
+            <%--.black {--%>
+                <%--color: black;--%>
+            <%--}--%>
 
-            .green {
-                color: limegreen;
-            }
-        </style>
-    </head>
-    <body>
-    <div align="center">
-        <table width="600px">  <%-- frame="border"--%>
-            <tr>
-                <td align="left">
-                    <a href="controller?command=logout"><fmt:message key="common.logout"/></a>
-                    <%--<a href="controller?command=results"> <fmt:message key="common.results"/></a>--%>
-                    <c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">
-                        <a href="controller?command=adminMenu"> <fmt:message key="common.administration"/></a>
-                    </c:if>
-                </td>
-                <td align="right">
-                    <a href="controller?command=${navigation}&userlang=en">ENG</a>
-                    <a href="controller?command=${navigation}&userlang=ru">РУC</a><br>
-                </td>
-            </tr>
-            <tr align="left">
-                <td colspan="2">
+            <%--.green {--%>
+                <%--color: limegreen;--%>
+            <%--}--%>
+        <%--</style>--%>
+    <%--</head>--%>
+    <%--<body>--%>
+    <%--<div align="center">--%>
+        <%--<table width="600px">  &lt;%&ndash; frame="border"&ndash;%&gt;--%>
+            <%--<tr>--%>
+                <%--<td align="left">--%>
+                    <%--<a href="controller?command=logout"><fmt:message key="common.logout"/></a>--%>
+                    <%--&lt;%&ndash;<a href="controller?command=results"> <fmt:message key="common.results"/></a>&ndash;%&gt;--%>
+                    <%--<c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">--%>
+                        <%--<a href="controller?command=adminMenu"> <fmt:message key="common.administration"/></a>--%>
+                    <%--</c:if>--%>
+                <%--</td>--%>
+                <%--<td align="right">--%>
+                    <%--<a href="controller?command=${navigation}&userlang=en">ENG</a>--%>
+                    <%--<a href="controller?command=${navigation}&userlang=ru">РУC</a><br>--%>
+                <%--</td>--%>
+            <%--</tr>--%>
+            <%--<tr align="left">--%>
+                <%--<td colspan="2">--%>
                         <%--template--%>
                     <div align="center">
                             <%--Test caption--%>
@@ -134,11 +134,11 @@
                         </form>
                     </div>
                         <%--template--%>
-                </td>
-            </tr>
-        </table>
-    </div>
-    </body>
-    </html>
+                <%--</td>--%>
+            <%--</tr>--%>
+        <%--</table>--%>
+    <%--</div>--%>
+    <%--</body>--%>
+    <%--</html>--%>
 
 </fmt:bundle>

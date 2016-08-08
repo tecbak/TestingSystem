@@ -94,7 +94,7 @@ public class UserJdbc extends AbstractJdbc implements UserDao {
                     user.setLastName(lastName);
                     user.setRole(role);
                 }
-                if (user.getRole() == UserRole.ADMIN) {
+                if (user != null && user.getRole() == UserRole.ADMIN) {
                     logger.warn("Login admin");
                 } else {
                     logger.info("Get user " + login);

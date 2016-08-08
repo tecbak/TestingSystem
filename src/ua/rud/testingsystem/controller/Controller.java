@@ -32,6 +32,8 @@ public class Controller extends HttpServlet {
     }
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        final String frame = PageManager.getProperty("path.page.frame");
+
         HttpServletRequestWrapper requestWrapper = new HttpServletRequestWrapper(request);
 
         CommandFactory factory = CommandFactory.getInstance();
@@ -46,8 +48,9 @@ public class Controller extends HttpServlet {
         } else {
             page = PageManager.getProperty("path.page.error");
         }
+        request.getSession().setAttribute("page", page);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher(page);
+        RequestDispatcher dispatcher = request.getRequestDispatcher(frame);
         dispatcher.forward(request, response);
     }
 }

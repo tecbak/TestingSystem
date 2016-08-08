@@ -3,58 +3,58 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="ctg" uri="http://customtags.rud.ua" %>
 
-<c:set var="navigation" value="adminEditTests"/>
+<%--<c:set var="navigation" value="adminEditTests"/>--%>
 <ctg:lang var="language" param="userlang"/>
 <fmt:setLocale value="${language}"/>
 <fmt:bundle basename="ua/rud/testingsystem/resource/messages">
 
-    <!DOCTYPE html>
-    <html lang="${language}">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title><fmt:message key="menu.title"/></title>
-        <style type="text/css">
-            table {
-                font-family: Arial;
-            }
-        </style>
-    </head>
-    <body>
-    <div align="center">
-        <table width="600px">
-            <tr>
-                <td align="left">
-                        <%--Logout link--%>
-                    <a href="controller?command=logout"><fmt:message key="common.logout"/></a>
-                        <%--Administration link--%>
-                    <c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">
-                        <a href="controller?command=adminMenu"> <fmt:message key="common.administration"/></a>
-                    </c:if>
-                </td>
-                <td align="right">
-                        <%--Language links--%>
-                    <a href="controller?command=${navigation}&userlang=en">ENG</a>
-                    <a href="controller?command=${navigation}&userlang=ru">РУC</a><br>
-                </td>
-            </tr>
-            <tr align="left">
-                <td colspan="2">
+    <%--<!DOCTYPE html>--%>
+    <%--<html lang="${language}">--%>
+    <%--<head>--%>
+        <%--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>--%>
+        <%--<title><fmt:message key="menu.title"/></title>--%>
+        <%--<style type="text/css">--%>
+            <%--table {--%>
+                <%--font-family: Arial;--%>
+            <%--}--%>
+        <%--</style>--%>
+    <%--</head>--%>
+    <%--<body>--%>
+    <%--<div align="center">--%>
+        <%--<table width="600px">--%>
+            <%--<tr>--%>
+                <%--<td align="left">--%>
+                        <%--&lt;%&ndash;Logout link&ndash;%&gt;--%>
+                    <%--<a href="controller?command=logout"><fmt:message key="common.logout"/></a>--%>
+                        <%--&lt;%&ndash;Administration link&ndash;%&gt;--%>
+                    <%--<c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">--%>
+                        <%--<a href="controller?command=adminMenu"> <fmt:message key="common.administration"/></a>--%>
+                    <%--</c:if>--%>
+                <%--</td>--%>
+                <%--<td align="right">--%>
+                        <%--&lt;%&ndash;Language links&ndash;%&gt;--%>
+                    <%--<a href="controller?command=${navigation}&userlang=en">ENG</a>--%>
+                    <%--<a href="controller?command=${navigation}&userlang=ru">РУC</a><br>--%>
+                <%--</td>--%>
+            <%--</tr>--%>
+            <%--<tr align="left">--%>
+                <%--<td colspan="2">--%>
                         <%--template--%>
 
                         <%--No new test is creating--%>
                     <c:if test="${empty sessionScope.newTest}">
                         <%--Caption--%>
-                        <div align="center">
+                        <div id="center">
                             <h1><fmt:message key="editTests.caption"/></h1>
                         </div>
 
 
                         <%--Add test caption--%>
-                        <div align="center">
+                        <div id="center">
                             <h2><fmt:message key="editTests.addTest"/></h2>
                         </div>
                         <%--Add test form--%>
-                        <div align="left">
+                        <div id="left">
                             <form action="controller" method="post">
                                 <input type="hidden" name="command" value="adminAddTest"/>
 
@@ -77,11 +77,11 @@
                         </div>
                         <hr>
                         <%--Delete test caption--%>
-                        <div align="center">
+                        <div id="center">
                             <h2><fmt:message key="editTests.deleteTest"/></h2>
                         </div>
                         <%--Delete test form--%>
-                        <div align="left">
+                        <div id="left">
                             <form action="controller" method="post">
                                 <input type="hidden" name="command" value="adminDeleteTest"/>
                                 <c:forEach var="subject" items="${sessionScope.subjects}">
@@ -107,17 +107,17 @@
                         <%--New test creating--%>
                     <c:if test="${not empty sessionScope.newTest}">
 
-                        <div align="center">
+                        <div id="center">
                             <h1><fmt:message key="editTests.newTestCaption"/></h1>
                         </div>
 
                         <%--Caption of new test--%>
-                        <div align="center">
+                        <div id="center">
                             <h2><c:out value="${sessionScope.newTest.caption}"/></h2>
                         </div>
 
                         <%--Buttons save/cancel--%>
-                        <div align="center">
+                        <div id="center">
                             <fmt:message key="editTests.save" var="save"/>
                             <input type="button" class="button" value="${save}"
                                    onclick="location.href='controller?command=adminSaveTest&save=1'"/>
@@ -129,7 +129,7 @@
 
 
                         <%--Already created questions--%>
-                        <div align="left">
+                        <div id="left">
                             <c:forEach var="question" items="${sessionScope.newTest.questions}">
 
 
@@ -165,7 +165,7 @@
                         </div>
 
                         <%--Form for new question--%>
-                        <div align="left">
+                        <div id="left">
                             <form action="controller" method="post">
                                 <input type="hidden" name="command" value="adminAddQuestion"/>
                                 <h3><fmt:message key="editTests.newQuestion"/>:</h3>
@@ -206,11 +206,11 @@
                     </a></p>
 
                         <%--template--%>
-                </td>
-            </tr>
-        </table>
-    </div>
-    </body>
-    </html>
+                <%--</td>--%>
+            <%--</tr>--%>
+        <%--</table>--%>
+    <%--</div>--%>
+    <%--</body>--%>
+    <%--</html>--%>
 
 </fmt:bundle>
