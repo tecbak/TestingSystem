@@ -33,19 +33,19 @@ public class AdminAddQuestionCommand implements Command {
             /*Check if task is entered*/
             if (task == null || task.isEmpty()) {
                 Locale locale = wrapper.getSessionLanguage();
-                String message = MessageManager.getProperty("editTests.emptyTask", locale);
+                String message = MessageManager.getProperty("addTest.emptyTask", locale);
                 wrapper.setRequestAttribute("addQuestionMessage", message);
 
             /*Check if at least one answer is entered*/
             } else if (texts == null || CommonUtils.allEmpty(texts)) {
                 Locale locale = wrapper.getSessionLanguage();
-                String message = MessageManager.getProperty("editTests.emptyAnswers", locale);
+                String message = MessageManager.getProperty("addTest.emptyAnswers", locale);
                 wrapper.setRequestAttribute("addQuestionMessage", message);
 
             /*Check if at least one right answer*/
             } else if (answerIds == null || CommonUtils.allEmpty(answerIds)) {
                 Locale locale = wrapper.getSessionLanguage();
-                String message = MessageManager.getProperty("editTests.emptyRightAnswers", locale);
+                String message = MessageManager.getProperty("addTest.emptyRightAnswers", locale);
                 wrapper.setRequestAttribute("addQuestionMessage", message);
 
             /*If everything's OK - create a new question and add to the new test*/
@@ -57,7 +57,7 @@ public class AdminAddQuestionCommand implements Command {
             }
         }
 
-        return PageManager.getProperty("path.page.editTests");
+        return PageManager.getProperty("path.page.addTest");
     }
 
 }

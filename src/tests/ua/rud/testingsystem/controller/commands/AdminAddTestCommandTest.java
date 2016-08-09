@@ -26,7 +26,7 @@ import static org.mockito.Mockito.*;
 public class AdminAddTestCommandTest {
     private final RequestWrapper wrapper = mock(RequestWrapper.class);
     private final ArgumentCaptor<Object> o = ArgumentCaptor.forClass(Object.class);
-    private final String expectedPage = PageManager.getProperty("path.page.editTests");
+    private String expectedPage;
     private String actualPage;
 
 //    @Test(expected = NullPointerException.class)
@@ -77,18 +77,9 @@ public class AdminAddTestCommandTest {
         verify(wrapper).setRequestAttribute(eq("addTestMessage"), o.capture());
         String expectedMessage = MessageManager.getProperty("editTests.emptyCaption", Locale.ENGLISH);
         Assert.assertEquals(expectedMessage, o.getValue());
-    }
 
-    @org.junit.Test
-    public void executeTest() throws ServletException {
-        actualPage = new AdminAddTestCommand().execute(wrapper);
+        expectedPage = PageManager.getProperty("path.page.editTests");
 
-        /*Verify TestUtils.getNewTest is invoked*/
-        PowerMockito.verifyStatic();
-        TestUtils.getNewTest(any());
-
-        /*Verify wrapper.setSessionAttribute is invoked two times*/
-        verify(wrapper, times(2)).setSessionAttribute(any(), any());
     }
 
     @org.junit.Test
@@ -101,6 +92,24 @@ public class AdminAddTestCommandTest {
         verify(wrapper).setRequestAttribute(eq("addTestMessage"), o.capture());
         String expectedMessage = MessageManager.getProperty("editTests.noSubject", Locale.ENGLISH);
         Assert.assertEquals(expectedMessage, o.getValue());
+
+        expectedPage = PageManager.getProperty("path.page.editTests");
+
+    }
+
+    @org.junit.Test
+    public void executeTest() throws ServletException {
+        actualPage = new AdminAddTestCommand().execute(wrapper);
+
+        /*Verify TestUtils.getNewTest is invoked*/
+        PowerMockito.verifyStatic();
+        TestUtils.getNewTest(any());
+
+        /*Verify wrapper.setSessionAttribute is invoked two times*/
+        verify(wrapper, times(2)).setSessionAttribute(any(), any());
+
+        expectedPage = PageManager.getProperty("path.page.addTest");
+
     }
 
     @After

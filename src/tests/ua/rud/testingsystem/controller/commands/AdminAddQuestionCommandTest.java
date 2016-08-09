@@ -49,7 +49,7 @@ public class AdminAddQuestionCommandTest {
         page = new AdminAddQuestionCommand().execute(wrapper);
 
         Locale locale = wrapper.getSessionLanguage();
-        String message = MessageManager.getProperty("editTests.emptyTask", locale);
+        String message = MessageManager.getProperty("addTest.emptyTask", locale);
         verify(wrapper).setRequestAttribute(s.capture(), o.capture());
 
         assertEquals("addQuestionMessage", s.getValue());
@@ -66,7 +66,7 @@ public class AdminAddQuestionCommandTest {
         page = new AdminAddQuestionCommand().execute(wrapper);
 
         Locale locale = wrapper.getSessionLanguage();
-        String message = MessageManager.getProperty("editTests.emptyAnswers", locale);
+        String message = MessageManager.getProperty("addTest.emptyAnswers", locale);
         verify(wrapper).setRequestAttribute(s.capture(), o.capture());
 
         assertEquals("addQuestionMessage", s.getValue());
@@ -83,7 +83,7 @@ public class AdminAddQuestionCommandTest {
         page = new AdminAddQuestionCommand().execute(wrapper);
 
         Locale locale = wrapper.getSessionLanguage();
-        String message = MessageManager.getProperty("editTests.emptyRightAnswers", locale);
+        String message = MessageManager.getProperty("addTest.emptyRightAnswers", locale);
         verify(wrapper).setRequestAttribute(s.capture(), o.capture());
 
         assertEquals("addQuestionMessage", s.getValue());
@@ -100,7 +100,7 @@ public class AdminAddQuestionCommandTest {
 
     @After
     public void end() {
-        String testPage = PageManager.getProperty("path.page.editTests");
+        String testPage = PageManager.getProperty("path.page.addTest");
         assertEquals(page, testPage);
     }
 

@@ -17,6 +17,7 @@ public class AdminAddTestCommand implements Command {
 
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
+
         /*Get parameters from request*/
         String caption = wrapper.getRequestParameter("caption");
         String subjectId = wrapper.getRequestParameter("subjectId");
@@ -26,20 +27,21 @@ public class AdminAddTestCommand implements Command {
         if (caption == null || caption.isEmpty()) {
             String message = MessageManager.getProperty("editTests.emptyCaption", locale);
             wrapper.setRequestAttribute("addTestMessage", message);
+            return PageManager.getProperty("path.page.editTests");
+
 
             /*If no subject chosen*/
         } else if (subjectId == null || subjectId.isEmpty()) {
             String message = MessageManager.getProperty("editTests.noSubject", locale);
             wrapper.setRequestAttribute("addTestMessage", message);
+            return PageManager.getProperty("path.page.editTests");
 
             /*Everything is ok - construct new test*/
         } else {
             Test newTest = TestUtils.getNewTest(caption);
             wrapper.setSessionAttribute("newTest", newTest);
             wrapper.setSessionAttribute("subjectId", subjectId);
+            return PageManager.getProperty("path.page.addTest");
         }
-
-        return PageManager.getProperty("path.page.editTests");
     }
-
 }
