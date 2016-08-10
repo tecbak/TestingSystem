@@ -2,29 +2,165 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37df5f9e-ab7c-4818-8ce7-3225e42d12a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jsp/addTest.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/tests/ua/rud/testingsystem/controller/commands/commands.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/Новая папка.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/tests/ua/rud/testingsystem/controller/commands/commands.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/Новая папка.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/commands.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/commands.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/Новая папка.rar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_el_javax_el_api_2_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/entities/test/TestUtilsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/tags/LanguageTagTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/entities/CommonUtilsTest$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminAddTestCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminEditTestsCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminMenuCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminSaveTestCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AllIndexCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/CompleteCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/GuestLoginCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/GuestRegisterCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/GuestRegistrationCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/LogoutCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/MenuCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/StartCommandTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/entities/CommonUtilsTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/Controller.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminMenuCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminMenuCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AllIndexCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AllIndexCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AllRefreshCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/AllRefreshCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/CompleteCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/CompleteCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/GuestLoginCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/GuestLoginCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/GuestRegisterCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/GuestRegisterCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/LogoutCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/LogoutCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/MenuCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/MenuCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/StartCommand.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/commands/StartCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/filters/GuestFilter.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/controller/filters/GuestFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/UserJdbc.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/UserJdbc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/Controller.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminMenuCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminMenuCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AllIndexCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AllIndexCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AllRefreshCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AllRefreshCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/CompleteCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/CompleteCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/GuestLoginCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/GuestLoginCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/GuestRegisterCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/GuestRegisterCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/LogoutCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/LogoutCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/MenuCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/MenuCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/StartCommand.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/StartCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/filters/GuestFilter.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/filters/GuestFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/UserJdbc.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/UserJdbc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/CommonUtils.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/CommonUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/subject/Subject.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/subject/Subject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/Answer.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/Answer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/Question.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/Question.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/Test.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/TestUtils.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/test/TestUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/user/User.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/user/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/tags/LanguageTag.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/tags/LanguageTag.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommandTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminAddTestCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminAddTestCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminEditTestsCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminEditTestsCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminMenuCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminMenuCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminSaveTestCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AdminSaveTestCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AllIndexCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/AllIndexCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/CompleteCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/CompleteCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/GuestLoginCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/GuestLoginCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/GuestRegisterCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/GuestRegisterCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/GuestRegistrationCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/GuestRegistrationCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/LogoutCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/LogoutCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/MenuCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/MenuCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/StartCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/StartCommandTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/entities/CommonUtilsTest$1.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/entities/CommonUtilsTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/entities/CommonUtilsTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/entities/CommonUtilsTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/resource/config.properties" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/resource/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/jsp/editTests.jsp" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/jsp/editTests.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/resource/config.properties" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/resource/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommandTest.java" afterPath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminAddTestCommandTest.java" afterPath="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminAddTestCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.java" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/config.properties" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_ru.properties" afterPath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/jsp/editTests.jsp" afterPath="$PROJECT_DIR$/web/jsp/editTests.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestingSystem.iml" afterPath="$PROJECT_DIR$/TestingSystem.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SQL/TestingSystem.mwb" afterPath="$PROJECT_DIR$/sql/TestingSystem.mwb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SQL/insertTest.sql" afterPath="$PROJECT_DIR$/sql/insertTest.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SQL/testingsystem.sql" afterPath="$PROJECT_DIR$/sql/testingsystem.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/Command.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Command.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/CommandFactory.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CommandFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Controller.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/RequestWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/RequestWrapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminMenuCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminMenuCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AllIndexCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AllIndexCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AllRefreshCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AllRefreshCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/CompleteCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/CompleteCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestLoginCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/GuestLoginCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestRegisterCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/GuestRegisterCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/LogoutCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/LogoutCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/MenuCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/MenuCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/StartCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/StartCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/filters/DirectAccessFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/DirectAccessFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/filters/EncodingFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/EncodingFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/filters/GuestFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/GuestFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/SubjectDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/SubjectDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/TestDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/TestDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/UserDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/factory/DaoFactory.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/factory/DaoFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/factory/JdbcFactory.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/factory/JdbcFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/AbstractJdbc.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/AbstractJdbc.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/UserJdbc.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/UserJdbc.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/CommonUtils.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/CommonUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/subject/Subject.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/Subject.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/subject/SubjectUtils.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/SubjectUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Answer.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/Answer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Question.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/Question.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/Test.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/Test.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/TestUtils.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/TestUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/User.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/user/User.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/UserRole.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/user/UserRole.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/UserUtils.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/user/UserUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/MessageManager.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/managers/MessageManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/PageManager.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/managers/PageManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/SqlManager.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/managers/SqlManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/config.properties" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/messages_en.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_ru.properties" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/messages_ru.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/sql.properties" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/sql.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ua/rud/testingsystem/tags/LanguageTag.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/tags/LanguageTag.java" />
     </list>
     <ignored path="TestingSystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,6 +202,9 @@
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminAddQuestionCommandTest_and_11_more.coverage" NAME="AdminAddQuestionCommandTest and 11 more Coverage Results" MODIFIED="1470259246894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TestingSystem$LanguageTagTest.coverage" NAME="LanguageTagTest Coverage Results" MODIFIED="1470787499857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.tags.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminEditSubjectsCommandTest_executeTest.coverage" NAME="AdminEditSubjectsCommandTest.executeTest Coverage Results" MODIFIED="1470218888210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
@@ -86,6 +225,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$CompleteCommandTest_executeTest.coverage" NAME="CompleteCommandTest.executeTest Coverage Results" MODIFIED="1470177166738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$CommonUtilsTest.coverage" NAME="CommonUtilsTest Coverage Results" MODIFIED="1470778840274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.entities.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminDeleteSubjectCommandTest_deleteSubject.coverage" NAME="AdminDeleteSubjectCommandTest.deleteSubject Coverage Results" MODIFIED="1470001634867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
@@ -126,6 +268,9 @@
     <SUITE FILE_PATH="coverage/TestingSystem$GuestAuthorizationCommandTest.coverage" NAME="GuestAuthorizationCommandTest Coverage Results" MODIFIED="1470349840034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$LanguageTagTest_onLanguageDefinedInParam_setNewLanguage.coverage" NAME="LanguageTagTest.onLanguageDefinedInParam_setNewLanguage Coverage Results" MODIFIED="1470785239863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.tags.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminAddQuestionCommandTest_and_4_more.coverage" NAME="AdminAddQuestionCommandTest and 4 more Coverage Results" MODIFIED="1470170663328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TestingSystem$AdminDeleteSubjectCommandTest_onSubjectIdNull_ReportAboutIt.coverage" NAME="AdminDeleteSubjectCommandTest.onSubjectIdNull_ReportAboutIt Coverage Results" MODIFIED="1470004050503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
@@ -163,10 +308,10 @@
     <SUITE FILE_PATH="coverage/TestingSystem$AdminSaveSubjectCommandTest.coverage" NAME="AdminSaveSubjectCommandTest Coverage Results" MODIFIED="1470258869678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$All_in_TestingSystem.coverage" NAME="All in TestingSystem Coverage Results" MODIFIED="1470338214015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TestingSystem$All_in_TestingSystem.coverage" NAME="All in TestingSystem Coverage Results" MODIFIED="1470787641593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageOptionsProvider">
-    <option name="myAddOrReplace" value="1" />
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -184,75 +329,84 @@
     <favorites_list name="TestingSystem" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="frame.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/frame.jsp">
+    <leaf>
+      <file leaf-file-name="LanguageTagTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/tags/LanguageTagTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-493">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="390">
+              <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/config.properties">
+      <file leaf-file-name="DirectAccessFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/DirectAccessFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addTest.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/jsp/addTest.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editTests.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/editTests.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-347">
-              <caret line="38" column="69" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages_en.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties">
-          <provider editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminAddQuestionCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="59" column="57" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="57" />
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminAddQuestionCommandTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommandTest.java">
+      <file leaf-file-name="EncodingFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/EncodingFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GuestFilter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/GuestFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Object.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Object.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Matchers.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/Matchers.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="175" column="53" selection-start-line="175" selection-start-column="53" selection-end-line="175" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HandyReturnValues.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/progress/HandyReturnValues.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/managers/MessageManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -268,9 +422,9 @@
         <option value="Tag Library Descriptor" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -284,42 +438,11 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/CommandFactory.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CommandFactory.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/AbstractJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/factory/SubjectJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/SubjectJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminSaveTestCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/UserUtils.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/GuestLoginCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/GuestRegisterCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/UserUtils.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/LogoutCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/StartCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/TestCommand.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/TestCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/SubjectUtils.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/MenuCommand.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/MenuCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/Subject/SubjectUtils.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/subject/SubjectUtils.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/GuestRegistrationCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/entities/CommonUtils.java" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/entities/CommonUtilsTest.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AllRefresh.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/UserJdbc.java" />
-        <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/tags/LanguageTag.java" />
-        <option value="$PROJECT_DIR$/web/jsp/test.jsp" />
         <option value="$PROJECT_DIR$/web/jsp/frame.jsp" />
         <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AllRefreshCommand.java" />
         <option value="$PROJECT_DIR$/web/jsp/errorHandler.jsp" />
@@ -340,6 +463,37 @@
         <option value="$PROJECT_DIR$/web/jsp/editTests.jsp" />
         <option value="$PROJECT_DIR$/web/jsp/addTest.jsp" />
         <option value="$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/managers/SqlManager.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AdminMenuCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AdminAddTestCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AdminEditTestsCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AdminSaveTestCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AllIndexCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/CompleteCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestLoginCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestRegisterCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestRegistrationCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/LogoutCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/MenuCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/StartCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/entities/CommonUtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/TestUtils.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/entities/test/TestUtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/Answer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/user/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/Subject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/tags/LanguageTag.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/tags/LanguageTagTest.java" />
       </list>
     </option>
   </component>
@@ -587,6 +741,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -633,43 +789,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -695,247 +823,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'messages'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestingSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -965,11 +857,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="testingsystem" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="testingsystem" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -987,26 +879,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="testingsystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1016,12 +902,12 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="D:/Frameworks/powermock-module-junit4-rule-1.6.5.jar!/" />
+    <property name="last_opened_file_path" value="D:/Frameworks/javax.servlet-3.0.0.v201112011016.jar!/" />
     <property name="SearchEverywhereHistoryKey" value="Au&#9;FILE&#9;file://D:/Java Workspace/EPAM/TestingSystem/src/ua/rud/testingsystem/dao/jdbc/AuthorizationJDBC.java" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="full.screen.before.presentation.mode" value="false" />
@@ -1035,6 +921,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ua.rud.testingsystem.tags" />
+      <recent name="ua.rud.testingsystem.entities.test" />
       <recent name="ua.rud.testingsystem.entities" />
       <recent name="ua.rud.testingsystem.controller.commands" />
     </key>
@@ -1057,26 +945,52 @@
       <recent name="D:\Java Workspace\EPAM\TestingSystem\src\ua\rud\testingsystem\resource" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java Workspace\EPAM\TestingSystem\src\main" />
+      <recent name="D:\Java Workspace\EPAM\TestingSystem\src\tests\java" />
+      <recent name="D:\Java Workspace\EPAM\TestingSystem\src\main\java" />
       <recent name="D:\Java Workspace\EPAM\TestingSystem\test\ua.rud.testingsystem\controller.commands" />
       <recent name="D:\Java Workspace\EPAM\TestingSystem\src\ua\rud\testingsystem\resource" />
-      <recent name="D:\Java Workspace\EPAM\TestingSystem" />
-      <recent name="D:\Java Workspace\EPAM\TestingSystem\web\WEB-INF" />
-      <recent name="D:\Java Workspace\EPAM\TestingSystem\src" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.0.M4">
-    <configuration default="false" name="GuestAuthorizationCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="LanguageTagTest.onLanguageDefinedInParam_setNewLanguage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ua.rud.testingsystem.controller.commands.*" />
+          <option name="PATTERN" value="ua.rud.testingsystem.tags.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="TestingSystem" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.controller.commands" />
-      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.controller.commands.GuestAuthorizationCommandTest" />
+      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.tags" />
+      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.tags.LanguageTagTest" />
+      <option name="METHOD_NAME" value="onLanguageDefinedInParam_setNewLanguage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="LanguageTagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.rud.testingsystem.tags.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestingSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.tags" />
+      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.tags.LanguageTagTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1091,17 +1005,64 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ua.rud.testingsystem.controller.commands in TestingSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="LanguageTagTest.onSessionLanguageNotDefinedYet_setRequestLanguage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ua.rud.testingsystem.controller.commands.*" />
+          <option name="PATTERN" value="ua.rud.testingsystem.tags.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="TestingSystem" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.controller.commands" />
+      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.tags" />
+      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.tags.LanguageTagTest" />
+      <option name="METHOD_NAME" value="onSessionLanguageNotDefinedYet_setRequestLanguage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="LanguageTagTest.onNewLanguageNotDefined_andSessionLanguageDefined_doNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.rud.testingsystem.tags.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestingSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.tags" />
+      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.tags.LanguageTagTest" />
+      <option name="METHOD_NAME" value="onNewLanguageNotDefined_andSessionLanguageDefined_doNothing" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in TestingSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TestingSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -1116,97 +1077,6 @@
       <envs />
       <patterns />
       <method />
-    </configuration>
-    <configuration default="false" name="CommonUtilsTest.stringArrayToIntListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ua.rud.testingsystem.entities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TestingSystem" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.entities" />
-      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.entities.CommonUtilsTest" />
-      <option name="METHOD_NAME" value="stringArrayToIntListTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CommonUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ua.rud.testingsystem.entities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TestingSystem" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.entities" />
-      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.entities.CommonUtilsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="frame.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M4" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/jsp/frame.jsp" />
-      <deployment>
-        <artifact name="TestingSystem:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="frame_jsp_TestingSystem" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="TestingSystem:war exploded" />
-        </option>
-      </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
@@ -1714,19 +1584,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 9.0.0.M4" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GuestAuthorizationCommandTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ua.rud.testingsystem.controller.commands in TestingSystem" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CommonUtilsTest.stringArrayToIntListTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CommonUtilsTest" />
-      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.frame.jsp" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LanguageTagTest.onLanguageDefinedInParam_setNewLanguage" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LanguageTagTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LanguageTagTest.onSessionLanguageNotDefinedYet_setRequestLanguage" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LanguageTagTest.onNewLanguageNotDefined_andSessionLanguageDefined_doNothing" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in TestingSystem" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ua.rud.testingsystem.controller.commands in TestingSystem" />
-        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.frame.jsp" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CommonUtilsTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CommonUtilsTest.stringArrayToIntListTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.GuestAuthorizationCommandTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in TestingSystem" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LanguageTagTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LanguageTagTest.onNewLanguageNotDefined_andSessionLanguageDefined_doNothing" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LanguageTagTest.onSessionLanguageNotDefinedYet_setRequestLanguage" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LanguageTagTest.onLanguageDefinedInParam_setNewLanguage" />
       </list>
     </recent_temporary>
   </component>
@@ -1793,43 +1663,44 @@
       <workItem from="1470349923581" duration="3958000" />
       <workItem from="1470609173416" duration="19087000" />
       <workItem from="1470699001016" duration="4920000" />
+      <workItem from="1470769951805" duration="15720000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommonUtilsTest - 2016.08.08 at 02h 07m 10s.xml">
-      <configuration name="CommonUtilsTest" configurationId="JUnit" />
+    <history-entry file="All_in_TestingSystem - 2016.08.10 at 03h 06m 14s.xml">
+      <configuration name="All in TestingSystem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommonUtilsTest - 2016.08.08 at 02h 07m 58s.xml">
-      <configuration name="CommonUtilsTest" configurationId="JUnit" />
+    <history-entry file="All_in_TestingSystem - 2016.08.10 at 03h 07m 40s.xml">
+      <configuration name="All in TestingSystem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommonUtilsTest_stringArrayToIntListTest - 2016.08.08 at 01h 58m 23s.xml">
-      <configuration name="CommonUtilsTest.stringArrayToIntListTest" configurationId="JUnit" />
+    <history-entry file="LanguageTagTest - 2016.08.10 at 02h 48m 00s.xml">
+      <configuration name="LanguageTagTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommonUtilsTest_stringArrayToIntListTest - 2016.08.08 at 01h 59m 14s.xml">
-      <configuration name="CommonUtilsTest.stringArrayToIntListTest" configurationId="JUnit" />
+    <history-entry file="LanguageTagTest - 2016.08.10 at 02h 55m 30s.xml">
+      <configuration name="LanguageTagTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommonUtilsTest_stringArrayToIntListTest - 2016.08.08 at 02h 00m 31s.xml">
-      <configuration name="CommonUtilsTest.stringArrayToIntListTest" configurationId="JUnit" />
+    <history-entry file="LanguageTagTest - 2016.08.10 at 03h 05m 01s.xml">
+      <configuration name="LanguageTagTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CommonUtilsTest_stringArrayToIntListTest - 2016.08.08 at 02h 02m 42s.xml">
-      <configuration name="CommonUtilsTest.stringArrayToIntListTest" configurationId="JUnit" />
+    <history-entry file="LanguageTagTest_onLanguageDefinedInParam_setNewLanguage - 2016.08.10 at 02h 56m 10s.xml">
+      <configuration name="LanguageTagTest.onLanguageDefinedInParam_setNewLanguage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ua_rud_testingsystem_controller_commands_in_TestingSystem - 2016.08.09 at 02h 09m 54s.xml">
-      <configuration name="ua.rud.testingsystem.controller.commands in TestingSystem" configurationId="JUnit" />
+    <history-entry file="LanguageTagTest_onLanguageDefinedInParam_setNewLanguage - 2016.08.10 at 02h 56m 36s.xml">
+      <configuration name="LanguageTagTest.onLanguageDefinedInParam_setNewLanguage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ua_rud_testingsystem_controller_commands_in_TestingSystem - 2016.08.09 at 02h 18m 06s.xml">
-      <configuration name="ua.rud.testingsystem.controller.commands in TestingSystem" configurationId="JUnit" />
+    <history-entry file="LanguageTagTest_onNewLanguageNotDefined_andSessionLanguageDefined_doNothing - 2016.08.10 at 03h 00m 30s.xml">
+      <configuration name="LanguageTagTest.onNewLanguageNotDefined_andSessionLanguageDefined_doNothing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ua_rud_testingsystem_controller_commands_in_TestingSystem - 2016.08.09 at 02h 50m 34s.xml">
-      <configuration name="ua.rud.testingsystem.controller.commands in TestingSystem" configurationId="JUnit" />
+    <history-entry file="LanguageTagTest_onNewLanguageNotDefined_andSessionLanguageDefined_doNothing - 2016.08.10 at 03h 01m 58s.xml">
+      <configuration name="LanguageTagTest.onNewLanguageNotDefined_andSessionLanguageDefined_doNothing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ua_rud_testingsystem_controller_commands_in_TestingSystem - 2016.08.09 at 02h 53m 12s.xml">
-      <configuration name="ua.rud.testingsystem.controller.commands in TestingSystem" configurationId="JUnit" />
+    <history-entry file="LanguageTagTest_onSessionLanguageNotDefinedYet_setRequestLanguage - 2016.08.10 at 02h 56m 40s.xml">
+      <configuration name="LanguageTagTest.onSessionLanguageNotDefinedYet_setRequestLanguage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="580074000" />
+    <option name="totallyTimeSpent" value="595794000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1842,7 +1713,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1853,13 +1724,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50292826" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3170347" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12298682" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.362776" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26647145" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25622255" sideWeight="0.49369085" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32796487" sideWeight="0.49369085" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21815519" sideWeight="0.50630915" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18008785" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1876,11 +1747,11 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50292826" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18008785" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21815519" sideWeight="0.50630915" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1891,11 +1762,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35015774" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3643533" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294271" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26647145" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30283913" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21815519" sideWeight="0.49369085" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.49369085" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21815519" sideWeight="0.50630915" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21815519" sideWeight="0.50630915" order="5" side_tool="true" content_ui="tabs" />
@@ -1932,30 +1804,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ua/rud/testingsystem/tags/LanguageTag.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="92" />
+      <option name="time" value="93" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1964,405 +1816,449 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/StartCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/MenuCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
-          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="79" column="68" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/subject/Subject.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestLoginCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/subject/SubjectUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestRegisterCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/test/TestUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestRegistrationCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="130" column="4" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
+        <state relative-caret-position="0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/GuestRegistrationCommandTest.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/LogoutCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/template.jsp" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="312" column="24" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
-          <folding>
-            <element signature="e#10218#10219#0" expanded="true" />
-            <element signature="e#10276#10277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ua/rud/testingsystem/entities/CommonUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/CommonUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/StartCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/CommandFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/MenuCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/dao/jdbc/UserJdbc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="99" column="53" selection-start-line="99" selection-start-column="53" selection-end-line="99" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        <state relative-caret-position="0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/entities/user/UserUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/apache-tomcat-9.0.0.M4/lib/servlet-api.jar!/javax/servlet/ServletRequest.class">
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/CompleteCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/tags/LanguageTag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/RequestWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AllIndexCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-          <folding>
-            <element signature="e#1053#1054#0" expanded="false" />
-            <element signature="e#1099#1100#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/filters/DirectAccessFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="816">
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="427">
           <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/admin.jsp">
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/entities/CommonUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/errorHandler.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/editSubjects.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/StartCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/TestCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/MenuCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestRegisterCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/GuestLoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/CompleteCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AllIndexCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AllErrorCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminMenuCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ua/rud/testingsystem/controller/commands/AdminAddTestCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state relative-caret-position="-535">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1125#1175#0" expanded="false" />
+            <element signature="e#0#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AllRefreshCommand.java">
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/TestDao.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminEditTestsCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#790#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminEditSubjectsCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/CompleteCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/GuestRegisterCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/LogoutCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#636#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/MenuCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/StartCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1066#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestingSystem.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/frame.jsp">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
+        <state relative-caret-position="368">
+          <caret line="283" column="12" selection-start-line="283" selection-start-column="12" selection-end-line="283" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/entities/CommonUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/user/UserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/TestUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="121" column="40" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/entities/test/TestUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/SubjectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1009">
           <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddTestCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/user/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="-238">
+          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="-128">
+          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/editTests.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347">
-          <caret line="38" column="69" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="69" />
+        <state relative-caret-position="215">
+          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/resource/messages_en.properties">
-      <provider editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-364">
+          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+          <folding>
+            <element signature="e#2389#2390#0" expanded="true" />
+            <element signature="e#2438#2439#0" expanded="true" />
+            <element signature="e#2481#2482#0" expanded="true" />
+            <element signature="e#2522#2523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-261">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-363">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/tags/LanguageTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/apache-tomcat-9.0.0.M4/lib/jsp-api.jar!/javax/servlet/jsp/tagext/TagSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="89" column="42" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/apache-tomcat-9.0.0.M4/lib/servlet-api.jar!/javax/servlet/http/HttpSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/apache-tomcat-9.0.0.M4/lib/jsp-api.jar!/javax/servlet/jsp/tagext/Tag.class">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="59" column="57" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="57" />
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/addTest.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/managers/MessageManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/internal/progress/HandyReturnValues.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/org/mockito/Matchers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="175" column="53" selection-start-line="175" selection-start-column="53" selection-end-line="175" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/EncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/DirectAccessFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/tags/LanguageTagTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/GuestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -2446,7 +2342,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.powermock:powermock-module-junit4:1.6.5</last-edited>
+          <last-edited>javax.el:javax.el-api:2.2.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
