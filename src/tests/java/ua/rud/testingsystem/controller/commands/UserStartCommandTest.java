@@ -18,7 +18,7 @@ import static org.mockito.Mockito.*;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(TestUtils.class)
-public class StartCommandTest {
+public class UserStartCommandTest {
 
     private RequestWrapper wrapper = mock(RequestWrapper.class);
 
@@ -34,7 +34,7 @@ public class StartCommandTest {
 
         /*Verify page to be returned*/
         String expectedPage = PageManager.getProperty("path.page.menu");
-        String actualPage = new StartCommand().execute(wrapper);
+        String actualPage = new UserStartCommand().execute(wrapper);
         Assert.assertEquals(expectedPage, actualPage);
     }
 
@@ -54,7 +54,7 @@ public class StartCommandTest {
 
         /*Verify page to be returned*/
         String expectedPage = PageManager.getProperty("path.page.test");
-        String actualPage = new StartCommand().execute(wrapper);
+        String actualPage = new UserStartCommand().execute(wrapper);
         Assert.assertEquals(expectedPage, actualPage);
 
         /*Verify TestUtils.getTest is invoked*/

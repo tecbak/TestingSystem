@@ -21,6 +21,7 @@
     <div id="left">
         <form action="controller" method="post">
             <input type="hidden" name="command" value="adminAddTest"/>
+            <input type="hidden" name="token" value="${sessionScope.token}"/>
 
                 <%--List of subjects--%>
             <h3><fmt:message key="editTests.chooseSubject"/>:</h3>
@@ -48,6 +49,7 @@
     <div id="left">
         <form action="controller" method="post">
             <input type="hidden" name="command" value="adminDeleteTest"/>
+            <input type="hidden" name="token" value="${sessionScope.token}"/>
             <c:forEach var="subject" items="${sessionScope.subjects}">
                 <h3><c:out value="${subject.name}"/></h3>
                 <%--Output of tests--%>
@@ -67,7 +69,7 @@
 
     <hr>
 
-    <p><a href="controller?command=adminMenu">
+    <p><a href="controller?command=adminMenu&token=${sessionScope.token}">
         <fmt:message key="editTests.back"/>
     </a></p>
 

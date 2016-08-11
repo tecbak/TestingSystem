@@ -21,6 +21,7 @@
     <div id="left">
         <form action="controller" method="post">
             <input type="hidden" name="command" value="adminSaveSubject"/>
+            <input type="hidden" name="token" value="${sessionScope.token}"/>
             <h3><fmt:message key="editSubjects.newSubject"/>:</h3>
             <input type="text" name="name" value=""/>
             <fmt:message var="add" key="editSubjects.add"/>
@@ -40,6 +41,7 @@
     <div id="left">
         <form action="controller" method="post">
             <input type="hidden" name="command" value="adminDeleteSubject">
+            <input type="hidden" name="token" value="${sessionScope.token}"/>
             <c:forEach var="subject" items="${sessionScope.subjects}">
                 <p>
                     <input type="checkbox" name="subjectId" value="${subject.id}"/>
@@ -55,7 +57,7 @@
 
     <%--Back to admin menu link--%>
     <div id="left">
-        <p><a href="controller?command=adminMenu">
+        <p><a href="controller?command=adminMenu&token=${sessionScope.token}">
             <fmt:message key="editSubjects.back"/>
         </a></p>
     </div>

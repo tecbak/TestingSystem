@@ -17,7 +17,7 @@ import javax.servlet.ServletException;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(TestUtils.class)
-public class CompleteCommandTest {
+public class UserCompleteCommandTest {
     private RequestWrapper wrapper;
 
 
@@ -43,7 +43,7 @@ public class CompleteCommandTest {
         Mockito.when(wrapper.getSessionAttribute("test")).thenReturn(null);
 
         String expectedPage = PageManager.getProperty("path.page.menu");
-        String actualPage = new CompleteCommand().execute(wrapper);
+        String actualPage = new UserCompleteCommand().execute(wrapper);
 
         Assert.assertEquals(expectedPage, actualPage);
     }
@@ -53,7 +53,7 @@ public class CompleteCommandTest {
         Mockito.when(wrapper.getSessionAttribute("id")).thenReturn(null);
 
         String expectedPage = PageManager.getProperty("path.page.test");
-        String actualPage = new CompleteCommand().execute(wrapper);
+        String actualPage = new UserCompleteCommand().execute(wrapper);
 
         Assert.assertEquals(expectedPage, actualPage);
     }
@@ -63,7 +63,7 @@ public class CompleteCommandTest {
         Mockito.when(wrapper.getRequestParameterValues("user")).thenReturn(null);
 
         String expectedPage = PageManager.getProperty("path.page.test");
-        String actualPage = new CompleteCommand().execute(wrapper);
+        String actualPage = new UserCompleteCommand().execute(wrapper);
 
         Assert.assertEquals(expectedPage, actualPage);
     }
@@ -71,7 +71,7 @@ public class CompleteCommandTest {
     @Test
     public void executeTest() throws ServletException {
         String expectedPage = PageManager.getProperty("path.page.test");
-        String actualPage = new CompleteCommand().execute(wrapper);
+        String actualPage = new UserCompleteCommand().execute(wrapper);
 
         // TODO: 03.08.2016 verify invoking static method
         /*Verify that method TestUtils.addResult is invoked*/

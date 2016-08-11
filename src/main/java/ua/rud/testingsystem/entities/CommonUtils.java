@@ -1,5 +1,6 @@
 package ua.rud.testingsystem.entities;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,6 +8,8 @@ import java.util.List;
  * Contains common util methods
  */
 public final class CommonUtils {
+    private final static SecureRandom rnd = new SecureRandom();
+
     private CommonUtils() {
     }
 
@@ -65,5 +68,9 @@ public final class CommonUtils {
             }
         }
         return true;
+    }
+
+    public static long getRandomLong() {
+        return rnd.nextLong();
     }
 }

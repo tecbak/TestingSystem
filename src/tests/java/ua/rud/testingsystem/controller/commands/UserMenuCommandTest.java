@@ -21,7 +21,7 @@ import static org.mockito.Mockito.*;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(SubjectUtils.class)
-public class MenuCommandTest {
+public class UserMenuCommandTest {
     private RequestWrapper wrapper = mock(RequestWrapper.class);
 
     @Before
@@ -48,7 +48,7 @@ public class MenuCommandTest {
     @Test
     public void executeTest() throws ServletException {
         String expectedPage = PageManager.getProperty("path.page.menu");
-        String actualPage = new MenuCommand().execute(wrapper);
+        String actualPage = new UserMenuCommand().execute(wrapper);
 
         /*Verify setSessionAttribute is twice invoked (for subjects and results)*/
         verify(wrapper, times(2)).setSessionAttribute(any(), any());

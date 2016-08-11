@@ -34,6 +34,13 @@ public class Controller extends HttpServlet {
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         final String frame = PageManager.getProperty("path.page.frame");
 
+        System.out.println(request.getSession(false).toString()); // TODO: 11.08.2016 sout
+
+//        if (request.getSession(false) == null) {
+//
+//            System.out.println("afsdgfsdfgsdgsgs");
+//        }
+
         HttpServletRequestWrapper requestWrapper = new HttpServletRequestWrapper(request);
 
         CommandFactory factory = CommandFactory.getInstance();

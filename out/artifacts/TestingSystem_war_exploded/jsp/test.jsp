@@ -62,7 +62,7 @@
 
                     <div align="left">
                         <form action="controller" method="post">
-
+                        <input type="hidden" name="token" value="${sessionScope.token}"/>
 
                             <c:forEach var="question" items="${sessionScope.test.questions}">
                                 <p>
@@ -122,12 +122,12 @@
                             <c:choose>
                                 <c:when test="${!sessionScope.test.completed}">
                                     <fmt:message key="test.complete" var="complete"/>
-                                    <input type="hidden" name="command" value="complete">
+                                    <input type="hidden" name="command" value="userComplete">
                                     <input type="submit" name="select" value="${complete}">
                                 </c:when>
                                 <c:otherwise>
                                     <fmt:message key="test.menu" var="menu"/>
-                                    <input type="hidden" name="command" value="menu">
+                                    <input type="hidden" name="command" value="userMenu">
                                     <input type="submit" name="back" value="${menu}">
                                 </c:otherwise>
                             </c:choose>

@@ -14,8 +14,10 @@
 
     <%--Menu--%>
     <div id="left">
-        <form action="controller" method="get">
-            <input type="hidden" name="command" value="start">
+        <form action="controller" method="post">
+            <input type="hidden" name="command" value="userStart">
+            <input type="hidden" name="token" value="${sessionScope.token}"/>
+
 
             <c:forEach var="subject" items="${sessionScope.subjects}">
                 <%--Subject name--%>

@@ -12,7 +12,7 @@ import javax.servlet.ServletException;
 /**
  * Command to submit answers for a test
  */
-public class CompleteCommand implements Command {
+public class UserCompleteCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
         Object testObj = wrapper.getSessionAttribute("test");

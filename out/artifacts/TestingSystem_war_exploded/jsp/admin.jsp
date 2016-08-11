@@ -15,19 +15,19 @@
     <div id="left">
 
             <%--Edit subjects link--%>
-        <p><a href="controller?command=adminEditSubjects">
+        <p><a href="controller?command=adminEditSubjects&token=${sessionScope.token}">
             <fmt:message key="admin.editSubjects"/>
         </a></p>
 
             <%--Edit tests link--%>
-        <p><a href="controller?command=adminEditTests">
+        <p><a href="controller?command=adminEditTests&token=${sessionScope.token}">
             <fmt:message key="admin.editTests"/>
         </a></p>
 
         <hr/>
 
             <%--Back to main menu link--%>
-        <p><a href="controller?command=menu">
+        <p><a href="controller?command=userMenu&token=${sessionScope.token}">
             <fmt:message key="admin.back"/>
         </a></p>
 

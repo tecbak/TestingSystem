@@ -11,7 +11,7 @@ import javax.servlet.ServletException;
 /**
  * Command to start a test
  */
-public class StartCommand implements Command {
+public class UserStartCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
         String requestParameter = wrapper.getRequestParameter("id");

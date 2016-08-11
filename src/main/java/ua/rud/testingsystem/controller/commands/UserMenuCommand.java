@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * Command to enter to main menu
  */
-public class MenuCommand implements Command {
+public class UserMenuCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
         /*Extract list of subjects from database*/

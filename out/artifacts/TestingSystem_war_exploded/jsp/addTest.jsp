@@ -21,10 +21,10 @@
     <div id="center">
         <fmt:message key="addTest.save" var="save"/>
         <input type="button" class="button" value="${save}"
-               onclick="location.href='controller?command=adminSaveTest&save=1'"/>
+               onclick="location.href='controller?command=adminSaveTest&save=1&token=${sessionScope.token}'"/>
         <fmt:message key="addTest.cancel" var="cancel"/>
         <input type="button" class="button" value="${cancel}"
-               onclick="location.href='controller?command=adminSaveTest&save=0'"/><br/>
+               onclick="location.href='controller?command=adminSaveTest&save=0&token=${sessionScope.token}'"/><br/>
             ${saveTestMessage}
     </div>
 
@@ -62,6 +62,7 @@
     <div id="left">
         <form action="controller" method="post">
             <input type="hidden" name="command" value="adminAddQuestion"/>
+            <input type="hidden" name="token" value="${sessionScope.token}"/>
 
                 <%--"New question" caption--%>
             <h3><fmt:message key="addTest.newQuestion"/>:</h3>

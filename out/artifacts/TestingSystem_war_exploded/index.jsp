@@ -5,6 +5,12 @@
 <fmt:bundle basename="ua/rud/testingsystem/resource/config" prefix="path.page.">
 
     <c:choose>
+        <c:when test="${empty sessionScope.token}">
+
+        </c:when>
+    </c:choose>
+
+    <c:choose>
         <c:when test="${empty sessionScope.user}">
             <%--Load login page if user isn't authorized--%>
             <fmt:message var="page" key="login" scope="session"/>

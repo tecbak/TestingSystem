@@ -14,7 +14,7 @@
 
     <%--Login form--%>
     <div id="left">
-        <form action="controller" method="get">
+        <form action="controller" method="post">
             <input type="hidden" name="command" value="guestAuthorization">
             <table>
                 <tr>
