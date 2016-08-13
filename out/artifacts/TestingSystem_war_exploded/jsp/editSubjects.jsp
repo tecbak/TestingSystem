@@ -57,7 +57,7 @@
 
     <%--Back to admin menu link--%>
     <div id="left">
-        <p><a href="controller?command=adminMenu&token=${sessionScope.token}">
+        <p><a href="controller?command=adminMenu">
             <fmt:message key="editSubjects.back"/>
         </a></p>
     </div>

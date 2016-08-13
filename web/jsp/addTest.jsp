@@ -19,12 +19,29 @@
 
     <%--Buttons save/cancel--%>
     <div id="center">
-        <fmt:message key="addTest.save" var="save"/>
-        <input type="button" class="button" value="${save}"
-               onclick="location.href='controller?command=adminSaveTest&save=1&token=${sessionScope.token}'"/>
-        <fmt:message key="addTest.cancel" var="cancel"/>
-        <input type="button" class="button" value="${cancel}"
-               onclick="location.href='controller?command=adminSaveTest&save=0&token=${sessionScope.token}'"/><br/>
+        <table>
+            <tr>
+                <td>
+                    <fmt:message key="addTest.save" var="save"/>
+                    <form action="controller" method="post">
+                        <input type="hidden" name="command" value="adminSaveTest"/>
+                        <input type="hidden" name="save" value="1"/>
+                        <input type="hidden" name="token" value="${sessionScope.token}"/>
+                        <input type="submit" name="save" value="${save}">
+                    </form>
+                </td>
+                <td>
+                    <fmt:message key="addTest.cancel" var="cancel"/>
+                    <form action="controller" method="post">
+                        <input type="hidden" name="command" value="adminSaveTest"/>
+                        <input type="hidden" name="save" value="0"/>
+                        <input type="hidden" name="token" value="${sessionScope.token}"/>
+                        <input type="submit" name="cancel" value="${cancel}">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br/>
             ${saveTestMessage}
     </div>
 

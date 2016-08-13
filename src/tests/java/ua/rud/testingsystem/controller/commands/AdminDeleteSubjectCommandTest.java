@@ -33,7 +33,6 @@ public class AdminDeleteSubjectCommandTest {
     public void setUp() throws Exception {
         when(wrapper.getSessionLanguage()).thenReturn(Locale.ENGLISH);
         when(wrapper.getRequestParameterValues("subjectId")).thenReturn(new String[]{"100"});
-
     }
 
     @Test
@@ -45,15 +44,11 @@ public class AdminDeleteSubjectCommandTest {
         ArgumentCaptor<String> s = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<String> o = ArgumentCaptor.forClass(String.class);
 
-//        replayAll();
         page = new AdminDeleteSubjectCommand().execute(wrapper);
-//        verifyAll();
 
-        verify(wrapper).setRequestAttribute(s.capture(), o.capture());
-
-
+        /*Verify message*/
         String message = MessageManager.getProperty("editSubjects.noSubjectSelected", Locale.ENGLISH);
-
+        verify(wrapper).setRequestAttribute(s.capture(), o.capture());
         assertEquals("deleteSubjectMessage", s.getValue());
         assertEquals(message, o.getValue());
     }
@@ -69,19 +64,12 @@ public class AdminDeleteSubjectCommandTest {
         PowerMockito.doReturn(new ArrayList<>()).when(SubjectUtils.class);
         SubjectUtils.getSubjects();
 
-//        replayAll();
         page = new AdminDeleteSubjectCommand().execute(wrapper);
-//        verifyAll();
-
-
     }
 
 
     @After
     public void tearDown() throws Exception {
-
-
         assertEquals(page, PageManager.getProperty("path.page.editSubjects"));
     }
-
 }

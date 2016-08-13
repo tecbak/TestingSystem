@@ -20,7 +20,6 @@ import javax.servlet.ServletException;
 public class UserCompleteCommandTest {
     private RequestWrapper wrapper;
 
-
     @Before
     public void setUp()  {
         /*Wrapper standard behaviour*/
@@ -80,5 +79,4 @@ public class UserCompleteCommandTest {
 
         Assert.assertEquals(expectedPage, actualPage);
     }
-
 }

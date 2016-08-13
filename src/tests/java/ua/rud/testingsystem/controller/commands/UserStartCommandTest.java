@@ -19,13 +19,7 @@ import static org.mockito.Mockito.*;
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(TestUtils.class)
 public class UserStartCommandTest {
-
     private RequestWrapper wrapper = mock(RequestWrapper.class);
-
-    @Before
-    public void setUp() throws Exception {
-
-    }
 
     @Test
     public void onIdNull_returnToMenu() throws ServletException {
@@ -64,5 +58,4 @@ public class UserStartCommandTest {
         /*Verify wrapper.setSessionAttribute("test", test) is invoked*/
         verify(wrapper, times(1)).setSessionAttribute(eq("test"), any());
     }
-
 }

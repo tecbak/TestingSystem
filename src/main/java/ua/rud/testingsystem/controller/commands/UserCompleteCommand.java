@@ -1,6 +1,7 @@
 package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
+import ua.rud.testingsystem.controller.CsrfUnsafe;
 import ua.rud.testingsystem.controller.RequestWrapper;
 import ua.rud.testingsystem.entities.test.TestUtils;
 import ua.rud.testingsystem.entities.test.Test;
@@ -12,7 +13,7 @@ import javax.servlet.ServletException;
 /**
  * Command to submit answers for a test
  */
-public class UserCompleteCommand implements Command {
+public class UserCompleteCommand implements Command, CsrfUnsafe {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
         Object testObj = wrapper.getSessionAttribute("test");

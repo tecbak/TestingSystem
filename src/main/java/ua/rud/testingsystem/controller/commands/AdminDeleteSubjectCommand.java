@@ -1,6 +1,7 @@
 package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
+import ua.rud.testingsystem.controller.CsrfUnsafe;
 import ua.rud.testingsystem.controller.RequestWrapper;
 import ua.rud.testingsystem.entities.CommonUtils;
 import ua.rud.testingsystem.entities.subject.Subject;
@@ -15,7 +16,7 @@ import java.util.Locale;
 /**
  * Command to delete a subject
  */
-public class AdminDeleteSubjectCommand implements Command {
+public class AdminDeleteSubjectCommand implements Command, CsrfUnsafe {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
         String[] stringSubjectIds = wrapper.getRequestParameterValues("subjectId");

@@ -17,5 +17,4 @@ public class GuestRegisterCommandTest {
 
         Assert.assertEquals(expectedPage, actualPage);
     }
-
 }

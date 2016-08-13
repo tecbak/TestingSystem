@@ -16,6 +16,5 @@ public class GuestLoginCommandTest {
         String expectedPage = PageManager.getProperty("path.page.login");
 
         Assert.assertEquals(expectedPage, actualPage);
-
     }
 }

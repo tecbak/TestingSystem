@@ -37,9 +37,6 @@ public class UserMenuCommandTest {
         PowerMockito.doReturn(new HashMap()).when(SubjectUtils.class);
         SubjectUtils.getResultsForSubjects(anyListOf(Subject.class), anyInt());
 
-//        ArrayList toBeReturned = new ArrayList() {{         //ArrayList containing one Subject
-//            add(new Subject());
-//        }};
         PowerMockito.doReturn(new ArrayList()).when(SubjectUtils.class);
         SubjectUtils.getSubjects();
 
@@ -55,5 +52,4 @@ public class UserMenuCommandTest {
 
         Assert.assertEquals(expectedPage, actualPage);
     }
-
 }

@@ -52,10 +52,10 @@
                 <%--Logout and Administration links--%>
             <td id="left">
                 <c:if test="${not empty sessionScope.user}">
-                    <a href="controller?command=userLogout&token=${sessionScope.token}"><fmt:message key="common.logout"/></a>
+                    <a href="controller?command=userLogout"><fmt:message key="common.logout"/></a>
 
                     <c:if test="${sessionScope.user.role.toString() == 'ADMIN'}">
-                        <a href="controller?command=adminMenu&token=${sessionScope.token}"> <fmt:message key="common.administration"/></a>
+                        <a href="controller?command=adminMenu"> <fmt:message key="common.administration"/></a>
                     </c:if>
                 </c:if>
             </td>

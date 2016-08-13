@@ -1,6 +1,7 @@
 package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
+import ua.rud.testingsystem.controller.CsrfUnsafe;
 import ua.rud.testingsystem.controller.RequestWrapper;
 import ua.rud.testingsystem.entities.CommonUtils;
 import ua.rud.testingsystem.entities.test.Answer;
@@ -17,7 +18,7 @@ import java.util.Locale;
 /**
  * Command to add a new question for a test, which is being constructed
  */
-public class AdminAddQuestionCommand implements Command {
+public class AdminAddQuestionCommand implements Command, CsrfUnsafe {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
         Object newTestObj = wrapper.getSessionAttribute("newTest");

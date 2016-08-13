@@ -69,7 +69,7 @@
 
     <hr>
 
-    <p><a href="controller?command=adminMenu&token=${sessionScope.token}">
+    <p><a href="controller?command=adminMenu">
         <fmt:message key="editTests.back"/>
     </a></p>
 

@@ -46,8 +46,6 @@ public class GuestRegistrationCommandTest {
 
         PowerMockito.doNothing().when(UserUtils.class);
         UserUtils.saveUser(Mockito.any(), Mockito.any());
-
-
     }
 
     @Test
@@ -150,7 +148,6 @@ public class GuestRegistrationCommandTest {
     @Test
     public void executeTest() throws ServletException {
 
-
         /*Verify returned page*/
         String expectedPage = PageManager.getProperty("path.page.register");
         String actualPage = new GuestRegistrationCommand().execute(wrapper);
@@ -168,5 +165,4 @@ public class GuestRegistrationCommandTest {
 
         Assert.assertEquals(message, o.getValue());
     }
-
 }

@@ -13,7 +13,7 @@ public final class UserUtils {
     }
 
     /**
-     * Check wether two passwords are equal
+     * Check whether two passwords are equal
      *
      * @param password0
      * @param password1
@@ -52,7 +52,8 @@ public final class UserUtils {
      * @return {@code true} if email is valid and {@code false} otherwise
      */
     public static boolean isEmailValid(String email) {
-        final String EMAIL_PATTERN = "^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
+//        final String EMAIL_PATTERN = "^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
+        final String EMAIL_PATTERN = "[a-zA-Z]+\\w*(\\.\\w+)*@([a-zA-Z]\\w*\\.)+[a-zA-Z]{2,6}";
         return email.matches(EMAIL_PATTERN);
     }
 

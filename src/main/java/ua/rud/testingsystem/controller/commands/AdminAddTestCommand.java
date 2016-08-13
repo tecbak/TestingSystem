@@ -1,6 +1,7 @@
 package ua.rud.testingsystem.controller.commands;
 
 import ua.rud.testingsystem.controller.Command;
+import ua.rud.testingsystem.controller.CsrfUnsafe;
 import ua.rud.testingsystem.controller.RequestWrapper;
 import ua.rud.testingsystem.entities.test.Test;
 import ua.rud.testingsystem.entities.test.TestUtils;
@@ -13,7 +14,7 @@ import java.util.Locale;
 /**
  * Command to start creating of new test
  */
-public class AdminAddTestCommand implements Command {
+public class AdminAddTestCommand implements Command, CsrfUnsafe {
 
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {

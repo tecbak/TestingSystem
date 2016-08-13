@@ -2,7 +2,6 @@ package ua.rud.testingsystem.controller.commands;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
@@ -11,6 +10,7 @@ import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 import ua.rud.testingsystem.controller.RequestWrapper;
 import ua.rud.testingsystem.entities.subject.SubjectUtils;
+import ua.rud.testingsystem.entities.test.Test;
 import ua.rud.testingsystem.entities.test.TestUtils;
 import ua.rud.testingsystem.managers.MessageManager;
 import ua.rud.testingsystem.managers.PageManager;
@@ -24,19 +24,12 @@ import java.util.Locale;
 @PrepareForTest({TestUtils.class, SubjectUtils.class})
 public class AdminSaveTestCommandTest {
     private RequestWrapper wrapper = Mockito.mock(RequestWrapper.class);
-    private ua.rud.testingsystem.entities.test.Test test = Mockito.mock(ua.rud.testingsystem.entities.test.Test.class);
+    private Test test = Mockito.mock(Test.class);
     private List questions = Mockito.mock(ArrayList.class);
 
     @Before
     public void setUp() throws Exception {
-
         /*Mocks standard behaviour*/
-
-//        test = new ua.rud.testingsystem.entities.test.Test() {{
-//            addQuestion(new Question());
-//        }};
-
-
         Mockito.when(test.getQuestions()).thenReturn(questions);
         Mockito.when(questions.size()).thenReturn(1);
         Mockito.when(wrapper.getRequestParameter("save")).thenReturn("1");
@@ -55,7 +48,7 @@ public class AdminSaveTestCommandTest {
         SubjectUtils.getSubjects();
     }
 
-    @Test
+    @org.junit.Test
     public void onSaveNotEqual1_Cancel() throws ServletException {
         Mockito.when(wrapper.getRequestParameter("save")).thenReturn("0");
 
@@ -74,11 +67,9 @@ public class AdminSaveTestCommandTest {
         Assert.assertEquals("subjectId", s.getAllValues().get(1));
         Assert.assertNull(o.getAllValues().get(0));
         Assert.assertNull(o.getAllValues().get(1));
-
-
     }
 
-    @Test
+    @org.junit.Test
     public void onTestContainNoQuestions_reportAboutIt() throws ServletException {
         Mockito.when(questions.size()).thenReturn(0);
 
@@ -96,12 +87,9 @@ public class AdminSaveTestCommandTest {
 
         String message = MessageManager.getProperty("editTests.noQuestions", Locale.ENGLISH);
         Assert.assertEquals(message, o.getValue());
-
-
     }
 
-
-    @Test
+    @org.junit.Test
     public void executeTest() throws ServletException {
         String expectedPage = PageManager.getProperty("path.page.editTests");
         String actualPage = new AdminSaveTestCommand().execute(wrapper);
@@ -110,7 +98,5 @@ public class AdminSaveTestCommandTest {
         TestUtils.addTest(Mockito.anyInt(), Mockito.any());
 
         Assert.assertEquals(expectedPage, actualPage);
-
     }
-
 }

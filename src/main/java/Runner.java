@@ -1,4 +1,6 @@
-import java.security.SecureRandom;
+import ua.rud.testingsystem.entities.user.UserUtils;
+
+import java.util.Scanner;
 
 public class Runner {
     public static void main(String[] args) throws InterruptedException {
@@ -8,8 +10,17 @@ public class Runner {
 //        Thread thread1 = new Thread(new B());
 //        thread1.start();
 
-        System.out.println(new SecureRandom().nextLong());
+//        System.out.println(new SecureRandom().nextLong());
+
+        Scanner scanner = new Scanner(System.in);
+        String line;
+        do {
+            line = scanner.nextLine();
+            System.out.println(UserUtils.isEmailValid(line));
+
+        } while (!line.equals(""));
     }
+
 }
 
 class Test {

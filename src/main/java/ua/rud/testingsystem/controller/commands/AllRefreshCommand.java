@@ -15,11 +15,11 @@ public class AllRefreshCommand implements Command {
         Object page = wrapper.getSessionAttribute("page");
 
         /*
-         * Return index page if there is no current page
+         * Return error page if there is no current page
          * or current page otherwise
          */
         if (page == null || !(page instanceof String) || ((String) page).isEmpty()) {
-            return PageManager.getProperty("path.page.index");
+            return PageManager.getProperty("path.page.error");
         } else {
             return (String) page;
         }

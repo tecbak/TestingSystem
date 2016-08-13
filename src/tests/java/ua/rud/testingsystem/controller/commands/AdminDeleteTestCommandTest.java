@@ -26,7 +26,6 @@ import static org.mockito.Mockito.*;
 public class AdminDeleteTestCommandTest {
     private RequestWrapper wrapper = mock(RequestWrapper.class);
 
-
     @Before
     public void setUp() throws Exception {
         /*Standard wrapper behaviour*/
@@ -43,8 +42,6 @@ public class AdminDeleteTestCommandTest {
         PowerMockito.spy(SubjectUtils.class);
         PowerMockito.doReturn(new ArrayList()).when(SubjectUtils.class);
         SubjectUtils.getSubjects();
-
-
     }
 
     @Test

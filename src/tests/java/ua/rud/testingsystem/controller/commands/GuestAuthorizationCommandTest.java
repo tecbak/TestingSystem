@@ -76,8 +76,8 @@ public class GuestAuthorizationCommandTest {
         PowerMockito.verifyStatic(times(1));
         SubjectUtils.getSubjects();
 
-        /*Verify wrapper.setSessionAttribute is invoked 3 tomes*/
-        verify(wrapper, times(3)).setSessionAttribute(any(), any());
+        /*Verify wrapper.setSessionAttribute is invoked 4 times*/
+        verify(wrapper, times(4)).setSessionAttribute(any(), any());
     }
 
 }

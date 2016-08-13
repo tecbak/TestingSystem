@@ -19,5 +19,4 @@ public class UserLogoutCommandTest {
 
         Assert.assertEquals(expectedPage, actualPage);
     }
-
 }
