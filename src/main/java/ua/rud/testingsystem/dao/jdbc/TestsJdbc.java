@@ -16,8 +16,6 @@ import java.util.List;
 import static ua.rud.testingsystem.managers.SqlManager.getProperty;
 
 public class TestsJdbc extends AbstractJdbc implements TestDao {
-    private static final String SQL_LAST_INSERT_ID = getProperty("sql.select.lii");
-
     public TestsJdbc(DataSource dataSource) {
         super(dataSource);
     }
@@ -122,31 +120,31 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
         final String SQL_INSERT_TEST = getProperty("sql.insert.test");
 
         try (Connection connection = dataSource.getConnection();
-             PreparedStatement statement0 = connection.prepareStatement(SQL_INSERT_TEST);
-             PreparedStatement statement1 = connection.prepareStatement(SQL_LAST_INSERT_ID)) {
+             PreparedStatement statement =
+                     connection.prepareStatement(SQL_INSERT_TEST, PreparedStatement.RETURN_GENERATED_KEYS)) {
 
             String caption = test.getCaption();
             List<Question> questions = test.getQuestions();
-            statement0.setInt(1, subjectId);
-            statement0.setString(2, caption);
+            statement.setInt(1, subjectId);
+            statement.setString(2, caption);
 
             /*Start of transaction*/
             connection.setAutoCommit(false);
             try {
-                statement0.executeUpdate();
-
-                try (ResultSet resultSet = statement1.executeQuery()) {
-                    if (resultSet.next()) {
-                        int testId = resultSet.getInt("LAST_INSERT_ID()");
+                statement.executeUpdate();
+                try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
+                    if (generatedKeys.next()) {
+                        int testId = generatedKeys.getInt(1);
                         addQuestions(connection, questions, testId);
                     }
                 }
+
+                logger.info("Add test " + test);
             } catch (SQLException e) {
                 connection.rollback();
                 e.printStackTrace();
             } finally {
                 connection.commit();
-                logger.info("Add test " + test);
             }
             /*End of transaction*/
         } catch (SQLException e) {
@@ -166,17 +164,17 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
         final String SQL_INSERT_QUESTION = getProperty("sql.insert.question");
 
         for (Question question : questions) {
-            try (PreparedStatement statement0 = connection.prepareStatement(SQL_INSERT_QUESTION);
-                 PreparedStatement statement1 = connection.prepareStatement(SQL_LAST_INSERT_ID)) {
+            try (PreparedStatement statement =
+                         connection.prepareStatement(SQL_INSERT_QUESTION, PreparedStatement.RETURN_GENERATED_KEYS)) {
 
                 String task = question.getTask();
                 List<Answer> answers = question.getAnswers();
 
-                statement0.setInt(1, testID);
-                statement0.setString(2, task);
-                statement0.executeUpdate();
+                statement.setInt(1, testID);
+                statement.setString(2, task);
+                statement.executeUpdate();
 
-                try (ResultSet resultSet = statement1.executeQuery()) {
+                try (ResultSet resultSet = statement.getGeneratedKeys()) {
                     if (resultSet.next()) {
                         int questionId = resultSet.getInt(1);
                         addAnswers(connection, answers, questionId);
@@ -197,17 +195,18 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
     private void addAnswers(Connection connection, List<Answer> answers, int questionId) throws SQLException {
         final String SQL_INSERT_ANSWER = getProperty("sql.insert.answer");
 
-        // TODO: 28.07.2016 batch
-        for (Answer answer : answers) {
-            try (PreparedStatement statement = connection.prepareStatement(SQL_INSERT_ANSWER)) {
+        try (PreparedStatement statement = connection.prepareStatement(SQL_INSERT_ANSWER)) {
+            for (Answer answer : answers) {
                 String text = answer.getText();
                 boolean correct = answer.isCorrect();
 
                 statement.setInt(1, questionId);
                 statement.setString(2, text);
                 statement.setBoolean(3, correct);
-                statement.executeUpdate();
+
+                statement.addBatch();
             }
+            statement.executeBatch();
         }
     }
 
