@@ -21,29 +21,31 @@
 
             <c:forEach var="subject" items="${sessionScope.subjects}">
                 <%--Subject name--%>
-                <h3><c:out value="${subject.name}"/></h3>
+                <c:if test="${subject.tests.size() > 0}">
+                    <h3><c:out value="${subject.name}"/></h3>
 
-                <%--Output of tests--%>
-                <c:forEach var="entry" items="${subject.tests.entrySet()}">
-                    <p>
-                        <c:set var="testId" value="${entry.getKey()}"/>
-                        <c:set var="testCaption" value="${entry.getValue()}"/>
+                    <%--Output of tests--%>
+                    <c:forEach var="entry" items="${subject.tests.entrySet()}">
+                        <p>
+                            <c:set var="testId" value="${entry.getKey()}"/>
+                            <c:set var="testCaption" value="${entry.getValue()}"/>
 
-                        <input type="radio" name="id" value="${testId}"/>
-                        <c:out value="${testCaption}"/>
+                            <input type="radio" name="id" value="${testId}"/>
+                            <c:out value="${testCaption}"/>
 
-                            <%--If there are any result for the test--%>
-                        <c:set var="rates" value="${sessionScope.results[testId]}"/>
-                        <c:if test="${rates.size() > 0}">
-                            <br/><fmt:message key="menu.results"/>
-                            <c:forEach var="rate" items="${rates}">
-                                <c:out value="${rate}"/>%
-                            </c:forEach>
-                            <br/>
-                        </c:if>
-                    </p>
-                </c:forEach>
-                <br/>
+                                <%--If there are any result for the test--%>
+                            <c:set var="rates" value="${sessionScope.results[testId]}"/>
+                            <c:if test="${rates.size() > 0}">
+                                <br/><fmt:message key="menu.results"/>
+                                <c:forEach var="rate" items="${rates}">
+                                    <c:out value="${rate}"/>%
+                                </c:forEach>
+                                <br/>
+                            </c:if>
+                        </p>
+                    </c:forEach>
+                    <br/>
+                </c:if>
             </c:forEach>
 
             <fmt:message key="menu.start" var="start"/>

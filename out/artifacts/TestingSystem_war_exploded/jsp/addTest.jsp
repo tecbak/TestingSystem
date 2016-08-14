@@ -50,7 +50,7 @@
         <c:forEach var="question" items="${sessionScope.newTest.questions}">
 
             <%--Task--%>
-            <h3><c:out value="${question.task}"/></h3>
+            <h3><ctg:source value="${question.task}"/></h3>
 
             <%--Answers--%>
             <c:forEach var="answer" items="${question.answers}">
@@ -69,7 +69,7 @@
                 <input type="checkbox" name="id" value="${answer.id}" ${checked} disabled/>
 
                 <%--Answer's text--%>
-                <c:out value="${answer.text}"/><br/>
+                <ctg:source value="${answer.text}"/><br/>
             </c:forEach>
 
         </c:forEach>

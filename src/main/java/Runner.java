@@ -1,18 +1,12 @@
 public class Runner {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
+        int i = 255;
+        int a = 0b10;
+        byte b = (byte) i;
+        System.out.println(a);
+        System.out.println(b);
 
-        try {
-            try {
-                throw new IllegalArgumentException();
-            } finally {
-
-            }
-
-        } catch (Exception e) {
-            System.out.println("caught");
-        }
-
-        System.out.println("".startsWith("a"));
+        System.out.println();
     }
 }
 

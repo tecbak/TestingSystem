@@ -56,7 +56,6 @@ public class GuestFilterTest {
             {INCORRECT_COMMAND, GUEST},
             {INCORRECT_COMMAND, USER},
             {INCORRECT_COMMAND, ADMIN},
-
     };
 
     @DataPoints("expectDoChain")
@@ -71,7 +70,6 @@ public class GuestFilterTest {
             {USER_COMMAND, ADMIN},
 
             {ADMIN_COMMAND, ADMIN},
-
     };
 
 
