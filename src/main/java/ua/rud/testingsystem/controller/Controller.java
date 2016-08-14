@@ -40,7 +40,9 @@ public class Controller extends HttpServlet {
         Command command = factory.getCommand(wrapper);
 
         /*
-         * Execute command or redirect to error page in case of command is null
+         * Assign a value of "error" jsp's path if command is null
+         * or CSRF unsafe command hasn't pass verification of tokens.
+         * Otherwise, execute command and assign a value returned by command.
          */
         String page;
         if (command == null || (command instanceof CsrfUnsafe && !isCsrfVerified(wrapper))) {
@@ -49,35 +51,25 @@ public class Controller extends HttpServlet {
             page = command.execute(wrapper);
         }
 
-//        if (command != null) {
-//            page = command.execute(wrapper);
-//        } else {
-//            page = PageManager.getProperty("path.page.error");
-//        }
+        /* Save path of jsp to session's attribute "page" */
         request.getSession().setAttribute("page", page);
 
+        /* Forward to frame.jsp. It will include jsp from session's attribute "page" */
         RequestDispatcher dispatcher = request.getRequestDispatcher(frame);
         dispatcher.forward(request, response);
     }
 
+    /**
+     * Verify whether token received from client matches the one stored at server
+     *
+     * @param wrapper contains client's request
+     * @return {@code true} if tokens are the same and {@code false} otherwise
+     */
     private boolean isCsrfVerified(RequestWrapper wrapper) {
         String receivedToken = wrapper.getRequestParameter("token");
         String expectedToken = wrapper.getSessionAttribute("token") == null ?
                 "" : wrapper.getSessionAttribute("token").toString();
-
-        /*Continue if received token matches received one*/
         return expectedToken.equals(receivedToken);
-
-//        String receivedToken = httpRequest.getParameter("token");
-//        String expectedToken = session.getAttribute("token") == null ? "" : session.getAttribute("token").toString();
-
-//        if (expectedToken.equals(receivedToken)) {
-////            session.setAttribute("token", getRandomLong());
-//            chain.doFilter(request, response);
-//        } else {
-//            RequestDispatcher dispatcher = request.getRequestDispatcher(errorHandlerJsp);
-//            dispatcher.forward(request, response);
-//        }
     }
 }
 

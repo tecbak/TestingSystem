@@ -63,7 +63,7 @@ public final class SubjectUtils {
      * @param stringSubjectIds ids of subjects to be deleted
      */
     public static void deleteSubjects(String[] stringSubjectIds) {
-        List<Integer> subjectIds = CommonUtils.stringArrayToIntList(stringSubjectIds); //todo common utils
+        List<Integer> subjectIds = CommonUtils.stringArrayToIntList(stringSubjectIds);
         DaoFactory factory = JdbcFactory.getInstance();
         SubjectDao subjectDao = factory.getSubjectDao();
         subjectDao.deleteSubjects(subjectIds);

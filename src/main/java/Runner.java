@@ -12,6 +12,7 @@ public class Runner {
             System.out.println("caught");
         }
 
+        System.out.println("".startsWith("a"));
     }
 }
 

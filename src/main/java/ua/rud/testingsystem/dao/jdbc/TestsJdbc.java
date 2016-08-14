@@ -13,6 +13,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.sql.PreparedStatement.*;
 import static ua.rud.testingsystem.managers.SqlManager.getProperty;
 
 public class TestsJdbc extends AbstractJdbc implements TestDao {
@@ -22,12 +23,6 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
 
     /*SELECT QUERIES*/
 
-    /**
-     * Extract test with particular ID from database
-     *
-     * @param testId test ID
-     * @return test with particular ID or {@code null} if there's no test with such ID
-     */
     @Override
     public Test getTestById(int testId) {
         final String SQL_GET_TEST_BY_ID = getProperty("sql.select.test");
@@ -75,13 +70,6 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
         return test;
     }
 
-    /**
-     * Get all results of particular user and test
-     *
-     * @param userId users's id
-     * @param testId test's id
-     * @return result as percent of correct answers
-     */
     @Override
     public List<Integer> getResults(int userId, int testId) {
         final String SQL_GET_RESULT = getProperty("sql.select.result");
@@ -109,19 +97,12 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
 
     /*INSERT QUERIES*/
 
-    /**
-     * Add test to database
-     *
-     * @param subjectId id of test's subject
-     * @param test      test to be added
-     */
     @Override
     public void addTest(int subjectId, Test test) {
         final String SQL_INSERT_TEST = getProperty("sql.insert.test");
 
         try (Connection connection = dataSource.getConnection();
-             PreparedStatement statement =
-                     connection.prepareStatement(SQL_INSERT_TEST, PreparedStatement.RETURN_GENERATED_KEYS)) {
+             PreparedStatement statement = connection.prepareStatement(SQL_INSERT_TEST, RETURN_GENERATED_KEYS)) {
 
             String caption = test.getCaption();
             List<Question> questions = test.getQuestions();
@@ -157,28 +138,32 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
      *
      * @param connection {@link Connection} to database
      * @param questions  a {@link List} of {@link Question}s to be saved
-     * @param testID     id of {@link Test} the {@link Question}s regard to
+     * @param testId     id of {@link Test} the {@link Question}s regard to
      * @throws SQLException in case of problems with database connection
      */
-    private void addQuestions(Connection connection, List<Question> questions, int testID) throws SQLException {
+    private void addQuestions(Connection connection, List<Question> questions, int testId) throws SQLException {
         final String SQL_INSERT_QUESTION = getProperty("sql.insert.question");
 
-        for (Question question : questions) {
-            try (PreparedStatement statement =
-                         connection.prepareStatement(SQL_INSERT_QUESTION, PreparedStatement.RETURN_GENERATED_KEYS)) {
+        try (PreparedStatement statement = connection.prepareStatement(SQL_INSERT_QUESTION, RETURN_GENERATED_KEYS)) {
 
-                String task = question.getTask();
-                List<Answer> answers = question.getAnswers();
+            /*Add all question to batch*/
+            for (Question question : questions) {
+                statement.setInt(1, testId);
+                statement.setString(2, question.getTask());
+                statement.addBatch();
+            }
 
-                statement.setInt(1, testID);
-                statement.setString(2, task);
-                statement.executeUpdate();
+            statement.executeBatch();
 
-                try (ResultSet resultSet = statement.getGeneratedKeys()) {
-                    if (resultSet.next()) {
-                        int questionId = resultSet.getInt(1);
-                        addAnswers(connection, answers, questionId);
-                    }
+            /*Save answers of each question*/
+            try (ResultSet resultSet = statement.getGeneratedKeys()) {
+                for (Question question : questions) {
+                    resultSet.next();
+
+                    int questionID = resultSet.getInt(1);
+                    List<Answer> answers = question.getAnswers();
+
+                    addAnswers(connection, answers, questionID);
                 }
             }
         }
@@ -226,6 +211,8 @@ public class TestsJdbc extends AbstractJdbc implements TestDao {
             logger.error(e);
         }
     }
+
+    /*DELETE QUERIES*/
 
     @Override
     public void deleteTests(List<Integer> testIds) {

@@ -12,6 +12,6 @@ abstract class AbstractJdbc {
     AbstractJdbc(DataSource dataSource) {
         this.dataSource = dataSource;
         this.logger = Logger.getLogger(this.getClass());
-        this.logger.setLevel(Level.INFO);
+        this.logger.setLevel(Level.ERROR);
     }
 }

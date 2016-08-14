@@ -2,20 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37df5f9e-ab7c-4818-8ce7-3225e42d12a7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/A.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/B.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/A.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/B.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TestingSystem/Test.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/Runner.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/Runner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/filters/GuestFilterTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" afterPath="$PROJECT_DIR$/out/artifacts/TestingSystem_war_exploded/WEB-INF/classes/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/Runner.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/Runner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/Controller.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/filters/GuestFilter.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/controller/filters/GuestFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/AbstractJdbc.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/AbstractJdbc.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" afterPath="$PROJECT_DIR$/out/production/TestingSystem/ua/rud/testingsystem/dao/jdbc/TestsJdbc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/UserCompleteCommandTest.class" afterPath="$PROJECT_DIR$/out/test/TestingSystem/ua/rud/testingsystem/controller/commands/UserCompleteCommandTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Runner.java" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CsrfUnsafe.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CsrfUnsafe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/GuestFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/GuestFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/TestDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/TestDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/AbstractJdbc.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/AbstractJdbc.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/sql.properties" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/sql.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/SubjectUtils.java" afterPath="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/SubjectUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/UserCompleteCommandTest.java" afterPath="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/UserCompleteCommandTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="TestingSystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,15 +56,9 @@
     <SUITE FILE_PATH="coverage/TestingSystem$StartCommandTest_onIdNull_returnToMenu.coverage" NAME="StartCommandTest.onIdNull_returnToMenu Coverage Results" MODIFIED="1470314263657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$StartCommandTest_executeTest.coverage" NAME="StartCommandTest.executeTest Coverage Results" MODIFIED="1470314317442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$MenuCommandTest.coverage" NAME="MenuCommandTest Coverage Results" MODIFIED="1470348045693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminAddQuestionCommandTest_and_11_more.coverage" NAME="AdminAddQuestionCommandTest and 11 more Coverage Results" MODIFIED="1470259246894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TestingSystem$LanguageTagTest.coverage" NAME="LanguageTagTest Coverage Results" MODIFIED="1470787499857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.tags.*</FILTER>
+    <SUITE FILE_PATH="coverage/TestingSystem$GuestFilterTest.coverage" NAME="GuestFilterTest Coverage Results" MODIFIED="1471135652896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.filters.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminEditSubjectsCommandTest_executeTest.coverage" NAME="AdminEditSubjectsCommandTest.executeTest Coverage Results" MODIFIED="1470218888210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
@@ -69,20 +69,8 @@
     <SUITE FILE_PATH="coverage/TestingSystem$GuestAuthorizationCommandTest_executeTest.coverage" NAME="GuestAuthorizationCommandTest.executeTest Coverage Results" MODIFIED="1470349744568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$ua_rud_testingsystem_controller_commands_in_TestingSystem.coverage" NAME="ua.rud.testingsystem.controller.commands in TestingSystem Coverage Results" MODIFIED="1470700380677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$StartCommandTest.coverage" NAME="StartCommandTest Coverage Results" MODIFIED="1470314793468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$ua_rud_testingsystem_controller_commands___in_TestingSystem.coverage" NAME="ua.rud.testingsystem.controller.commands.Новая папка in TestingSystem Coverage Results" MODIFIED="1470259479035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.Новая папка.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$CompleteCommandTest_executeTest.coverage" NAME="CompleteCommandTest.executeTest Coverage Results" MODIFIED="1470177166738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$CommonUtilsTest.coverage" NAME="CommonUtilsTest Coverage Results" MODIFIED="1470778840274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.entities.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminDeleteSubjectCommandTest_deleteSubject.coverage" NAME="AdminDeleteSubjectCommandTest.deleteSubject Coverage Results" MODIFIED="1470001634867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
@@ -99,19 +87,7 @@
     <SUITE FILE_PATH="coverage/TestingSystem$TestCommandTest.coverage" NAME="TestCommandTest Coverage Results" MODIFIED="1470318308600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$GuestRegistrationCommandTest.coverage" NAME="GuestRegistrationCommandTest Coverage Results" MODIFIED="1470267166600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminAddQuestionCommandTest_onTextsNull_reportAboutIt.coverage" NAME="AdminAddQuestionCommandTest.onTextsNull_reportAboutIt Coverage Results" MODIFIED="1469972792580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$AdminEditSubjectsCommandTest.coverage" NAME="AdminEditSubjectsCommandTest Coverage Results" MODIFIED="1470258849766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$GuestLoginCommandTest.coverage" NAME="GuestLoginCommandTest Coverage Results" MODIFIED="1470261216145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$AdminSaveTestCommandTest.coverage" NAME="AdminSaveTestCommandTest Coverage Results" MODIFIED="1470258877605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$MenuCommandTest_executeTest.coverage" NAME="MenuCommandTest.executeTest Coverage Results" MODIFIED="1470306750558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -120,12 +96,6 @@
     <SUITE FILE_PATH="coverage/TestingSystem$AdminAddTestCommandTest.coverage" NAME="AdminAddTestCommandTest Coverage Results" MODIFIED="1470342428581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$GuestAuthorizationCommandTest.coverage" NAME="GuestAuthorizationCommandTest Coverage Results" MODIFIED="1470349840034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$LanguageTagTest_onLanguageDefinedInParam_setNewLanguage.coverage" NAME="LanguageTagTest.onLanguageDefinedInParam_setNewLanguage Coverage Results" MODIFIED="1470785239863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.tags.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminAddQuestionCommandTest_and_4_more.coverage" NAME="AdminAddQuestionCommandTest and 4 more Coverage Results" MODIFIED="1470170663328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TestingSystem$AllRefreshCommandTest.coverage" NAME="AllRefreshCommandTest Coverage Results" MODIFIED="1471045373425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
@@ -133,28 +103,10 @@
     <SUITE FILE_PATH="coverage/TestingSystem$AdminDeleteSubjectCommandTest_onSubjectIdNull_ReportAboutIt.coverage" NAME="AdminDeleteSubjectCommandTest.onSubjectIdNull_ReportAboutIt Coverage Results" MODIFIED="1470004050503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$AdminAddQuestionCommandTest_addQuestion.coverage" NAME="AdminAddQuestionCommandTest.addQuestion Coverage Results" MODIFIED="1469975011841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$AdminSaveSubjectCommandTest_onSubjectExists_reportAboutIt.coverage" NAME="AdminSaveSubjectCommandTest.onSubjectExists_reportAboutIt Coverage Results" MODIFIED="1470158888868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$AdminSaveTestCommandTest_executeTest.coverage" NAME="AdminSaveTestCommandTest.executeTest Coverage Results" MODIFIED="1470257932158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$CompleteCommandTest.coverage" NAME="CompleteCommandTest Coverage Results" MODIFIED="1470258907377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$AdminDeleteTestCommandTest.coverage" NAME="AdminDeleteTestCommandTest Coverage Results" MODIFIED="1470337933613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$AdminAddQuestionCommandTest_onTaskEmpty_reportAboutIt.coverage" NAME="AdminAddQuestionCommandTest.onTaskEmpty_reportAboutIt Coverage Results" MODIFIED="1469887034050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminMenuCommandTest.coverage" NAME="AdminMenuCommandTest Coverage Results" MODIFIED="1470258863544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$CompleteCommandTest_onTestNull_returnToMenu.coverage" NAME="CompleteCommandTest.onTestNull_returnToMenu Coverage Results" MODIFIED="1470176342967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TestingSystem$AdminSaveSubjectCommandTest_saveSubjectTest.coverage" NAME="AdminSaveSubjectCommandTest.saveSubjectTest Coverage Results" MODIFIED="1470170646558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -166,7 +118,64 @@
     <SUITE FILE_PATH="coverage/TestingSystem$AdminSaveSubjectCommandTest.coverage" NAME="AdminSaveSubjectCommandTest Coverage Results" MODIFIED="1470258869678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TestingSystem$All_in_TestingSystem.coverage" NAME="All in TestingSystem Coverage Results" MODIFIED="1471045819719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TestingSystem$StartCommandTest_executeTest.coverage" NAME="StartCommandTest.executeTest Coverage Results" MODIFIED="1470314317442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$MenuCommandTest.coverage" NAME="MenuCommandTest Coverage Results" MODIFIED="1470348045693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$LanguageTagTest.coverage" NAME="LanguageTagTest Coverage Results" MODIFIED="1470787499857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.tags.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$ua_rud_testingsystem_controller_commands_in_TestingSystem.coverage" NAME="ua.rud.testingsystem.controller.commands in TestingSystem Coverage Results" MODIFIED="1470700380677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$ua_rud_testingsystem_controller_commands___in_TestingSystem.coverage" NAME="ua.rud.testingsystem.controller.commands.Новая папка in TestingSystem Coverage Results" MODIFIED="1470259479035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.Новая папка.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$CompleteCommandTest_executeTest.coverage" NAME="CompleteCommandTest.executeTest Coverage Results" MODIFIED="1470177166738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$CommonUtilsTest.coverage" NAME="CommonUtilsTest Coverage Results" MODIFIED="1470778840274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.entities.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$GuestRegistrationCommandTest.coverage" NAME="GuestRegistrationCommandTest Coverage Results" MODIFIED="1470267166600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$AdminEditSubjectsCommandTest.coverage" NAME="AdminEditSubjectsCommandTest Coverage Results" MODIFIED="1470258849766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$GuestLoginCommandTest.coverage" NAME="GuestLoginCommandTest Coverage Results" MODIFIED="1470261216145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$AdminSaveTestCommandTest.coverage" NAME="AdminSaveTestCommandTest Coverage Results" MODIFIED="1470258877605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$GuestAuthorizationCommandTest.coverage" NAME="GuestAuthorizationCommandTest Coverage Results" MODIFIED="1470349840034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$LanguageTagTest_onLanguageDefinedInParam_setNewLanguage.coverage" NAME="LanguageTagTest.onLanguageDefinedInParam_setNewLanguage Coverage Results" MODIFIED="1470785239863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.tags.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$AdminAddQuestionCommandTest_addQuestion.coverage" NAME="AdminAddQuestionCommandTest.addQuestion Coverage Results" MODIFIED="1469975011841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$AdminSaveSubjectCommandTest_onSubjectExists_reportAboutIt.coverage" NAME="AdminSaveSubjectCommandTest.onSubjectExists_reportAboutIt Coverage Results" MODIFIED="1470158888868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$AdminSaveTestCommandTest_executeTest.coverage" NAME="AdminSaveTestCommandTest.executeTest Coverage Results" MODIFIED="1470257932158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$AdminDeleteTestCommandTest.coverage" NAME="AdminDeleteTestCommandTest Coverage Results" MODIFIED="1470337933613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$AdminAddQuestionCommandTest_onTaskEmpty_reportAboutIt.coverage" NAME="AdminAddQuestionCommandTest.onTaskEmpty_reportAboutIt Coverage Results" MODIFIED="1469887034050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$CompleteCommandTest_onTestNull_returnToMenu.coverage" NAME="CompleteCommandTest.onTestNull_returnToMenu Coverage Results" MODIFIED="1470176342967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ua.rud.testingsystem.controller.commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingSystem$All_in_TestingSystem.coverage" NAME="All in TestingSystem Coverage Results" MODIFIED="1471135663269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="0" />
@@ -187,125 +196,150 @@
     <favorites_list name="TestingSystem" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AllIndexCommandTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AllIndexCommandTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubjectUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/SubjectUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/CommonUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1958#1959#0" expanded="false" />
-                <element signature="e#1995#1996#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/test/TestUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2227">
-              <caret line="139" column="19" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/TestDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestsJdbc.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="174" column="42" selection-start-line="174" selection-start-column="42" selection-end-line="174" selection-end-column="42" />
-              <folding>
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreparedStatement.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/sql/PreparedStatement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="491" column="9" selection-start-line="491" selection-start-column="9" selection-end-line="491" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sql.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/sql.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllIndexCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AllIndexCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.4858044">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="GuestFilter.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/GuestFilter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-257">
+                  <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Filter.class" pinned="false" current-in-tab="false">
+            <entry file="jar://D:/Program Files/apache-tomcat-9.0.0.M4/lib/servlet-api.jar!/javax/servlet/Filter.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GuestFilterTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/filters/GuestFilterTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                  <folding>
+                    <marker date="1471135650521" expanded="true" signature="57:309" ph="..." />
+                    <marker date="1471135650521" expanded="true" signature="1475:2485" ph="@{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TestsJdbc.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-101">
+                  <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
+                  <folding>
+                    <element signature="method#getResults#0;class#TestsJdbc#0" expanded="false" />
+                    <element signature="docComment;method#addQuestions#0;class#TestsJdbc#0" expanded="false" />
+                    <element signature="docComment;method#addAnswers#0;class#TestsJdbc#0" expanded="false" />
+                    <element signature="method#addResult#0;class#TestsJdbc#0" expanded="false" />
+                    <element signature="method#deleteTests#0;class#TestsJdbc#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Command.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Command.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AbstractJdbc.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/AbstractJdbc.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-19">
+                  <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CsrfUnsafe.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CsrfUnsafe.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RequestWrapper.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/RequestWrapper.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EncodingFilter.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/EncodingFilter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="203">
+                  <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+                  <folding>
+                    <element signature="e#923#924#0" expanded="true" />
+                    <element signature="e#950#951#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Controller.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="52">
+                  <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="GuestFilterTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/filters/GuestFilterTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1887">
+                  <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -336,11 +370,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/GuestFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/UserLogoutCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/CommonUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/GuestAuthorizationCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/config.properties" />
         <option value="$PROJECT_DIR$/web/jsp/test.jsp" />
         <option value="$PROJECT_DIR$/web/jsp/menu.jsp" />
@@ -348,16 +377,13 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CsrfProtectable.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CsrfProtect.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CsrfProtectionRequiring.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CsrfUnsafe.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/CsrfFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminDeleteSubjectCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminDeleteTestCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminSaveTestCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/UserStartCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/UserCompleteCommand.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/jsp/addTest.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminAddQuestionCommand.java" />
@@ -372,7 +398,6 @@
         <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestLoginCommandTest.java" />
         <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestRegisterCommandTest.java" />
         <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/GuestRegistrationCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/UserCompleteCommandTest.java" />
         <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/UserLogoutCommandTest.java" />
         <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/UserMenuCommandTest.java" />
         <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/UserStartCommandTest.java" />
@@ -384,9 +409,18 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AllRefreshCommand.java" />
         <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AllRefreshCommandTest.java" />
         <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/AllIndexCommandTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/sql.properties" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/UserCompleteCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/SubjectUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/TestDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/AbstractJdbc.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CsrfUnsafe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/GuestFilter.java" />
+        <option value="$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/filters/GuestFilterTest.java" />
       </list>
     </option>
   </component>
@@ -635,6 +669,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -664,6 +699,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -779,10 +826,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestingSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testingsystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -806,13 +916,11 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ua.rud.testingsystem.controller.commands" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ua.rud.testingsystem.controller.filters" />
       <recent name="ua.rud.testingsystem.controller.commands" />
       <recent name="ua.rud.testingsystem.tags" />
       <recent name="ua.rud.testingsystem.entities.test" />
@@ -830,12 +938,6 @@
       <recent name="ua.rud.testingsystem.entities" />
       <recent name="ua.rud.testingsystem.controller" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java Workspace\EPAM\TestingSystem\web\jsp" />
-      <recent name="D:\Java Workspace\EPAM\TestingSystem\src" />
-      <recent name="D:\Java Workspace\EPAM\TestingSystem\web" />
-      <recent name="D:\Java Workspace\EPAM\TestingSystem\src\ua\rud\testingsystem\resource" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java Workspace\EPAM\TestingSystem\src\main" />
       <recent name="D:\Java Workspace\EPAM\TestingSystem\src\tests\java" />
@@ -843,60 +945,17 @@
       <recent name="D:\Java Workspace\EPAM\TestingSystem\test\ua.rud.testingsystem\controller.commands" />
       <recent name="D:\Java Workspace\EPAM\TestingSystem\src\ua\rud\testingsystem\resource" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java Workspace\EPAM\TestingSystem\web\jsp" />
+      <recent name="D:\Java Workspace\EPAM\TestingSystem\src" />
+      <recent name="D:\Java Workspace\EPAM\TestingSystem\web" />
+      <recent name="D:\Java Workspace\EPAM\TestingSystem\src\ua\rud\testingsystem\resource" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ua.rud.testingsystem.controller.commands" />
+    </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.0.M4">
-    <configuration default="false" name="AllRefreshCommandTest.executeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ua.rud.testingsystem.controller.commands.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TestingSystem" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.controller.commands" />
-      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.controller.commands.AllRefreshCommandTest" />
-      <option name="METHOD_NAME" value="executeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="AllRefreshCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ua.rud.testingsystem.controller.commands.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TestingSystem" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.controller.commands" />
-      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.controller.commands.AllRefreshCommandTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in TestingSystem">
     <configuration default="false" name="All in TestingSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TestingSystem" />
@@ -906,32 +965,6 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="AllIndexCommandTest.executeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ua.rud.testingsystem.controller.commands.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TestingSystem" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.controller.commands" />
-      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.controller.commands.AllIndexCommandTest" />
-      <option name="METHOD_NAME" value="executeTest" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -957,6 +990,84 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="TestingSystem" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="GuestFilterTest.expectForwardToIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.rud.testingsystem.controller.filters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestingSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.controller.filters" />
+      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.controller.filters.GuestFilterTest" />
+      <option name="METHOD_NAME" value="expectForwardToIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="GuestFilterTest.expectDoChain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.rud.testingsystem.controller.filters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestingSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.controller.filters" />
+      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.controller.filters.GuestFilterTest" />
+      <option name="METHOD_NAME" value="expectDoChain" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="GuestFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ua.rud.testingsystem.controller.filters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestingSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ua.rud.testingsystem.controller.filters" />
+      <option name="MAIN_CLASS_NAME" value="ua.rud.testingsystem.controller.filters.GuestFilterTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -1465,19 +1576,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 9.0.0.M4" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AllRefreshCommandTest.executeTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AllRefreshCommandTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in TestingSystem" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AllIndexCommandTest.executeTest" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Runner" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in TestingSystem" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Runner" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GuestFilterTest.expectForwardToIndex" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GuestFilterTest.expectDoChain" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.GuestFilterTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Runner" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in TestingSystem" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AllRefreshCommandTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AllIndexCommandTest.executeTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.AllRefreshCommandTest.executeTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in TestingSystem" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.GuestFilterTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.GuestFilterTest.expectDoChain" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.GuestFilterTest.expectForwardToIndex" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -1548,44 +1659,45 @@
       <workItem from="1470913857191" duration="31727000" />
       <workItem from="1471006445431" duration="11960000" />
       <workItem from="1471107092377" duration="104000" />
-      <workItem from="1471107231950" duration="781000" />
+      <workItem from="1471107231950" duration="5609000" />
+      <workItem from="1471121257108" duration="8659000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllIndexCommandTest_executeTest - 2016.08.13 at 02h 46m 36s.xml">
-      <configuration name="AllIndexCommandTest.executeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllRefreshCommandTest - 2016.08.13 at 02h 42m 55s.xml">
-      <configuration name="AllRefreshCommandTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllRefreshCommandTest - 2016.08.13 at 02h 47m 12s.xml">
-      <configuration name="AllRefreshCommandTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllRefreshCommandTest_executeTest - 2016.08.13 at 02h 42m 09s.xml">
-      <configuration name="AllRefreshCommandTest.executeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllRefreshCommandTest_executeTest - 2016.08.13 at 02h 42m 42s.xml">
-      <configuration name="AllRefreshCommandTest.executeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllRefreshCommandTest_onPageNotString_returnIndex - 2016.08.13 at 02h 40m 43s.xml">
-      <configuration name="AllRefreshCommandTest.onPageNotString_returnIndex" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_TestingSystem - 2016.08.13 at 02h 43m 34s.xml">
+    <history-entry file="All_in_TestingSystem - 2016.08.14 at 03h 48m 04s.xml">
       <configuration name="All in TestingSystem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_TestingSystem - 2016.08.13 at 02h 47m 36s.xml">
-      <configuration name="All in TestingSystem" configurationId="JUnit" />
+    <history-entry file="GuestFilterTest - 2016.08.14 at 03h 41m 27s.xml">
+      <configuration name="GuestFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_TestingSystem - 2016.08.13 at 02h 49m 18s.xml">
-      <configuration name="All in TestingSystem" configurationId="JUnit" />
+    <history-entry file="GuestFilterTest - 2016.08.14 at 03h 43m 36s.xml">
+      <configuration name="GuestFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_TestingSystem - 2016.08.13 at 02h 50m 39s.xml">
-      <configuration name="All in TestingSystem" configurationId="JUnit" />
+    <history-entry file="GuestFilterTest - 2016.08.14 at 03h 47m 34s.xml">
+      <configuration name="GuestFilterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestFilterTest_expectDoChain - 2016.08.14 at 03h 41m 00s.xml">
+      <configuration name="GuestFilterTest.expectDoChain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestFilterTest_expectDoChain - 2016.08.14 at 03h 41m 17s.xml">
+      <configuration name="GuestFilterTest.expectDoChain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestFilterTest_expectForwardToIndex - 2016.08.14 at 03h 30m 56s.xml">
+      <configuration name="GuestFilterTest.expectForwardToIndex" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestFilterTest_expectForwardToIndex - 2016.08.14 at 03h 32m 09s.xml">
+      <configuration name="GuestFilterTest.expectForwardToIndex" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestFilterTest_expectForwardToIndex - 2016.08.14 at 03h 33m 12s.xml">
+      <configuration name="GuestFilterTest.expectForwardToIndex" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestFilterTest_expectForwardToIndex - 2016.08.14 at 03h 34m 30s.xml">
+      <configuration name="GuestFilterTest.expectForwardToIndex" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="649766000" />
+    <option name="totallyTimeSpent" value="663253000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1609,8 +1721,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50292826" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3564669" sideWeight="0.4956076" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3564669" sideWeight="0.4956076" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26647145" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1624,7 +1737,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4384858" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21815519" sideWeight="0.50630915" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26647145" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30283913" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1739,130 +1851,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/jsp/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/errorHandler.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/frame.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="58" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="56" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CsrfUnsafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/AdminSaveSubjectCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/GuestLoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/UserLogoutCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/GuestRegisterCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/factory/JdbcFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/UserJdbc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/resources/messages_ru.properties">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/CsrfFilter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/commands/GuestRegistrationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1903,13 +1891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/UserCompleteCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2042,25 +2023,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/SubjectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/CommonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1958#1959#0" expanded="false" />
-            <element signature="e#1995#1996#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2068,27 +2034,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2227">
           <caret line="139" column="19" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2102,19 +2048,208 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/sql/PreparedStatement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
+        <state relative-caret-position="7905">
           <caret line="491" column="9" selection-start-line="491" selection-start-column="9" selection-end-line="491" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#67335#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/entities/subject/SubjectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="65" column="86" selection-start-line="65" selection-start-column="86" selection-end-line="65" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/commands/UserCompleteCommandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5950">
+          <caret line="376" column="11" selection-start-line="376" selection-start-column="11" selection-end-line="376" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#207463#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/jre/lib/resources.jar!/com/sun/org/apache/xml/internal/serializer/output_unknown.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/jre/lib/resources.jar!/com/sun/org/apache/xml/internal/serializer/output_xml.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/DirectAccessFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ltd/lang.tld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/HttpServletRequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/EncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding>
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/RequestWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/CsrfUnsafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/apache-tomcat-9.0.0.M4/lib/servlet-api.jar!/javax/servlet/Filter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/java/ua/rud/testingsystem/controller/filters/GuestFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1471135650521" expanded="true" signature="57:309" ph="..." />
+            <marker date="1471135650521" expanded="true" signature="1475:2485" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/filters/GuestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-257">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/AbstractJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/rud/testingsystem/dao/jdbc/TestsJdbc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="174" column="42" selection-start-line="174" selection-start-column="42" selection-end-line="174" selection-end-column="42" />
+        <state relative-caret-position="-101">
+          <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
           <folding>
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
+            <element signature="method#getResults#0;class#TestsJdbc#0" expanded="false" />
+            <element signature="docComment;method#addQuestions#0;class#TestsJdbc#0" expanded="false" />
+            <element signature="docComment;method#addAnswers#0;class#TestsJdbc#0" expanded="false" />
+            <element signature="method#addResult#0;class#TestsJdbc#0" expanded="false" />
+            <element signature="method#deleteTests#0;class#TestsJdbc#0" expanded="false" />
           </folding>
         </state>
       </provider>

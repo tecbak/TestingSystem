@@ -8,13 +8,6 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
-    <!--<jsp-config>-->
-        <!--<taglib>-->
-            <!--<taglib-uri>customtags</taglib-uri>-->
-            <!--<taglib-location>/WEB-INF/ltd/lang.tld</taglib-location>-->
-        <!--</taglib>-->
-    <!--</jsp-config>-->
-
     <!--DB-->
     <description>MySQL</description>
     <resource-ref>
@@ -51,10 +44,6 @@
     <filter>
         <filter-name>directAccessFilter</filter-name>
         <filter-class>ua.rud.testingsystem.controller.filters.DirectAccessFilter</filter-class>
-        <init-param>
-            <param-name>indexJsp</param-name>
-            <param-value>/index.jsp</param-value>
-        </init-param>
     </filter>
     <filter-mapping>
         <filter-name>directAccessFilter</filter-name>
@@ -64,30 +53,16 @@
     <filter>
         <filter-name>guestFilter</filter-name>
         <filter-class>ua.rud.testingsystem.controller.filters.GuestFilter</filter-class>
-        <!--<init-param>-->
-            <!--<param-name>indexJsp</param-name>-->
-            <!--<param-value>index.jsp</param-value>-->
-        <!--</init-param>-->
     </filter>
     <filter-mapping>
         <filter-name>guestFilter</filter-name>
         <url-pattern>/controller</url-pattern>
     </filter-mapping>
 
-    <!--<filter>-->
-        <!--<filter-name>csrfFilter</filter-name>-->
-        <!--<filter-class>ua.rud.testingsystem.controller.filters.CsrfFilter</filter-class>-->
-    <!--</filter>-->
-    <!--<filter-mapping>-->
-        <!--<filter-name>csrfFilter</filter-name>-->
-        <!--<url-pattern>/controller</url-pattern>-->
-    <!--</filter-mapping>-->
-
     <!--Errors-->
     <error-page>
         <error-code>404</error-code>
         <location>/jsp/errorHandler.jsp</location>
-
     </error-page>
 
     <error-page>

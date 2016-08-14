@@ -72,7 +72,6 @@ public class UserCompleteCommandTest {
         String expectedPage = PageManager.getProperty("path.page.test");
         String actualPage = new UserCompleteCommand().execute(wrapper);
 
-        // TODO: 03.08.2016 verify invoking static method
         /*Verify that method TestUtils.addResult is invoked*/
         PowerMockito.verifyStatic(Mockito.times(1));
         TestUtils.addResult(Mockito.any(), Mockito.any());
