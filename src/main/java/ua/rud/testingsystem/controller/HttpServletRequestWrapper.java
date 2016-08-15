@@ -7,7 +7,7 @@ import java.util.Locale;
 /**
  * Encapsulates {@link HttpServletRequest}
  * and provides access to its parameters and attributes
- * as well as {@link javax.servlet.http.HttpSession}'s attributes
+ * as well as {@link HttpSession}'s attributes
  */
 public class HttpServletRequestWrapper implements RequestWrapper {
     private HttpServletRequest request;

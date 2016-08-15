@@ -12,7 +12,6 @@
         <h1><fmt:message key="editTests.caption"/></h1>
     </div>
 
-
     <%--Add test caption--%>
     <div id="center">
         <h2><fmt:message key="editTests.addTest"/></h2>
@@ -41,10 +40,12 @@
         </form>
     </div>
     <hr>
+
     <%--Delete test caption--%>
     <div id="center">
         <h2><fmt:message key="editTests.deleteTest"/></h2>
     </div>
+
     <%--Delete test form--%>
     <div id="left">
         <form action="controller" method="post">
@@ -52,6 +53,7 @@
             <input type="hidden" name="token" value="${sessionScope.token}"/>
             <c:forEach var="subject" items="${sessionScope.subjects}">
                 <h3><c:out value="${subject.name}"/></h3>
+
                 <%--Output of tests--%>
                 <c:forEach var="entry" items="${subject.tests.entrySet()}">
                     <c:set var="testId" value="${entry.getKey()}"/>

@@ -1,6 +1,7 @@
 package ua.rud.testingsystem.dao;
 
 import ua.rud.testingsystem.entities.subject.Subject;
+import ua.rud.testingsystem.entities.test.Test;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ import java.util.List;
  */
 public interface SubjectDao {
     /**
-     * Get {@link List} of all {@link ua.rud.testingsystem.entities.test.Test}s stored in database
+     * Get {@link List} of all {@link Test}s stored in database
      *
      * @return List of tests
      */

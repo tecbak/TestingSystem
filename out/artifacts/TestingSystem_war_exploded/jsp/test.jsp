@@ -8,8 +8,10 @@
 <fmt:bundle basename="ua/rud/testingsystem/resource/messages">
 
     <div align="center">
+
             <%--Test caption--%>
         <h1><c:out value="${sessionScope.test.caption}"/></h1>
+
             <%--Results--%>
         <c:if test="${sessionScope.test.completed}">
             <h2><fmt:message key="test.correctAnswers"/> ${sessionScope.test.getRate()}%</h2>
@@ -41,7 +43,6 @@
                     <span class="${color}"><b><ctg:source value="${question.task}"/></b></span><br/>
 
                         <%--Answers--%>
-
                 <table width="100%">
                     <c:forEach var="answer" items="${question.answers}">
                         <tr>

@@ -9,10 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+import static ua.rud.testingsystem.entities.user.UserRole.*;
+
 /**
- * Prevents from unauthorized access
+ * Prevents the use of commands that do not correspond to user's role
  */
-public class GuestFilter implements Filter {
+public class RoleFilter implements Filter {
     private String indexJsp;
 
     @Override
@@ -36,10 +38,6 @@ public class GuestFilter implements Filter {
         }
     }
 
-//    @Override
-//    public void destroy() {
-//    }
-
     /**
      * If command's name starts with prefix:
      * "all" - this command is available for all users
@@ -48,11 +46,12 @@ public class GuestFilter implements Filter {
      * "user"- for any authorized user
      *
      * @param command invoked by user
-     * @param user who has invoked a command
-     * @return {@code true} if user rights to invoke the command,
+     * @param user    who has invoked a command
+     * @return {@code true} if user has rights to invoke the command,
      * {@code false} otherwise
      */
     private boolean isCommandMatchUser(String command, User user) {
+
         /*Return false if command is null*/
         if (command == null) {
             return false;
@@ -63,19 +62,22 @@ public class GuestFilter implements Filter {
             return true;
         }
 
+        /*Define user's role*/
+        final UserRole role = (user == null) ? GUEST : user.getRole();
+
         /*Return true if "guest" command is applied by unauthorized user*/
         if (command.startsWith("guest")) {
-            return user == null;
+            return role.compareTo(GUEST) == 0;
         }
 
-        /*Return true if "user" command is applied by authorized user*/
+        /*Return true if "user" command is applied by user with "USER" or higher role*/
         if (command.startsWith("user")) {
-            return user != null;
+            return role.compareTo(USER) >= 0;
         }
 
         /*Return true if "admin" command is applied by admin*/
         if (command.startsWith("admin")) {
-            return (user != null) && (user.getRole() == UserRole.ADMIN);
+            return role.compareTo(ADMIN) == 0;
         }
 
         /*Return false if command has no appropriate user identifier*/

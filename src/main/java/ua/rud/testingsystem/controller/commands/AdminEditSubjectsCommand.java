@@ -15,6 +15,7 @@ import java.util.List;
 public class AdminEditSubjectsCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
+
         /*Extract list of subjects from database*/
         List<Subject> subjects = SubjectUtils.getSubjects();
         wrapper.setSessionAttribute("subjects", subjects);

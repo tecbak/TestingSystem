@@ -8,7 +8,6 @@ import ua.rud.testingsystem.dao.factory.JdbcFactory;
  * Utility class for {@link User}
  */
 public final class UserUtils {
-
     private UserUtils() {
     }
 
@@ -87,4 +86,5 @@ public final class UserUtils {
 
         return user;
     }
+
 }

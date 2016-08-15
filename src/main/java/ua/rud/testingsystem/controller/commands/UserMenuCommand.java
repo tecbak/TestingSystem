@@ -17,6 +17,7 @@ import java.util.Map;
 public class UserMenuCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
+
         /*Extract list of subjects from database*/
         List<Subject> subjects = SubjectUtils.getSubjects();
 
@@ -30,14 +31,6 @@ public class UserMenuCommand implements Command {
 
         /*Extract results for every test*/
         Map<Integer, List<Integer>> resultMap = SubjectUtils.getResultsForSubjects(subjects, userId);
-//        for (Subject subject : subjects) {
-//            resultMap = SubjectUtils.getResultsForSubject(subject, userId);
-
-//            for (int testId : subject.getTests().keySet()) {
-//                List<Integer> results = TestUtils.getResults(userId, testId);
-//                resultMap.put(testId, results);
-//            }
-//        }
 
         /*Put extracted subjects and results to session*/
         wrapper.setSessionAttribute("subjects", subjects);

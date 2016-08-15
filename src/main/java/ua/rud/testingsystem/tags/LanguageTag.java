@@ -11,8 +11,10 @@ import java.util.Locale;
  * or sets default locale if no one has been defined yet
  */
 public class LanguageTag extends TagSupport {
+
     // Name of session's attribute storing value of locale (session's locale attribute)
     private String var;
+
     // Name of request parameter storing value of new defined language
     private String param;
 
@@ -26,7 +28,6 @@ public class LanguageTag extends TagSupport {
     }
 
     /*Methods*/
-
     @Override
     public int doStartTag() throws JspException {
         HttpSession session = pageContext.getSession();

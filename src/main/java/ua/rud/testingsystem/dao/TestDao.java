@@ -46,8 +46,9 @@ public interface TestDao {
     void addResult(int userId, int testId, int rate);
 
     /**
+     * Delete specified {@link Test} from database
      *
-     * @param testIds
+     * @param testIds ids of {@link Test} to be deleted
      */
     void deleteTests(List<Integer> testIds);
 }

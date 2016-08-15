@@ -15,12 +15,12 @@ import java.util.List;
 public class AdminEditTestsCommand implements Command {
     @Override
     public String execute(RequestWrapper wrapper) throws ServletException {
+
         /*Extract list of subjects from database*/
         List<Subject> subjects = SubjectUtils.getSubjects();
 
         /*Put extracted subjects and results to session*/
         wrapper.setSessionAttribute("subjects", subjects);
-
 
         return PageManager.getProperty("path.page.editTests");
     }

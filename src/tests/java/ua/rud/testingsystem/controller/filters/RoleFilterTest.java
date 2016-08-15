@@ -23,7 +23,7 @@ import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.*;
 
 @RunWith(Theories.class)
-public class GuestFilterTest {
+public class RoleFilterTest {
     private static final User USER = new User() {{
         setRole(UserRole.USER);
     }};
@@ -102,7 +102,7 @@ public class GuestFilterTest {
         String indexJsp = PageManager.getProperty("path.page.index");
         when(request.getRequestDispatcher(eq(indexJsp))).thenReturn(dispatcher);
 
-        GuestFilter filter = new GuestFilter();
+        RoleFilter filter = new RoleFilter();
         filter.init(config);
         filter.doFilter(request, response, chain);
 
@@ -116,7 +116,7 @@ public class GuestFilterTest {
 
         doNothing().when(chain).doFilter(request, response);
 
-        GuestFilter filter = new GuestFilter();
+        RoleFilter filter = new RoleFilter();
         filter.init(config);
         filter.doFilter(request, response, chain);
 
