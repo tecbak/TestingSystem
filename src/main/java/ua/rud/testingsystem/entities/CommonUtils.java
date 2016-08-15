@@ -1,15 +1,13 @@
 package ua.rud.testingsystem.entities;
 
-import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Contains common util methods
  */
 public final class CommonUtils {
-    private final static SecureRandom rnd = new SecureRandom();
-
     private CommonUtils() {
     }
 
@@ -70,7 +68,25 @@ public final class CommonUtils {
         return true;
     }
 
-    public static long getRandomLong() {
-        return rnd.nextLong();
+    /**
+     * Generate random string with a particular size
+     *
+     * @param size size of string to be generated
+     * @return random string
+     */
+    public static String getRandomString(int size) {
+        final Random random = new Random();
+        final String characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        final int length = characters.length();
+
+        StringBuilder builder = new StringBuilder();
+
+        for (int i = 0; i < size; i++) {
+            int index = random.nextInt(length);
+            char next = characters.charAt(index);
+            builder.append(next);
+        }
+
+        return builder.toString();
     }
 }

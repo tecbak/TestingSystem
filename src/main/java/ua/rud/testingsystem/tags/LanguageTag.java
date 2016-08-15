@@ -6,7 +6,10 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.TagSupport;
 import java.util.Locale;
 
-
+/**
+ * Changes locale if a new one defined
+ * or sets default locale if no one has been defined yet
+ */
 public class LanguageTag extends TagSupport {
     // Name of session's attribute storing value of locale (session's locale attribute)
     private String var;

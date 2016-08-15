@@ -10,12 +10,11 @@ import ua.rud.testingsystem.managers.MessageManager;
 import ua.rud.testingsystem.managers.PageManager;
 
 import javax.servlet.ServletException;
-import java.security.SecureRandom;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import static ua.rud.testingsystem.entities.CommonUtils.getRandomLong;
+import static ua.rud.testingsystem.entities.CommonUtils.getRandomString;
 
 /**
  * Command to sign in
@@ -58,7 +57,7 @@ public class GuestAuthorizationCommand implements Command {
             wrapper.setSessionAttribute("user", user);
             wrapper.setSessionAttribute("subjects", subjects);
             wrapper.setSessionAttribute("results", resultMap);
-            wrapper.setSessionAttribute("token", getRandomLong());
+            wrapper.setSessionAttribute("token", getRandomString(32));
 
             /*Return menu page*/
             return PageManager.getProperty("path.page.menu");
